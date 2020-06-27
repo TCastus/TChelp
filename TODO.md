@@ -1,11 +1,22 @@
 - dual boot
-- instalation des programme avec chocolatey -> un .abt exaustif des apps pour TC
+- gestionnaire de paquets pour windows
+  - powershell -> (findpakage, getpakage, ...)
+  - chocolatey -> faire un .bat exaustif des apps pour TC
 - GitHub / git
-- utilisations des IDE de jet brains
-- utilisation de VScode
-- atom
-- eclipse ?
-- liste de deb linux
+- IDE
+  - utilisations des IDE de jet brains
+  - utilisation de VScode
+  - atom
+  - eclipse ?
+- liste de deb linux (petit point sur chaque distrib pour comparatif) (topo sur les différents environnements graphique)
+  - Debian
+  - Ubuntu
+  - kbuntu
+  - xubuntu
+  - arch
+  - manjaro
+  - opensuse
+  - fedora
 - GNS3
 - Wireshark
-- 
+- Matlab (liste des addons a avoir)
