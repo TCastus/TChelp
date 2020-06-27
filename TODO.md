@@ -20,3 +20,7 @@
 - GNS3
 - Wireshark
 - Matlab (liste des addons a avoir)
+- listes de resources 
+  - plmlatex
+  - hackmd
+  - FAQ de la DSI
