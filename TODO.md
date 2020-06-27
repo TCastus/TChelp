@@ -1,0 +1,11 @@
+- dual boot
+- instalation des programme avec chocolatey -> un .abt exaustif des apps pour TC
+- GitHub / git
+- utilisations des IDE de jet brains
+- utilisation de VScode
+- atom
+- eclipse ?
+- liste de deb linux
+- GNS3
+- Wireshark
+- 
