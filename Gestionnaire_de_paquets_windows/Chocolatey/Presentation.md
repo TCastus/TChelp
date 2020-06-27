@@ -13,3 +13,9 @@ Puis taper cette commande ``Set-ExecutionPolicy Bypass -Scope Process -Force; [S
 
 ## Comment l'utiliser ? 
 
+Pour l'utilisation vous pouvez vérifier sur le [site de chocolatey](https://chocolatey.org/search?q=) que votre application est présente
+Sinon vous pouvez utiliser le ligne de commande suivante ``choco search <package name>``, la liste des applications correspondant à ce paquet s'afficherons. Pour installer le paquet voulu, il faut tapper la commande ``choco install <package name>`` , vous pouvez utiliser l'option ``-y`` pour accepter directmennt.
+
+Pour la mise à jour des paquets, il faut taper la commande ``choco upgrade <package name>`` et pour mettres à jour tous les paquet ```choco upgrade all`` (vous pouvez faire un script avec un lancement regulier à l'aide du planificateur de tâches)
+
+Pour lister les applications installer, utiliser la commande ``choco list --local-only``
