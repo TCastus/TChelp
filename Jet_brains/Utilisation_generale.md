@@ -23,18 +23,17 @@ File -> Settings -> projects -> interpreter
 
 # Raccourcis clavier
 
-## Raccourcis pour git
+### Raccourcis pour git
 
-ctrl+k = commit
+ctrl+k = commit  
 ctrl+shift+k = push
 
+### raccourcis pour l'édition
 
-# Raccourcis pour l'édition
-
-ctrl+d = dupliquer la sélection ou la ligne
-ctrl+shit+alt+clic = sélection multiple pour édition
-ctrl+/ = commenter / uncommenter 
-ctrl+shift+f10 = lancer le fichier courant
+ctrl+d = dupliquer la sélection ou la ligne  
+ctrl+shit+alt+clic = sélection multiple pour édition  
+ctrl+/ = commenter / uncommenter  
+ctrl+shift+f10 = lancer le fichier courant  
 ctrl+f10 = lancer le dernier fichier
 
 
