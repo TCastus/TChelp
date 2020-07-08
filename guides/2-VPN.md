@@ -36,32 +36,32 @@ Choisir un des deux outils :
 
     - Openconnect : https://www.infradead.org/openconnect/download.html
     - Anyconnect : https://software.cisco.com/download/home/286281283/type/282364313/release/4.8.03036
-    - choco install openconnect-gui -y /* SFR, j'ai un doute sur la commande finale */
+    - choco install openconnect-gui -y
 
 ## Lancement de la connexion (Windows)
 ### Avec Openconnect
   * Faire un nouveau nouveau profile (ctrl+n) File->Profile->New Profil
-  ![](https://i.imgur.com/uxZ58wW.png)
+    ![](https://i.imgur.com/uxZ58wW.png)
   * Mettre le nom que vous voulez et dans Gateway mettre : ``[NomGateway]`` puis save and connect
-  ![](https://i.imgur.com/oReSe4f.png)
+    ![](https://i.imgur.com/oReSe4f.png)
   * Mettre Group : ``INSA``
-  ![](https://i.imgur.com/BWnEX4y.png)
+    ![](https://i.imgur.com/BWnEX4y.png)
   * Entrez votre identifiant puis mot de passe
-  ![](https://i.imgur.com/5qIDPJW.png)
+    ![](https://i.imgur.com/5qIDPJW.png)
   * Quand le VPN est connecté il y a le petit cadenat vert
-  ![](https://i.imgur.com/8yEDZSL.png)
-  Sinon il est rouge
-  ![](https://i.imgur.com/SBGNpuJ.png)
+    ![](https://i.imgur.com/8yEDZSL.png)
+    Sinon il est rouge
+    ![](https://i.imgur.com/SBGNpuJ.png)
 
 ### Avec Anyconnect
   * Mettre l'url ``[NomGateway]`` dans le champs et cliquer sur connect
-  ![](https://i.imgur.com/VKpmKlU.png)
+    ![](https://i.imgur.com/VKpmKlU.png)
   * Renseigner le groupe, identifiant et mode de passe et cliquer sur ok
-  ![](https://i.imgur.com/NyyZyac.png)
+    ![](https://i.imgur.com/NyyZyac.png)
   * Quand le VPN est connecté il y a un check vert sur le cadenat
-  ![](https://i.imgur.com/1GJhzTn.png)
-   sinon il y a 3 petit point
-   ![](https://i.imgur.com/ZUrc1nM.png)
+    ![](https://i.imgur.com/1GJhzTn.png)
+      sinon il y a 3 petit point
+      ![](https://i.imgur.com/ZUrc1nM.png)
 
 
 # Sur MacOS
