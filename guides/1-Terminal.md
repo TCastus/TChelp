@@ -14,6 +14,8 @@ d'exploitation fait toujours un peu la même chose...
 
 Il faut cependant savoir ouvrir un terminal quelque soit votre système d'exploitation.
 
+A chaque fois qu'un enseignant vous demande d'ouvrir une fenêtre de commande, de taper une commande, d'ouvrir un shell, d'exécuter un programme, de lancer un CLI, de pinguer une machine... cela peut se faire rapidement à partir d'un terminal.
+
 # MacosX
 Dans MacOs, le terminal est initialement caché dans 'Autre' application de votre
 Launchpad.
