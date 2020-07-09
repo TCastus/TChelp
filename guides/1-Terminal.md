@@ -34,3 +34,9 @@ Pour macos, il existe des terminaux alternatifs de substitution. Un terminal cla
 https://medium.com/swlh/4-apps-must-install-on-your-mac-for-development-in-2020-3d8cd81c316c
 
 # Windows 10
+
+Il y a plusieurs choix proposé par Windows. L'utilisation de cmd est suffisante pour les commandes de bases tel que du parcours de fichier, git ... Cependant la similitude avec l'univers UNIX est marquée, le ``ls`` devient ``dir``, ``rm`` -> ``del``et j'en passe. 
+
+Une autre solution est PowerShell, ici les commandes connues sous UNIX sont fonctionnel, et sont un peu à rallonge. Mais nous avons ici une plus grande possibilité avec des commandes plus avancées. 
+
+La dernière solution est d'utiliser le terminale open source de Windows, un terminal entièrement personnalisable et la possibilité de l'utiliser pour les WSL (tuto a venir). Ce dernier reprend exactement les invite de commande cmd et PowerShell mais permet en plus d'avoir plusieurs onglets, des raccourcis clavier...
