@@ -36,7 +36,7 @@ Choisir un des deux outils :
 
     - Openconnect : https://www.infradead.org/openconnect/download.html
     - Anyconnect : https://software.cisco.com/download/home/286281283/type/282364313/release/4.8.03036
-    - choco install openconnect-gui -y /* SFR, j'ai un doute sur la commande finale */
+    - choco install openconnect-gui -y
 
 ## Lancement de la connexion (Windows)
 ### Avec Openconnect
@@ -63,7 +63,6 @@ Choisir un des deux outils :
    sinon il y a 3 petit point
    ![](https://i.imgur.com/ZUrc1nM.png)
 
-
 # Sur MacOS
 ## Installation du client vpn (MacOS)
 Choisir un des deux clients :
@@ -75,6 +74,10 @@ Avec openconnect, directement en ligne de commande dans un terminal :
 `sudo openconnect [NomGateway] --authgroup=INSA -u [LoginInsa]`
 
 La passerelle vous demandera votre mot de passe.
+
+## Ajout d'un alias
+Cette commande peut être ajoutée comme alias dans votre shell (cf cours shell).
+alias vpn='sudo openconnect [NomGateway] -u [LoginInsa] --authgroup=INSA'
 
 # Tester ma connexion vpn
 Pour tester ma connexion, le plus simple est d'ouvrir un terminal de commande et faire un ping sur une machine du réseau pour voir si elle répond.
