@@ -1,4 +1,6 @@
 # Connexion par clé ssh
+###### tags: `Assistance` `SSH` `Clés asymétriques'
+
 Vous allez rapidement être lassé de taper votre mot de passe ultra sécurisé à la fois pour votre connexion vpn et votre connexion à la machine distante. Vous pouvez éviter la saisie du mot de passe sur la machine distante, et de manière générale à tous les sites d'accès ssh distants, en utilisant des clés asymétriques ssh. Cette suite d'instructions vous explique comment faire sans entrer dans les détails.
 
 Il est inutile de savoir faire cela pour pouvoir travailler à distance. Cela permet juste d'accélerer votre mise en situation de travail.

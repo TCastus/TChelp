@@ -1,5 +1,4 @@
 # Terminal de commandes
-TODO: Unix, Windows
 ###### tags: `Assistance` `Terminal`
 
 Un terminal de commande et une fenêtre qui permet d'intergir en mode texte
