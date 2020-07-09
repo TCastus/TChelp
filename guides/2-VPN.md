@@ -70,14 +70,20 @@ Choisir un des deux clients :
   - Cisco anyconnect : http://dsi-pgdm-web01.insa-lyon.fr/files/cisco/4.8/anyconnect-macos-4.8.03052-predeploy-k9.dmg. Décochez toutes les options sauf l'accès vpn
 
 ## Lancement de la connexion
-Avec openconnect, directement en ligne de commande dans un terminal :
+Avec openconnect, directement en ligne de commande dans un terminal :  
 `sudo openconnect [NomGateway] --authgroup=INSA -u [LoginInsa]`
 
 La passerelle vous demandera votre mot de passe.
 
 ## Ajout d'un alias
-Cette commande peut être ajoutée comme alias dans votre shell (cf cours shell).
-alias vpn='sudo openconnect [NomGateway] -u [LoginInsa] --authgroup=INSA'
+Cette commande peut être ajoutée comme alias dans votre shell (cf cours shell).  
+`alias vpn='sudo openconnect [NomGateway] -u [LoginInsa] --authgroup=INSA'
+
+Cet alias vous permet par la suite de ne taper que la commande `vpn` pour le lancer.
+
+L'image suivante vous donne un exemple de terminal avec une connexion vpn active sous Macos.
+
+![](https://i.imgur.com/5axtNbT.png)
 
 # Tester ma connexion vpn
 Pour tester ma connexion, le plus simple est d'ouvrir un terminal de commande et faire un ping sur une machine du réseau pour voir si elle répond.
