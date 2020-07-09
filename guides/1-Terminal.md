@@ -26,10 +26,10 @@ Nous vous conseillons d'ajouter cette application à votre dock macosx en glissa
 
 Un terminal propose une interface texte de commande avec le système d'exploitation.
 Voici un bureau de MacosX avec quatre terminaux ouverts simultanément.
-![](https://i.imgur.com/AyK5YkO.png)
+![](https://i.imgur.com/sbssnDV.png)
 
 ## Alternatives
-Pour macos, il existe des terminaux alternatifs de substitution. L'outil classique est iterm2, qui offre quelques fonctions avancées d'interaction.
+Pour macos, il existe des terminaux alternatifs de substitution. Un terminal classique est iterm2, qui offre quelques fonctions avancées d'interaction.
 
 https://medium.com/swlh/4-apps-must-install-on-your-mac-for-development-in-2020-3d8cd81c316c
 
