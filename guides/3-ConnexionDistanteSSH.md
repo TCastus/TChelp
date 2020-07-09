@@ -15,7 +15,7 @@ Pour travailler à distance en mode texte vous devez savoir :
 
 ## Terminal Macos / linux
 
-Dans un terminal taper la commande ``ssh [Login_INSA]@[machine]`` avec un nom de machine valide. Votre mote de passe est alors demandé. Une fois saisi, vous vous retrouvez avec la même interface de commande qu'un terminal de votre système d'exploitation.
+Dans un terminal taper la commande ``ssh [Login_INSA]@[machine]`` avec un nom de machine valide. Votre mot de passe est alors demandé. Une fois saisi, vous vous retrouvez avec la même interface de commande qu'un terminal de votre système d'exploitation.
 
 L'image suivante montre un bureau macosx avec une connexion vpn, une connexion ssh et un terminal local.
 ![](https://i.imgur.com/dPnjiv4.png)

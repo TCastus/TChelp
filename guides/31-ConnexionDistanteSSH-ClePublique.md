@@ -8,7 +8,7 @@ Il est inutile de savoir faire cela pour pouvoir travailler à distance. Cela pe
 ## Lancez votre vpn
 Pensez à bien lancer votre vpn avant de faire ces manipulation. Sinon la machine distante ne sera pas accessible.
 
-## Sur la machine locale :
+## Sur la machine locale
 - Utilisez la commande `ssh-keygen` pour générer un couple de clés public / privé.
 Les valeurs par défaut proposés sont normalement bonnes. Vous devriez voir passer la génération d'un fichier `.ssh/id_rsa.pub` contenant votre clé d'accès publique à déposer sur les sites distant. Elle va de pair avec les données contenues dans le fichier `.ssh/id_rsa` qui contient votre clé privé, qui ne doit pas bouger ni être transmise à quelqu'un.
 
@@ -24,7 +24,7 @@ Les valeurs par défaut proposés sont normalement bonnes. Vous devriez voir pas
 - `ssh [login]@[machine]` ne doit plus vous demander votre mot de passe
 - En cas de souci, vous pouvez lancer avec l'option -v, qui donnera quelques indications d'erreur.
 `ssh -v [login]@[machine]`
-- Attention dans tous les cas, au pire votre session login/motdepasse doit continuer à fonctionner.
+- Attention dans tous les cas, votre session login/motdepasse doit continuer à fonctionner.
 
 L'image suivante montre les actions à partir de deux machines vides de clés.
 
