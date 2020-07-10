@@ -1,4 +1,7 @@
 # Connection SSH
+
+TODO : Putty, BItvise
+
 ###### tags: `Assistance` `Terminal distant` `SSH`
 Une connexion distante permet d'accéder à un terminal de commandes sur une machine de votre réseau. Avoir une connexion distante sur une machine vous permet d'interagir avec, comme si vous étiez physiquement à côté d'elle.
 Il existe trois formes de connexions distantes : texte, bureau et X11. Au département, vous utiliserez principalement les connexions texte et bureau pour travailler. Les connexions textes transfèrent des caractères entre les deux machines, les connexions bureau transfèrent des flux vidéos de la machine distante vers votre machine.
@@ -39,3 +42,5 @@ scp toto.txt [nomLogin]@[nommachine]:
 scp [nomLogin]@[nomMachine]:toto.txt .
 ```
 Notez le '@' après votre nom de login, et le ':', qui indique qu'il s'agit d'une machine distante. Sinon la commande est toujours la même : `scp <source> <destination>``
+=======
+![](https://i.imgur.com/sbssnDV.png)

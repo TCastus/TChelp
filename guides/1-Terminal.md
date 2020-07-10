@@ -45,3 +45,10 @@ https://www.putty.org/
 https://mobaxterm.mobatek.net/
 
 Certains utilisateurs par habitude continuent de les utiliser.
+
+## Powershell
+Il y a plusieurs choix proposé par Windows. L'utilisation de cmd est suffisante pour les commandes de bases tel que du parcours de fichier, git ... Cependant la similitude avec l'univers UNIX est marquée, le ``ls`` devient ``dir``, ``rm`` -> ``del``et j'en passe.
+
+Une autre solution est PowerShell, ici les commandes connues sous UNIX sont fonctionnelles, et sont un peu à rallonge. Mais nous avons ici une plus grande possibilité avec des commandes plus avancées.
+
+La dernière solution est d'utiliser le terminal open source de Windows, un terminal entièrement personnalisable et la possibilité de l'utiliser pour les WSL (tuto a venir). Ce dernier reprend exactement les invite de commande cmd et PowerShell mais permet en plus d'avoir plusieurs onglets, des raccourcis clavier...
