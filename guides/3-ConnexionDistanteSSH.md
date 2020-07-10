@@ -18,4 +18,24 @@ Pour travailler à distance en mode texte vous devez savoir :
 Dans un terminal taper la commande ``ssh [Login_INSA]@[machine]`` avec un nom de machine valide. Votre mot de passe est alors demandé. Une fois saisi, vous vous retrouvez avec la même interface de commande qu'un terminal de votre système d'exploitation.
 
 L'image suivante montre un bureau macosx avec une connexion vpn, une connexion ssh et un terminal local.
-![](https://i.imgur.com/sbssnDV.png)
+![](https://i.imgur.com/USgO52S.png)
+
+## Windows
+### Terminal Windows
+Les fonctions de connexion distantes sont maintenant natives dans l'OS.
+Exécutez ces fonctions directement dans un terminal windows.
+
+#### Si vous ne les avez pas
+Il faut activer les services SSH. Pour cela : Parametres -> Applications -> Gerer les fonctionnalites facultatives -> Ajouter un fonctionnalite -> OpenSSH client -> Installer -> redemarer la machine.
+- Petit tuto en cas ou https://www.pcastuces.com/pratique/astuces/5235.htm)
+
+Ensuite dans un terminal windows (cmd dans la recherche Windows ou win+r et taper cmd ou windows terminal) taper la commande ``ssh [Login_INSA]@[machine]``. Puis votre mdp est demandé.
+
+# scp
+Une commande importante à connaître avec ssh, est la copie de fichiers sécurisé (scp) à partir ou vers une machine distante. En supposant qu'on a un fichier `toto.txt` dans la fenêtre de votre terminal, les deux commandes sont :
+
+```bash
+scp toto.txt [nomLogin]@[nommachine]:
+scp [nomLogin]@[nomMachine]:toto.txt .
+```
+Notez le '@' après votre nom de login, et le ':', qui indique qu'il s'agit d'une machine distante. Sinon la commande est toujours la même : `scp <source> <destination>``

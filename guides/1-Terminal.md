@@ -34,3 +34,14 @@ Pour macos, il existe des terminaux alternatifs de substitution. Un terminal cla
 https://medium.com/swlh/4-apps-must-install-on-your-mac-for-development-in-2020-3d8cd81c316c
 
 # Windows 10
+Pour lancer un terminal windows, il faut rechercher l'exécutable cmd.
+!! Attention, les machines de l'INSA sont sous windows 7, les commandes indiquées sont pour une utilisation de windows 10.
+
+## Terminaux alternatifs
+Pendant longtemps, windows ne fournissait pas de terminaux d'accès distant. La fenêtre de commande windows était réservé aux commandes locales. Des terminaux alternatifs ont été développés pour accéder aux machines distantes. Ces solutions alternatives sont maintenant devenues inutiles.
+
+Il existe deux outils classiques de terminaux pour windows. Putty et MobaXterm
+https://www.putty.org/
+https://mobaxterm.mobatek.net/
+
+Certains utilisateurs par habitude continuent de les utiliser.
