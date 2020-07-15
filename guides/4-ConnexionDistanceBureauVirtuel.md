@@ -1,108 +1,41 @@
-# Connection RDP & SSH - Ubuntu / Windows / Macos
-###### tags: `Assistance` `RDP` `SSH` `VPN`
+# Connection RDP
+###### tags: `Assistance` `rdp`
 
-## Sur Ubuntu
+Si vous avez réussi à vous connecter en ssh à une machine distante, c'est que vous savez lancer un terminal, vous connecter en vpn et manipuler les commandes ssh de base.
 
-### Connection au vpn insa
+En remplacement du protocole d'accès texte, windows a développé dans les années 1990, un protocole de transfère de flux vidéo pour accéder à leur environnement à distance. Le protocole rdp (remote desktop) permet d'accéder à un espace de type bureau sur une machine distante. Vous accédez alors à votre environnement de travail, plutôt qu'à une simple fenêtre de terminal.
 
- - `sudo apt update`
- - `sudo apt upgrade`
- - `sudo apt install openconnect network-manager-openconnect network-manager-openconnect-gnome`
+Ce système est maintenant installé sur toutes les machines windows et unix des départements. Vous allez certainement préférer cette usage, même si vous subirez un peu plus de latence qu'en utilisant un simple terminal en connexion ssh.
 
- - Ensuite aller dans les Paramètres > Network
+Que vous accédiez à une machine distante sous windows ou sous linux le protocole est fortement similaire. Vous utilisez donc la même application sur votre machine locale pour tous les systèmes accédés.
 
-![](https://i.imgur.com/IwLZ3bj.png)
+Dans tous les cas pensez à deux choses :
+- Il faut toujours avoir le vpn actif, puisque vous accédez à des machines distantes
+- Il faut penser à quitter votre session distante en fin d'utilisation  
 
- - Cliquer sur le + à côté de VPN pour ajouter une connexion.
+:warning: Sur windows faites bien :  
+démarrer -> petite flèche a côté de fermer la session -> déconnecter
+![](https://i.imgur.com/t47Nlkq.png)  
 
-![](https://i.imgur.com/jRiAJTg.png)
+:warning:Sur debian,  
+Menu -> Fermer la session
+![](https://i.imgur.com/Op39150.png)
 
- - Ensuite cliquer sur l'option openconnect (en haut) et configurer la Gateway ([NomGateway])
+Enfin, il peut y avoir des fenêtre de warning à la connexion sur le fait que le client n'a pas pu s'authentifier. Vous pouvez les ignorer, c'est des questions de compatibilité de protocoles.
 
-![](https://i.imgur.com/MYghTvq.png)
-
- - Et voila ! Vous pouvez vous connecter au vpn en basculant le slider sur on, entrez vos identifiants et la connexion est établie.
-
-![](https://i.imgur.com/qIfD9Zq.png)
-
-### Connection SSH
-
-Dans un terminal taper la commande ``ssh [Login_INSA]@[machine].insa-lyon.fr`` avec un nom de machine valide. Puis votre mdp est demandé.
-
-
-### Connection RDP
-
-#### Avec rDesktop (plutot utiliser Remmina :arrow_down:)
-
- - `sudo apt install rdesktop`
- - Etre sur d'etre connecté au Vpn insa
- - `rdesktop -u [Login_INSA]@insa-lyon.fr [machine].insa-lyon.fr` en modifiant le pc ( la liste des pc dispo est actualisée en envoyant !up dans le channel check-etat-pc du discord) et le login.
-
-:warning: Pour la déconnexion de RDP sur windows faites bien : démarrer -> petite fleche a coter de fermer la session -> deconnecter
-![](https://i.imgur.com/t47Nlkq.png)
-
-#### Avec Remmina (des fois installé de base)
-
+## Accès avec une machine sous linux
+### Avec Remmina (des fois installé de base)
 Connexion avec Remmina pour le RDP
 ![](https://i.imgur.com/7JjNInj.png)
 
-:warning: Pour la deconnexion de RDP sur windows faites bien : démarrer -> petite flèche a côté de fermer la session -> déconnecter
-![](https://i.imgur.com/t47Nlkq.png)
+### Solution alternative
+rDesktop est une autre solution d'accès au bureau distant.
+
+ - `sudo apt install rdesktop`
+ - `rdesktop -u [Login_INSA]@insa-lyon.fr [machine].insa-lyon.fr` en modifiant le pc ( la liste des pc dispo est actualisée en envoyant !up dans le channel check-etat-pc du discord) et le login.
 
 ## Sur Windows
-
-### Connection au vpn insa
-
-1) Télécharger et installer soit :
-    - Openconnect : https://www.infradead.org/openconnect/download.html
-    - Anyconnect : https://software.cisco.com/download/home/286281283/type/282364313/release/4.8.03036
-
-Ou avec le gestionnaire de paquet Chocolatey (https://chocolatey.org/)
-``choco install openconnect-gui -y``
-dommage anyconnect n'est pas dans le repo :upside_down_face:
-
-2) Connection au VPN
-    - Avec Openconnect
-        * Faire un nouveau nouveau profile (ctrl+n) File->Profile->New Profil
-        ![](https://i.imgur.com/uxZ58wW.png)
-        * Mettre le nom que vous voulez et dans Gateway mettre : ``[NomGateway].insa-lyon.fr`` puis save and connect
-        ![](https://i.imgur.com/oReSe4f.png)
-        * Mettre Group : ``INSA``
-        ![](https://i.imgur.com/BWnEX4y.png)
-        * Entrez votre identifiant puis mot de passe
-        ![](https://i.imgur.com/5qIDPJW.png)
-        * Quand le VPN est connecté il y a le petit cadenat vert
-        ![](https://i.imgur.com/8yEDZSL.png)
-        Sinon il est rouge
-        ![](https://i.imgur.com/SBGNpuJ.png)
-
-    - Avec Anyconnect
-        * Mettre l'url ``[NomGateway].insa-lyon.fr`` dans le champs et cliquer sur connect
-        ![](https://i.imgur.com/VKpmKlU.png)
-        * Renseigner le groupe, identifiant et mode de passe et cliquer sur ok
-        ![](https://i.imgur.com/NyyZyac.png)
-        * Quand le VPN est connecté il y a un check vert sur le cadenat
-        ![](https://i.imgur.com/1GJhzTn.png)
-         sinon il y a 3 petit point
-         ![](https://i.imgur.com/ZUrc1nM.png)
-
-
-
-### Connection au SSH
-
-#### Putty :
-- Selectionez SSH
-- et indiquez la machine sur laquelle vous voulez vous connecter
-![](https://i.imgur.com/XTmcUNt.png)
-ensuite comme toutes connexion SSH il vous demande Login et mdp (identifiant INSA)
-
-#### Terminal Windows :
-Il faut activer les services SSH. Pour cela : Parametres -> Applications -> Gerer les fonctionnalites facultatives -> Ajouter un fonctionnalite -> OpenSSH client -> Installer -> redemarer la machine (Petit tuto en cas ou https://www.pcastuces.com/pratique/astuces/5235.htm)
-    ensite dans un terminal windows (cmd dans la recher Windows ou win+r et taper cmd ou windows terminal) taper la commande ``ssh [Login_INSA]@[machine]`` avec comme nom de machine ``tc405-109-01.insa-lyon.fr`` par exemple. Puis votre mdp est demandé.
-
-### Connection au RDP
-
-Dans la recherche windows taper ``rdp`` vous allez voir cette app
+Dans la recherche windows taper ``connexion bureau à distance`` vous allez voir cette app
 ![](https://i.imgur.com/iUHYuN2.png)
 Puis indiquer le nom de la machine sur laquelle vous voulez vous connecter puis connexion
 ![](https://i.imgur.com/Q85woEu.png)
@@ -110,45 +43,31 @@ Ensuite dans les champs nom d'utilisateur : ``ìnsa-lyon.fr\[Login_INSA]``
 et mot de passe
 ![](https://i.imgur.com/cex5XGo.png)
 
-:warning: Pour la deconnexion de RDP sur windows faites bien : demarrer -> petite fleche a coter de fermer la session -> deconnecter
-![](https://i.imgur.com/t47Nlkq.png)
-
 ## Sur MacOs
-
-### Connection au VPN INSA :
-
-Télécharger et installer Anyconnect : https://software.cisco.com/download/home/286281283/type/282364313/release/4.8.03036
-
-* Mettre l'url ``[NomGateway].insa-lyon.fr`` dans le champs et cliquer sur connect
-
-![](https://i.imgur.com/wCvqWCV.png)
-* Renseigner le groupe, identifiant et mode de passe et cliquer sur ok
-
-![](https://i.imgur.com/yNsuM5u.png)
-* Quand le VPN est connecté il y a un check vert sur le cadenat
-
-![](https://i.imgur.com/3IvgyMK.png)
-
-
-### Connection en SSH
-
-* Ouvrez un terminal et faites ``ssh [Login_INSA]@[machine]``
-
-### Connection en RDP
-
-* Telecharger RDP :
+* Telecharger microsoft remote desktop :
 https://apps.apple.com/fr/app/microsoft-remote-desktop-10/id1295203466?mt=12
 
 * Ajouter une machine :
-
 ![](https://i.imgur.com/TqhUrsr.png)
 
 * Remplir "pc name" avec l'addresse de la machine
-
 ![](https://i.imgur.com/HmKzCwK.png)
 
-* Pour se connecter double cliquer ou clic droit puis connect
-
+* Pour se connecter double-cliquez ou clic droit puis connect
 ![](https://i.imgur.com/Xz2AiLy.png)
-
 ![](https://i.imgur.com/YmHkpXV.png)
+
+:warning: Pour les portables Mac votre clavier sur la machine distante risque d'être en 'qwerty'. Tapez la lettre 'a' dans un terminal distant et regardez si vous obtenez un 'q' ou un 'a'.
+![](https://i.imgur.com/zLLVSAA.png)
+
+Il s'agit d'un bug de l'application cliente (microsoft) qui négocie mal le clavier du portable. Il vous faut installer un second clavier sur votre Mac: Français-PC.(Préférences Système -> Clavier -> Méthodes de saisie -> +)
+![](https://i.imgur.com/biPlYMu.png)
+
+La solution n'est pas parfaite, car vous allez perdre quelques touches comme l'arobase. '@'
+
+## Résultats obtenus
+Si vous vous connectez sur une des machines windows du département, voici ce que vous devriez obtenir.
+![](https://i.imgur.com/CdqUqXi.png)
+
+Si vous vous connectez sur une machine debian du département, voici ce que vous devriez obtenir.
+![](https://i.imgur.com/bDOFdrJ.png)
