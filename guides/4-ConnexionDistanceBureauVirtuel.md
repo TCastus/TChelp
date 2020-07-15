@@ -11,10 +11,14 @@ Que vous accédiez à une machine distante sous windows ou sous linux le protoco
 
 Dans tous les cas pensez à deux choses :
 - Il faut toujours avoir le vpn actif, puisque vous accédez à des machines distantes
-- Il faut penser à quitter votre session distante en fin d'utilisation
-:warning: Sur windows faites bien : démarrer -> petite flèche a côté de fermer la session -> déconnecter
-![](https://i.imgur.com/t47Nlkq.png)
-:warning:Sur debian, Menu -> Fermer la session
+- Il faut penser à quitter votre session distante en fin d'utilisation  
+
+:warning: Sur windows faites bien :  
+démarrer -> petite flèche a côté de fermer la session -> déconnecter
+![](https://i.imgur.com/t47Nlkq.png)  
+
+:warning:Sur debian,  
+Menu -> Fermer la session
 ![](https://i.imgur.com/Op39150.png)
 
 Enfin, il peut y avoir des fenêtre de warning à la connexion sur le fait que le client n'a pas pu s'authentifier. Vous pouvez les ignorer, c'est des questions de compatibilité de protocoles.
