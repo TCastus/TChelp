@@ -158,6 +158,7 @@ Puis git vous annonce qu'il voit des changements, mais qu'ils ne sont pas prévu
 
 La dernière ligne vous indique que pour l'instant il n'y a aucune demande d'enregistré pour une version suivante.
 
+#### Vous voulez revenir en arrière
 Supposons maintenant que vous voulez acter la suppression du fichier README.md dans votre version courante. (Vous supposez que README.md ne sert plus dans votre projet). On utilise la commande git `rm` pour enregistrer la suppression d'un fichier.
 
 ```bash
@@ -222,12 +223,162 @@ Gestionnaire_de_paquets_windows Jet_brains                      guides
 ```
 Tous les fichiers sont présents sauf le README.md
 
+Vous venez d'ajouter une nouvelle version à la liste des versions de votre projet. Vous pouvez lister toutes les versions de votre projet avec la commande git `log`.
+
+```bash
+$ git log
+commit 764d91dff713fd07d13679cbf881683365523522 (HEAD -> master)
+Author: Stephane Frenot <stephane.frenot@insa-lyon.fr>
+Date:   Wed Jul 15 14:17:55 2020 +0200
+
+    Suppression du fichier README.md
+
+commit 9918866df451e1815b87c7a9334d35d780ac96d7 (origin/master, origin/HEAD)
+Author: Stephane Frenot <stephane.frenot@insa-lyon.fr>
+Date:   Wed Jul 15 09:16:13 2020 +0200
+
+    Text fix
+
+commit 86baf19700805fc04bfae5698263778caa055282
+Merge: d10762f bb4d7a4
+Author: Stephane Frenot <stephane.frenot@insa-lyon.fr>
+Date:   Fri Jul 10 11:35:54 2020 +0200
+
+    Merge branch 'master' of github.com:TCastus/TChelp
+```
+Le résultat de la commande vous indique que votre version en cours (HEAD->master) est la 764d91d (dernier commit), et que la personne qui a validé ce commit a indiqué la 'Suppression du fichier README.md'.
 
 
+Votre projet contient un certain nombre de versions. Elles ont toute un numéro de commit qui l'identifie de manière unique. Vous pouvez revenir sur une version particulière avec la commande `checkout` mais en indiquant cette fois-ci non pas un fichier ou un répertoire, mais un numéro de commit de version.
 
+Revenons par exemple sur la version '86baf197'. Comme vous avez cloné le projet initial que je possède, cette version existe également chez vous dans votre dépôt. La commande `checkout`, va juste remettre tous les fichiers dans l'état où ils étaient dans la version '86baf197' du 10 juillet 2020 à partir du dépôt que vous possédez.
 
+```bash
+$ git checkout 86baf197
+Note: checking out '86baf197'.
 
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
 
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 86baf19 Merge branch 'master' of github.com:TCastus/TChelp
+```
+
+git vous indique que la tête de mise à jour des version est détachée et que vous vous êtes placé sur une version spécifique antérieure. Vous pouvez y retrouver une version du fichier README.md.
+Comment le remettre dans votre version courante... Comment récupérer votre ancienne version de fichier.
+
+Vous savez maintenant que votre fichier est présent dans la version '86baf197'. Vous allez donc revenir à la version courante, puis checkouter votre fichier provenant de cette version. Pour revenir à votre projet en cours, vous aller vous replacer sur l'identifiant 'master' de votre projet.
+
+```bash
+$ git checkout master
+Previous HEAD position was 86baf19 Merge branch 'master' of github.com:TCastus/TChelp
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+```
+La commande vous répond que vous étiez sur la version 86baf19, que maintenant vous êtes sur la branche master de votre projet.
+
+Vous pouvez maintenent récupérer votre fichier de l'ancienne version du projet.
+
+```bash
+$ git checkout 86baf19 README.md
+Updated 1 path from 2b7e802
+```
+Vous venez de recopier le fichier README.md provenant de la version 86baf19 de votre projet dans votre Workspace courant. La commande 'status' vous indique que le fichier a été récupéré et qu'il est déjà prêt a être intégré dans la prochaine version commité. Nous allons valider cette nouvelle version de projet avec la commande commit et pour message : "Ajout du fichier README.md qu'on avait supprimé avant"
+
+```bash
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   README.md
+$ git commit -m"Ajout du fichier README.md qu'on avait supprimé avant"
+[master 8be8200] Ajout du fichier README.md qu\'on avait supprimé avant
+ 1 file changed, 19 insertions(+)
+ create mode 100644 README.md
+```
+
+Le système git nous annonce une nouvelle version de projet, la 8be8200 qui est la nouvelle version 'master' de travail.
+
+Un dernier coup d'oeil nous indique la suite des versions du projet.  
+
+```bash
+commit 8be820066d158fefc3c96b78b6591b1715511744 (HEAD -> master)
+Author: Stephane Frenot <stephane.frenot@insa-lyon.fr>
+Date:   Wed Jul 15 16:14:18 2020 +0200
+
+    Ajout du fichier README.md qu\'on avait supprimé avant
+
+commit 764d91dff713fd07d13679cbf881683365523522
+Author: Stephane Frenot <stephane.frenot@insa-lyon.fr>
+Date:   Wed Jul 15 14:17:55 2020 +0200
+
+    Suppression du fichier README.md
+
+commit 9918866df451e1815b87c7a9334d35d780ac96d7 (origin/master, origin/HEAD)
+Author: Stephane Frenot <stephane.frenot@insa-lyon.fr>
+Date:   Wed Jul 15 09:16:13 2020 +0200
+
+    Text fix
+```
+
+Nous avons initialement 'cloné' le projet, en copiant la version stockée sur un site web distant. Cette version (99188) est marquée (taggée). origin/master, origin/HEAD, ces deux marqueurs indique la version courante de travail distante.
+
+Puis nous avons créé la version 764d91 qui contient le projet sans le fichier README.md
+
+Enfin nous avons créé la version 8be82 qui contient une version contenant le fichier README.md provenant d'une version précédente du projet. Cette version 8be82, est également taggée comme étant la tête HEAD du projet : c'est là où les commit iront et master qui représente la version la plus avancée de votre projet local. (On devrait lire local/master par rapport à la version 9918 qui elle est origin/master).
+
+Pour rappel, git est fait pour que vous puissiez, en tant que développeur suivre les modifications que vous faites sur un projet initialement créé ou récupéré. Les commandes présentées jusque maintenant ne font pas appel au réseau (à part pour le clone initial). Cele vous permet de suivre toutes les modifications que vous réalisez sur votre projet.
+
+Dans un cas extrême de travail, pouvez avoir un commit par ligne de code ajouté ou modifié de votre programme. Git fournit un mécanisme de sauvegarde rapide de vos modifications, et il est impossible de perdre des données dans git, tant que vous ne modifiez pas à la main le repértoire '.git'.
+
+C'est un outil de protection des développeurs contre les erreurs de manipulation. L'outil enregistre toutes les modifications validées depuis le lancement du projet. Pour récupérer une très très vielle version d'un projet il suffit de checkouter une très très vieille version du projet. Tout ceci localement à votre machine.
+
+Il existe de très nombreuses autres fonctions permettant de manipuler les différentes informations entre le workspace et le dépôt local. Il existe de nombreuses autres fonctions pour gérer plus finement vos versions comme par exemple les branches. Il existe de nombreuses commandes pour comprendre et manipuler la base de stockage du dépôt. Vous apprendrez ces commandes au besoin ou en lisant un cours plus complet sur git. Mais les quelques instructions de base nécessaires sont :
+
+git clone <dépot distant>
+git rm <fichier du workspace>
+git checkout <fichier du workspace> | <version de commit> <fichier du commit> | <version de commit>
+git commit -m'<message de version>'
+git status
+git log
+
+Une toute dernière commande à connaitre est la commande diff, qui permet d'afficher la différence entre un fichier de votre workspace avec la version enregistré dans votre dépôt qui correspond à la dernière version connue. Avant de faire un commit de version, on lance donc les deux commandes de contrôle pour vérifier ce qui va se passer :
+$ git status -> liste les modification que git va prendre en compte et celle qu'il ignore.
+$ git diff -> liste les différence d'un fichier du workspace par rapport à la version du dépôt local
+$ git commit -m'Message'
+
+#### Comment ajouter un fichier à un projet ?
+On a vu jusqu'à présent comment récupérer des fichiers existants, comment supprimer des fichiers, mais on ne sais pas comment ajouter un fichier dans un projet, ou comment se comporte le système quand on modifie le contenu d'un fichier.
+
+Vous allez commencer par vérifier que votre projet est à jour. C'est à dire que la version du Workspace et la version du dépôt sont les mêmes. La commande est :
+```bash
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+```
+Rien à commit, espace de travail propre. Sont des messages optimistes pour commencer un travail.
+
+Vous décider de modifier le fichier README.md en mettant l'unique phrase 'bonjour', et vous crééz un fichier TOTO.md contenant la phrase 'au revoir'. Vous pouvez utiliser n'importe quel éditeur pour modifier ces fichiers ou bien exécuter rapidement ces deux commandes sous unix ou mac.
+
+```bash
+$ echo "bonjour" > README.md
+$ echo "au revoir" > TOTO.md
+```
+
+Vous allez maintenant taper la commande `status` pour que git analyse la différence entre votre workspace et le dépôt.
 
 
 
