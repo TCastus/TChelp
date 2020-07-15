@@ -443,11 +443,9 @@ A noter qu'il n'y a pas de règles sur la taille d'un commit, le nombre de fichi
 C'est le développeur du projet qui décide du rythme des commits. Les commits étant fait localement,
 il n'est pas nécessaire d'avoir une connexion réseau pour enregistrer les évolutions de son projet. Certains projets font des commits à la granularité de la ligne de code, d'autre font des commits à la journée ou à la semaine.
 
+Beaucoup d'utilisateurs considèrent git comme un outils de travail et de dévéloppement collaboratif. Ce n'est pas exclusivement fait pour cela, si vous avez compris cette présentation. C'est un outil très pratique pour suivre son propre code, sans qu'il ne soit partagé avec d'autres utilisateurs. Cependant git permet également de travailler à plusieurs sur un code commun.
 
-
-
-
-
+La synchronisation entre les utilisateurs est une fonctionnalité prévue par git. L'environnement le plus classique qui propose cela est github, que nous présentons chapitre suivant. 
 
 
 # Ressources
