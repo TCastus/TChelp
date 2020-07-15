@@ -379,6 +379,71 @@ $ echo "au revoir" > TOTO.md
 ```
 
 Vous allez maintenant taper la commande `status` pour que git analyse la différence entre votre workspace et le dépôt.
+```bash
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	TOTO.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+Le status vous indique que le fichier README.md a été modifié mais qu'il n'est pas prévu dans
+le commmit et que TOTO.md n'est pas suivi par git. Les deux commentaires indiquent que vous pouvez utiliser la commande 'add' pour ajouter le suivi de ces fichiers et les intégrer dans le prochain commit.
+
+```bash
+$ git add README.md TOTO.md
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+	new file:   TOTO.md
+```
+Les deux fichiers sont prévus pour être intégrés au prochain commit. Notez la parenthèse sur la commande 'reset HEAD <file>' qui permet d'annuler l'intégration d'une des modifications dans le commit. Si vous vous appercevez par exemple que le fichier 'TOTO.md' ne doit pas faire partie du prochain commit, c'est le seul moyen pour le retirer du prochain commit.
+
+Si vous êtes d'accord avec les modification du projet et du prochain commit, vous pouvez alors lancer la commande de validation de vos modifications.
+```bash
+$ git commit -m"Modification du README.md et Ajout du fichier TOTO.md"
+$ git commit -m'Modifications du README.md et ajout du fichier TOTO.md'
+[master 01004f3] Modifications du README.md et ajout du fichier TOTO.md
+ 2 files changed, 2 insertions(+), 19 deletions(-)
+ rewrite README.md (100%)
+ create mode 100644 TOTO.md
+```
+
+En résumé git gère les version de l'intégralité des fichiers d'un projet. De plus il conserve localement dans un répertoire de copie, l'intégralité de toutes les versions d'un projet.
+
+Le cycle classique de codage en utilisant git est le suivant :
+
+git clone <localisation distante> // Cette commande ne se fait qu'une fois dans la vie du projet
+
+// A chaque fois que vous voulez valider une version. On répète les commandes suivantes
+git status                      // Pour vérifier ce qui a été modifié
+git diff <fichier>              // Pour vérifier une modification spécifique sur un fichier quand on a un doute
+git add                         // Pour ajouter les éléments dans la liste des modifications
+git commit -m"<Message clair>"  // Pour enregistrer votre nouvelle version
+
+A noter qu'il n'y a pas de règles sur la taille d'un commit, le nombre de fichiers à intégrer, etc
+C'est le développeur du projet qui décide du rythme des commits. Les commits étant fait localement,
+il n'est pas nécessaire d'avoir une connexion réseau pour enregistrer les évolutions de son projet. Certains projets font des commits à la granularité de la ligne de code, d'autre font des commits à la journée ou à la semaine.
+
+
 
 
 
