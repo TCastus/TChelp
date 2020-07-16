@@ -92,7 +92,22 @@ Date:   Thu Jul 16 12:10:20 2020 +0200
 Votre marqueur de tête pointe sur local/master, qui est en avance d'un commit sur orgin/master. Par contre vous ne savez pas si d'autres utilisateurs ont déjà pris de l'avance sur votre projet.
 
 ```bash
-$ git 
+$ git push
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 1.49 KiB | 1.49 MiB/s, done.
+Total 12 (delta 9), reused 0 (delta 0)
+remote: Resolving deltas: 100% (9/9), completed with 3 local objects.
+To github.com:TCastus/TChelp.git
+   e7b9272..5eaf925  master -> master
+```
+Votre commande à validé votre dépôt local sur le site distant. La dernière version publique est maintenant 5eaf925, et les pointeurs master 'local' et 'orgin' sont sur la même version. Vous êtes à jour !!!
+
+# Vous arrivez après les autres et vos modifications sont compatibles
+Vous avez travaillé sur votre code, mais quelqu'un d'autre aussi. Il a poussé ses modifications avant les votres. On se place dans le premier cas, ou vos modifications sont compatibles avec les siennes. Vous n'avez pas travaillé sur les mêmes fichiers, ou sur les mêmes lignes, ou encore les modifications sont les mêmes...
+
 
 
 
