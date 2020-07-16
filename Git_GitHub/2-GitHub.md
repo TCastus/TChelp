@@ -1,5 +1,5 @@
 # Présentation de GitHub
-##### Tags : git, GITHHUB
+##### Tags : git
 GitHub est un site web de visualisation et de stockage de dépôts git. Vous vous souvenez que pour démarrer un projet git, on clone souvent un projet existant, github vous met à disposition les projets qu'il héberge publiquement. Vous pouvez également héberger vos propre projet sur le site de github.com à condition d'y avoir un compte.
 
 Github offre une première fonction de navigation dans les fichiers d'un projet ainsi que dans tous l'historique des versions associées. Dans l'exemple précédent, nous avons cloné le projet git@github.com:TCastus/TChelp.git. Il s'agit d'un projet TCHelp, initialement créé par l'utilisateur TCastus, et hébergé sur le site github.com.
@@ -154,6 +154,47 @@ Tout le monde est maintenant d'accord sur l'histoire A -> B -> C -> D
 
 # Vous arrivez après les autres et les modifications ne sont pas compatibles
 Voici ce qui se passe à l'étape du merge dans ce cas.
+```bash
+$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 2), reused 4 (delta 2), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From github.com:TCastus/TChelp
+   a929a6f..21afdda  master     -> origin/master
+Auto-merging Git_GitHub/1-Git.md
+CONFLICT (content): Merge conflict in Git_GitHub/1-Git.md
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+La version D qui groupe les modification de A et de B n'a pas pu être créée. Il y a un conflit (CONFLICT) entre les deux version. Git a injecté dans le fichier que vous possédez le point de vu du dépôt distant en désaccord avec le votre. A vous de modifier le fichier concerner pour résoudre ce conflit, puis de faire le commit spécifique à cette version d'intégration.
+Si vous ouvrez un fichier en conflit, voici ce que vous aurez.
+```bash
+# Présentation de Git
+##### Tags : git
+<<<<<<< HEAD
+Je pense oui
+=======
+Je pense non
+>>>>>>> 21afdda20852cc8e4715412fb4fd980abe608edf
+Git est un outil de gestion de version de fichier. Il permet de conserver sur votre machine local l\'ensemble des modifications que vous effectuez sur un ensembl
+```
+
+La version de tête du serveur distant considère que la valeur est 'Je pense oui', alors votre version courante (21afdda) qu'il s'agit de 'Je pense non'. Vous devez résoudre ce conflit, en supprimant ou modifiant ce que vous voulez. Comme il s'agit d'un commit de merge, vous pouvez décider de mettre 'Je pense que peut-être', et valider cette version des faits. Pour l'instant localement vous avez A -> B -> ? et vous êtes en train de fabriquer D.
+
+Quand votre conflit est résolu, vous pouvez pousser votre nouvelle version qui sera compatible avec le dépôt distant. A condition évidemment qu'aucun autre utilisateur n'ai poussé une nouvelle version entre temps. Mais ce n'est pas grave, il faut juste refaire l'étape de merge...
+
+!!! Attention : si vous avez un conflit sur un merge, un mauvais réflexe et de ne pas essayer de comprendre et valider votre version d'intégration sans corriger le conflit. Pour un document texte ce n'est pas forcément génant, mais très moche... Par contre s'il s'agit de code machine, ça plantera, et c'est peut être votre meilleur amis qui devra débugger cela.
+
+Un dernier cas existe...
+
+# Vous arrivez après les autres et vos modifications ne sont pas compatibles, mais vous le savez
+Vous êtes en train de faire des modifications de vos fichiers, et vous souhaitez vous mettre à jour. Le souci est que vous ne voulez pas commiter ou merger vos modifications. Ceci arrive pour les raisons suivantes :
+ - Vous codez depuis longtemps sans avoir commité, et vous savez que le code externe a beaucup évolué. Vous voulez vous mettre à jour avant de pousser le code, mais vous savez que ce que vous avez écrit est en conflit avec le reste, et vous ne pouvez pas ou ne souhaitez pas merger.
+ - Le code que vous êtes en train d'écrire dépend de code que vous n'avez pas encore, mais qui existe dans les nouvelles versions du dépôt distant.
+
+!!! Attention : vous pouvez toujours faire la manip précédent de merge intermédiaire, mais vous allez devoir commiter une version partielle. Il y a donc des commits qui ne fonctionnent pas dans la suite des versions.
 
 
 
