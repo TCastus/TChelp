@@ -24,7 +24,7 @@ Certains gestionnaires offrent des fonctions supplémentaires :
 Il existe des gestionnaires de packages pour tous les OS.
 Pour windows, vous avez à disposition une document sur chocolatey,  
 Pour macosx, vous avez à disposition brew,
-Pour les distributions linux, vous avez un gestionnaire spécifique, yum, portage, apt...
+Pour les distributions Linux, vous avez un gestionnaire spécifique, yum, portage, apt...
 
 # Quand faut-il utiliser un gestionnaire de packages ?
 Il est absolument nécessaire de connaitre son gestionnaire de package quel que soit votre système d'exploitation. Vous êtes quasiment toujours sur que les logiciels standard que nous utilisons au département seront disponible sur votre gestionnaire de package.
