@@ -1,5 +1,77 @@
-# Présentation de Git
+# Présentation de GitHub
 ##### Tags : git, github
+GitHub est un site web de visualisation et de stockage de dépôts git. Vous vous souvenez que pour démarrer un projet git, on clone souvent un projet existant, github vous met à disposition les projets qu'il héberge publiquement. Vous pouvez également héberger vos propre projet sur le site de github.com à condition d'y avoir un compte.
+
+Github offre une première fonction de navigation dans les fichiers d'un projet ainsi que dans tous l'historique des versions associées. Dans l'exemple précédent, nous avons cloné le projet git@github.com:TCastus/TChelp.git. Il s'agit d'un projet TCHelp, initialement créé par l'utilisateur TCastus, et hébergé sur le site github.com.
+
+Lorsque vous clonez ce projet, vous en réalisez une copie qui est stockée dans un répertoire du nom du projet. Sous deux versions : une version cachée qui contient toutes les versions du projet depuis sa création, et un workspace qui contient la dernière version 'poussée' sur le serveur github.
+Si vous avez bien suivi les explications précédentes, cloner un projet, consiste à récupérer son dépot local (.git), puis réaliser un checkout sur Origin/master afin de fabriquer le workspace avec la version courante du projet.
+
+# Interagir avec le dépôt distant
+Lorsque vous avez cloné le projet, git vas placer un marqueur origin/master sur la version courante du projet. Lorsque vous allez commiter localement des modifications, vos commit vont 'dépasser' le marqueur origin/master.
+Vous pouvez revenir sur votre projet précédent et relancer la commande `log`.
+
+```bash
+$ git log
+commit 01004f326a9eeeb864c97bad33c1a85b3589132f (HEAD -> master)
+Author: Stephane Frenot <stephane.frenot@insa-lyon.fr>
+Date:   Wed Jul 15 20:53:41 2020 +0200
+
+    Modifications du README.md et ajout du fichier TOTO.md
+
+commit 8be820066d158fefc3c96b78b6591b1715511744
+Author: Stephane Frenot <stephane.frenot@insa-lyon.fr>
+Date:   Wed Jul 15 16:14:18 2020 +0200
+
+    # Ajout du fichier README.md qu'on avait supprimé avant
+
+commit 764d91dff713fd07d13679cbf881683365523522
+Author: Stephane Frenot <stephane.frenot@insa-lyon.fr>
+Date:   Wed Jul 15 14:17:55 2020 +0200
+
+    Suppression du fichier README.md
+
+commit 9918866df451e1815b87c7a9334d35d780ac96d7 (origin/master, origin/HEAD)
+Author: Stephane Frenot <stephane.frenot@insa-lyon.fr>
+Date:   Wed Jul 15 09:16:13 2020 +0200
+
+    Text fix
+```
+Lors de nos manipulations, nous avons commité localement des modifications ce qui fait avancer les versions en avant des marqueurs (orgin/master, origin/HEAD)
+
+Cette même information est présentée lors d'un status.
+```bash
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+```
+Git m'indique que mon projet est en avance de 3 commits par rapport à la version que j'ai initialement récupéré. Il m'indique entre parenthèse la commande à réaliser pour publier mes versions sur le site distant qui s'appelle 'origin'.
+
+Si vous n'êtes pas membre du projet, vous ne pourrez pas faire grand chose de plus.
+Si au contraire vous êtes participant à un projet vous allez pouvoir 'pousser' votre dépôt local sur le site distant.
+
+Résumons la situation, vous avez cloné un projet stocké sur github, mais vous n'êtes peut être pas le seul. Vous avez créé localement des nouvelles versions qui suivent les étapes de votre développement, mais vous n'êtes peut être pas le seul. Vous voulez maintenant diffuser au plus grand nombre votre nouvelle version, mais vous n'êtes peut être pas le seul... En résumé tous les utilisateurs qui travaillent sur le projet, le font de manière autonome et localement, puis ils vont vouloir pousser leurs version courante sur le site de référence.
+
+La commande `push` permet de pousser vos modifications.
+
+Trois cas peuvent se produire :
+
+ - Vous êtes le premier à pousser vos modifications.
+ - Vous arrivez après les autres et vos modifications sont compatibles
+ - Vous arrivez après les autres et vous avez modifié les mêmes fichiers, mais les modifications ne sont pas compatibles.
+
+# Vos modifications sont en avances sur tous les autres dépôts locaux modifiés
+
+```bash
+$ 
+
+
+
+
+
 Git est un outil de gestion de version de fichier. Il permet de conserver sur votre machine local l'ensemble des modifications que vous effectuez sur un ensemble de fichier.
 
 L'usage principal provient de la gestion de code informatique, car une modification d'une ligne de programme peut entrainer des bugs, et se souvenir des lignes de programme rédigées la veille, la semaine passée ou l'année précédente peut être complexe. Les bugs n'apparaissent pas toujours le jour de la correction...
@@ -439,16 +511,13 @@ git diff <fichier>              // Pour vérifier une modification spécifique s
 git add                         // Pour ajouter les éléments dans la liste des modifications
 git commit -m"<Message clair>"  // Pour enregistrer votre nouvelle version
 
-// Enfin en cas de problème la commande checkout permet de manipuler n'importe quel élément présent dans l'historique des versions
-git checkout
-
 A noter qu'il n'y a pas de règles sur la taille d'un commit, le nombre de fichiers à intégrer, etc
 C'est le développeur du projet qui décide du rythme des commits. Les commits étant fait localement,
 il n'est pas nécessaire d'avoir une connexion réseau pour enregistrer les évolutions de son projet. Certains projets font des commits à la granularité de la ligne de code, d'autre font des commits à la journée ou à la semaine.
 
 Beaucoup d'utilisateurs considèrent git comme un outils de travail et de dévéloppement collaboratif. Ce n'est pas exclusivement fait pour cela, si vous avez compris cette présentation. C'est un outil très pratique pour suivre son propre code, sans qu'il ne soit partagé avec d'autres utilisateurs. Cependant git permet également de travailler à plusieurs sur un code commun.
 
-La synchronisation entre les utilisateurs est une fonctionnalité prévue par git. L'environnement le plus classique qui propose cela est github, que nous présentons au chapitre suivant.
+La synchronisation entre les utilisateurs est une fonctionnalité prévue par git. L'environnement le plus classique qui propose cela est github, que nous présentons chapitre suivant.
 
 
 # Ressources
