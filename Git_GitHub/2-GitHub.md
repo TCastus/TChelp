@@ -108,6 +108,52 @@ Votre commande à validé votre dépôt local sur le site distant. La dernière 
 # Vous arrivez après les autres et vos modifications sont compatibles
 Vous avez travaillé sur votre code, mais quelqu'un d'autre aussi. Il a poussé ses modifications avant les votres. On se place dans le premier cas, ou vos modifications sont compatibles avec les siennes. Vous n'avez pas travaillé sur les mêmes fichiers, ou sur les mêmes lignes, ou encore les modifications sont les mêmes...
 
+```bash
+$ git push
+To github.com:TCastus/TChelp.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:TCastus/TChelp.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+Votre mise à jour est rejetée, le site distant possède une version que vous ne possédez pas localement. Git vous demande d'intégrer les modifications distantes dans votre projet, puis de refaire votre push. Vous avez deux histoire de versions différentes.
+Vous avez l'histoire A -> B, la version B arrive à la suite de la version A. Le site distante à l'histoire A -> C. Il voit instantanément qu'il y a un conflit dans le fil d'histoire. Vous devez faire un pull pour insérer B entre A et C.
+
+```bash
+$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 4 (delta 3), reused 4 (delta 3), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From github.com:TCastus/TChelp
+   5eaf925..cced1b6  master     -> origin/master
+Merge made by the 'recursive' strategy.
+ Git_GitHub/2-GitHub.md | 17 ++++++++++++++++-
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+```
+Git vient de réécrire votre histoire ainsi  : A -> B -> D (B + C). La version D est une incorporation(merge) automatique de B venant d'un autre développeur et de C qui sont vos modifications. Cette intégration fabrique une version locale D. Vous êtes donc maintenant en avance de deux étapes par rapport à la version initialement à jour : B et D. Dans ce cas le merge s'est déroulé sans encombre les modifications étant compatibles.
+Vous pouvez maintenant pousser la version sur le dépôt distant.
+
+```bash
+$ git push
+Enumerating objects: 13, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 781 bytes | 781.00 KiB/s, done.
+Total 7 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To github.com:TCastus/TChelp.git
+   cced1b6..a25736b  master -> master
+```
+Tout le monde est maintenant d'accord sur l'histoire A -> B -> C -> D
+
+# Vous arrivez après les autres et les modifications ne sont pas compatibles
+Voici ce qui se passe à l'étape du merge dans ce cas.
 
 
 
