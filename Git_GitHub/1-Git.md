@@ -1,5 +1,5 @@
 # Présentation de Git
-##### Tags : git, github
+##### Tags : git, GITHUB
 Git est un outil de gestion de version de fichier. Il permet de conserver sur votre machine local l'ensemble des modifications que vous effectuez sur un ensemble de fichier.
 
 L'usage principal provient de la gestion de code informatique, car une modification d'une ligne de programme peut entrainer des bugs, et se souvenir des lignes de programme rédigées la veille, la semaine passée ou l'année précédente peut être complexe. Les bugs n'apparaissent pas toujours le jour de la correction...
@@ -8,7 +8,6 @@ Git est aujourd'hui le produit de gestion de version de code le plus avancé. De
 Git est un outil que vous utilisez pour gérer vos mises à jours de code source ou du texte. Actuellement, pour lire ce document texte, vous accédez à un site web `github` qui stocke une copie des documents que vous êtes en train de lire. `Github.com` n'est donc pas un outil, mais un site de stockage, de récupération et d'indexation de projets reposant sur des documents au format caractères. C'est le cas du code source informatique, ou du document au format `markdown` que vous êtes en train de consulter.
 
 On doit donc présenter `git` et `github` de manière séparée.
-
 # Git
 ## Installation
 Git est un logiciel que vous devez installer sur votre machine.
