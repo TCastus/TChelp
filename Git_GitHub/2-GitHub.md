@@ -64,10 +64,35 @@ Trois cas peuvent se produire :
  - Vous arrivez après les autres et vous avez modifié les mêmes fichiers, mais les modifications ne sont pas compatibles.
 
 # Vos modifications sont en avances sur tous les autres dépôts locaux modifiés
-
+Voici les étapes 'classiques' après que le commit a été fait.
 ```bash
 $ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
 
+nothing to commit, working tree clean
+```
+Votre dépot(branche) est en avance de 1 version sur la version orgin/master distante. Ce qui se constate également avec la commande log.
+
+```bash
+$ git log
+commit 07b87bdd591f8e9264c69367dac873a8c1823ce2 (HEAD -> master)
+Author: Stephane Frenot <stephane.frenot@insa-lyon.fr>
+Date:   Thu Jul 16 12:11:52 2020 +0200
+
+    Modification de test
+
+commit e3bdbf9d30efaeaff1144e600837aa01027d85af (origin/master, origin/HEAD)
+Author: Stephane Frenot <stephane.frenot@insa-lyon.fr>
+Date:   Thu Jul 16 12:10:20 2020 +0200
+
+    Ajout des doc git
+```
+Votre marqueur de tête pointe sur local/master, qui est en avance d'un commit sur orgin/master. Par contre vous ne savez pas si d'autres utilisateurs ont déjà pris de l'avance sur votre projet.
+
+```bash
+$ git 
 
 
 
