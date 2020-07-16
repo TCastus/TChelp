@@ -1,5 +1,5 @@
 # Présentation de GitHub
-##### Tags : git, GITHUB, github
+##### Tags : git, github
 GitHub est un site web de visualisation et de stockage de dépôts git. Vous vous souvenez que pour démarrer un projet git, on clone souvent un projet existant, github vous met à disposition les projets qu'il héberge publiquement. Vous pouvez également héberger vos propre projet sur le site de github.com à condition d'y avoir un compte.
 
 Github offre une première fonction de navigation dans les fichiers d'un projet ainsi que dans tous l'historique des versions associées. Dans l'exemple précédent, nous avons cloné le projet git@github.com:TCastus/TChelp.git. Il s'agit d'un projet TCHelp, initialement créé par l'utilisateur TCastus, et hébergé sur le site github.com.
