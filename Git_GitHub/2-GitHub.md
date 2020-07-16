@@ -66,7 +66,9 @@ Trois cas peuvent se produire :
 # Vos modifications sont en avances sur tous les autres dépôts locaux modifiés
 
 ```bash
-$ 
+$ git status
+
+
 
 
 
