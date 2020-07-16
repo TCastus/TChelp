@@ -280,3 +280,6 @@ Vous ne pouvez pas faire d'erreur sur le code partagé en utilisant git. Ce qui 
 # Pour finir
 Git et github forment un couple d'outils permettant de gérer des projets complexes.
 Github peut être remplacé par quelques alternatives comme gitlab, ou vous pouvez monter votre propre ferme à projets (https://git.insa-lyon.fr/). Github offre un espace d'échange et de collaboration sans équivalent dans le monde.
+
+# Ressources
+http://etnbrd.github.io/git-cheatsheet/
