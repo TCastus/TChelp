@@ -1,4 +1,4 @@
-tag ![](https://cdn.clc2l.com/t/a/t/atom-E7XtFC.jpg)
+ ![](https://cdn.clc2l.com/t/a/t/atom-E7XtFC.jpg)
 # Qu'est ce qu'Atom?
 
 - Atom est un éditeur de texte "hackable", gratuit : pas de mise en forme, pas de dessins, juste du texte. Il est donc très util comme outil de développement.
