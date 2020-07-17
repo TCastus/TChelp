@@ -24,3 +24,8 @@
   - plmlatex
   - hackmd
   - FAQ de la DSI
+  
+ - liste des plateformes de com
+  - Discord
+  - Zoom
+  - BigBlueButton(BBB)
