@@ -48,11 +48,11 @@ Pour finir la configuration du routeur ``next`` puis ``finish``
 
 ## L'interface
 
-Elle se découpe en plusieurs partie,<font style="color:red"> la partie centrale </font>, notre espace de travail ou l'on peut construire notre infrastructure réseaux a l'aide de switch, pc, et routeur.   
+Elle se découpe en plusieurs partie,<span style="color:red"> la partie centrale </span> (en rouge), notre espace de travail ou l'on peut construire notre infrastructure réseaux a l'aide de switch, pc, et routeur.   
 
-<font style="color:#00A2E8 ">A gauche </font>, le panneau nous permet de choisir l'équipement souhaité, les logos sont assez parleur. Mais de haut en bas, nous avons les routeurs puis les switchs, puis les interfaces de navigations (Notamment les PCS) puis les périphériques de sécurités. Pour finir avec la catégorie qui les regroupes tous et boutons nous permettant de simuler les câbles.  
+<span style="color:#00A2E8 ">A gauche</span> (en bleu), le panneau nous permet de choisir l'équipement souhaité, les logos sont assez parleur. Mais de haut en bas, nous avons les routeurs puis les switchs, puis les interfaces de navigations (Notamment les PCS) puis les périphériques de sécurités. Pour finir avec la catégorie qui les regroupes tous et boutons nous permettant de simuler les câbles.  
 
- <font style="color:#22B14C">A droite</font>, nous avons tous les périphériques qui sont sur notre espace de travail. A l'aide de ce panneau, nous pouvons rapidement identifié les appareils en fonctionnement ou non. En double cliquant sur l'un des devices, celui-ci se voit centré sur notre espace de travail, très pratique pour retrouver des appareils sur de grosses architectures.  
+ <span style="color:#22B14C">A droite </span>(en vert), nous avons tous les périphériques qui sont sur notre espace de travail. A l'aide de ce panneau, nous pouvons rapidement identifié les appareils en fonctionnement ou non. En double cliquant sur l'un des devices, celui-ci se voit centré sur notre espace de travail, très pratique pour retrouver des appareils sur de grosses architectures.  
 
 En dessous du cadre vert, nous retrouvons les machines ressources. En effet, GNS3 permet de connecter plusieurs machines afin de repartir la charge de travail (Nous sommes sur de la simulation, donc grosse charge).
 
