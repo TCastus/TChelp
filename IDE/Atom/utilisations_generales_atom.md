@@ -53,3 +53,18 @@ Sur le haut de l'écran, on peut visionner le fichier en cours d'éxecution, ain
 
 ![](https://flight-manual.atom.io/using-atom/images/panes.png)
  >  Exemple d'un projet en cours de travail avec des fenetres séparées
+ 
+ 
+ - Il est possible d'utiliser la fonction ```ctrl+F ``` à la fois pour rechercher un mot, le remplacer, et remplacer tous les mots contenus dans le fichier par un nouveau. On peut le voir dans l'exemple suivant :
+ 
+ ![](https://ensiwiki.ensimag.fr/images/4/41/Atom-python-Control-s.png)
+  >  Exemple d'utilisation d'un  ```ctrl+F ``` dans un fichier
+
+
+### Cheat sheet Atom
+
+Atom contient de très nombreux racourcis. Les plus utils et facils d'utilisation ont été mentionné ci dessous. Cependant, bien d'autres fonctions sont disponibles. En voici un récapitulatif : 
+
+
+ ![](https://i.pinimg.com/originals/cc/1e/64/cc1e640dc54aa165a85ab07b4b3c8ba1.png)
+  > Cheat sheet Atom- Raccourcis claviers
