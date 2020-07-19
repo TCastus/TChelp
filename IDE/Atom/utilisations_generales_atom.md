@@ -68,3 +68,13 @@ Atom contient de très nombreux racourcis. Les plus utiles et faciles d'utilisat
 
  ![](https://i.pinimg.com/originals/cc/1e/64/cc1e640dc54aa165a85ab07b4b3c8ba1.png)
   > Cheat sheet Atom- Raccourcis claviers
+
+
+### Pour aller plus loin
+
+De nombreuses documentations en ligne sont disponibles. Parmis ces dernieres, on peut trouver les suivantes :
+- https://ensiwiki.ensimag.fr/index.php?title=Premiers_pas_avec_Atom_et_Python
+- https://geekeries.org/2018/01/atom-editor-et-quelques-modules/
+
+Site officiel d'Atom :
+- https://atom.io/
