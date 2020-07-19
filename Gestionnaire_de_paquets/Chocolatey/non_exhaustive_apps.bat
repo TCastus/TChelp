@@ -1,6 +1,6 @@
 @echo off
 
-set /P IDE="Choisie si tu veux installer vscode ou la suite JetBrains"
+set /P IDE="Choisie si tu veux installer vscode, atom ou la suite JetBrains"
 
 IF "%IDE%" == "vscode" (
 	choco install vscode -y
@@ -10,7 +10,9 @@ IF "%IDE%" == "vscode" (
 	choco install intellijidea-community -y
 	choco install goland -y
 	choco install webstorm -y
-) ELSE (
+) ELSE IF "%IDE% == "atom"(
+	choco install atom -y
+)ELSE (
 	set /P IDE="Saisie invalid, taper vscode ou jetbrains"
 )
 
