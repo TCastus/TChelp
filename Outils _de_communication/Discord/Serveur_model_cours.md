@@ -1,15 +1,15 @@
 # Model de serveur pour les cours
 
-Vous trouverez un model de serveur pour les cours [sur ce lien](https://discord.new/yUDAYNapWQRq). Ce model permet d'avoir une similarité entre les serveurs des 3, 4 et 5 TC.
+Vous trouverez un model de serveur pour les cours [sur ce lien](https://discord.new/yUDAYNapWQRq). Ce model permet d'avoir une similarité entre les serveurs des 3, 4 et 5 TC. L'idée du model est de dupliquer le rôle et la section ``model matiere`` afin de structurer les cours. Pour tout le reste, un espace sur [le serveur de l'astus](https://discord.com/invite/ukwVPsA) est disponible. Tu pourras parler librement, te détendre, parler avec des anciens TC et trouver plein de recourse.
 
 ## Les rôles
 
 Le serveur dispose de quelques rôles pour la gestion des groupes classes et modules. 
 
 - On retrouve les 3 groupes classes et les TCA avec leurs CM respectif.  
-
 - Un model de rôle pour les matières. Celui-ci permet de connaitre les enseignants du module.
 - Un rôle ``Prof`` et un ``etudiant`` pour la gestion global des permissions.
+- Un rôle administrateur pour la gestion du serveur
 
 
 
