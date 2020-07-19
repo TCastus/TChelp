@@ -63,7 +63,7 @@ Sur le haut de l'écran, on peut visionner le fichier en cours d'éxecution, ain
 
 ### Cheat sheet Atom
 
-Atom contient de très nombreux racourcis. Les plus utils et facils d'utilisation ont été mentionné ci dessous. Cependant, bien d'autres fonctions sont disponibles. En voici un récapitulatif : 
+Atom contient de très nombreux racourcis. Les plus utiles et faciles d'utilisation ont été mentionné ci dessous. Cependant, bien d'autres fonctions sont disponibles. En voici un récapitulatif : 
 
 
  ![](https://i.pinimg.com/originals/cc/1e/64/cc1e640dc54aa165a85ab07b4b3c8ba1.png)
