@@ -13,6 +13,7 @@ C/C++, C#, Clojure, CSS, CoffeeScript, GitHub Flavored Markdown, Go, Git, HTML, 
 # instalation
 
 - Sous Windows et Mac OS, rendez- vous sur le lien suivant : https://atom.io/
+- Sous Windows avec l'utilisation de chocolatey ``choco install atom``
 - Sous Linux : 
 	Télécharger le dernier package d’Atom, par exemple : curl -O https://atom-installer.github.com/v1.22.1/atom-amd64.deb
 	
