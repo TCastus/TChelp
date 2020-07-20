@@ -24,7 +24,7 @@ Vous retrouverez sur [la page de téléchargement](https://www.gns3.com/software
 
 ## Premiers pas avec GNS3
 
-Nous commençons par ajouter les images des routeurs (disponible sur moodle).  
+Nous commençons par ajouter les images des routeurs [(disponible sur moodle)](https://moodle.insa-lyon.fr/mod/folder/view.php?id=87489).  
 
 Edit -> Preferences -> IOS routers ->  
 
