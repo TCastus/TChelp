@@ -34,10 +34,20 @@ Lorsqu'on ouvre le logiciel, la fenêtre qui s'affiche comporte plusieurs pannea
 ![](https://i.imgur.com/PJzsghk.png)
 
  - En haut, la classique barre de menus
+
  - Tout à gauche, la barre des activités (avec les icônes)
- - Juste à côté le menu des activités qui change de "mode" en fonction de l'onglet choisi à gauche. (:keyboard: **Shortcut**: ***Ctrl+B*** pour le cacher ou l'afficher)
- - En grand le panneau principal qui affiche les fichiers ouverts avec les onglets en haut. (:bulb: **Tips**: En glisser-déposer on peut afficher plusieurs onglets côte à côte ou les uns au-dessus des autres...)
- - Il reste un panneau qui va servir a afficher les ~~nombreuses~~ erreurs dans ton code, les logs etc. Il est visible en allant dans le menu view et en cliquant sur Output, Debug Consol, Terminal ou Problems. Ce sont d'ailleurs ses fonctionnalitées.(:keyboard: **Shortcut**: ***Ctrl+Maj+M*** pour les problèmes, ***Ctrl+ù*** pour le terminal, etc. (Tout est marqué dans le menu view))
+
+ - Juste à côté le menu des activités qui change de "mode" en fonction de l'onglet choisi à gauche. 
+
+   > :keyboard: **Shortcut**: ***Ctrl+B*** pour le cacher ou l'afficher
+
+ - En grand le panneau principal qui affiche les fichiers ouverts avec les onglets en haut. 
+
+   > :bulb: **Tips**: En glisser-déposer on peut afficher plusieurs onglets côte à côte ou les uns au-dessus des autres...
+
+ - Il reste un panneau qui va servir a afficher les ~~nombreuses~~ erreurs dans ton code, les logs etc. Il est visible en allant dans le menu view et en cliquant sur Output, Debug Consol, Terminal ou Problems. Ce sont d'ailleurs ses fonctionnalitées.
+
+   > :keyboard: **Shortcut**: ***Ctrl+Maj+M*** pour les problèmes, ***Ctrl+ù*** pour le terminal, etc. (Tout est marqué dans le menu view)
 
 ## Découverte des activités
 
@@ -45,16 +55,16 @@ La barre des activités permet de naviguer dans les différents modes de l'édit
  - **Explorer**: L'explorateur de fichiers du logiciel, il affiche les fichiers du dossier (aka projet) ouvert
  - **Search**: :Explicit content:
  - **Source Control**: L'onglet pour gérer git depuis le logiciel
-:::info
-Si tu ne sais pas ce que c'est git, va jeter un coup d'oeil au tutoriel dédié
-:::
+
+> Si tu ne sais pas ce que c'est git, va jeter un coup d'oeil au[ tutoriel dédié](https://github.com/TCastus/TChelp/blob/master/Git_GitHub/1-Git.md)
  - **Run**: Pour éxécuter/débogger des commandes, des tests ou tout simplement tes programmes directement dans le logiciel
  - **Extensions**: Le marché des extensions :shopping_bags: :grinning_face_with_star_eyes: 
  - **Tests**: Un peu spécifique :) (en fait je sais pas trop a quoi il sert...) *(Note : Tests est pas présent de base chez moi, on le laisse ?, GW)*
 
 ## Conseils et prise en main (débutant)
 Dans VSCode il est assez rare de n'ouvrir qu'un fichier. L'explorateur intégré et les fonctions de l'onglet source control font qu'il est souvent bien plus pratique d'ouvrir le projet directement.
-:keyboard: **Shortcut**: Pour ouvrir un dossier ***Ctrl+K*** suivi de ***Ctrl+O***
+
+>  ​ :keyboard: **Shortcut**: Pour ouvrir un dossier ***Ctrl+K*** suivi de ***Ctrl+O***
 
 Le logiciel est bourré de fonctionnalitées très pratique (formatage automatique du code avec les bonnes indentations, etc. ) et **tout** est accessible par 
 
@@ -144,7 +154,7 @@ On ajoute une action qui lancera toujours le même fichier (test.py) dans un ter
 }
 ```
 
-:bulb: **Tips**: `${file}`, `${workspaceFolder}` sont des variables qui permettent de faire fonctionner le script de n'importe quel dossier, ordi, etc.
+> ​ :bulb: **Tips**: `${file}`, `${workspaceFolder}` sont des variables qui permettent de faire fonctionner le script de n'importe quel dossier, ordi, etc.
 La liste complète des variables supportées est ici https://code.visualstudio.com/docs/editor/variables-reference.
 
 
