@@ -1,4 +1,4 @@
-# Introduction a Visual Studio Code
+# Introduction à Visual Studio Code
 
 Visual Studio Code est un éditeur de texte qui comporte des fonctionnalités orientées développement. Il est utilisable avec la grande majorité des languages grâce aux extensions qui permettent de le personaliser.
 
