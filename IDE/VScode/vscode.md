@@ -16,9 +16,15 @@ Ce n'est pas un IDE aussi complet et spécifique que les logiciels de la suite [
 
 ## Installation - TODO
 
+Page de [téléchargement](https://code.visualstudio.com/download) sur le site de vscode
+
 ### Ubuntu
 
 `sudo snap install --classic code`
+
+### Windows avec chocolate
+
+`choco install vscode`
 
 ## Découverte de l'interface
 
