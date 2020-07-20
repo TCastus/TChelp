@@ -33,7 +33,7 @@ C/C++, C#, Clojure, CSS, CoffeeScript, GitHub Flavored Markdown, Go, Git, HTML, 
 - Pour ouvrir un nouveau fichier, on accède directement au menu Fichier>Nouveau fichier 
 ![](https://linuxhint.com/wp-content/uploads/2019/08/16-10-1024x591.png)
 
-Par la suite, on peut venir éditer directement dans ce nouveau fichier dans le langage de programmation de notre choix. L'enregistrement du fichier doit se faire avec l'extension du langage voulu ( ex : mon_fichier.py pour du python )
+Par la suite, on peut venir éditer directement dans ce nouveau fichier dans le langage de programmation de notre choix. L'enregistrement du fichier doit se faire avec l'extension du langage voulu ( ex : mon_fichier<strong>.py</strong> pour du python )
 Une fois l'enregistrement du fichier fait avec l'extension du langage choisi effectué, la syntaxe colorée sera adaptée au langage.
 
 Sur le haut de l'écran, on peut visionner le fichier en cours d'éxecution, ainsi que les autres fichiers ouverts avec l'éditeur de texte. Il est aussi possible de visualiser l'arborescence des fichiers qui composent le dossier dans lequel l'utilisateur travaille.
@@ -56,10 +56,10 @@ Sur le haut de l'écran, on peut visionner le fichier en cours d'éxecution, ain
  >  Exemple d'un projet en cours de travail avec des fenêtres séparées
  
  
- - Il est possible d'utiliser la fonction ```ctrl+F ``` à la fois pour rechercher un mot, le remplacer, et remplacer tous les mots contenus dans le fichier par un nouveau. On peut le voir dans l'exemple suivant :
+ - Il est possible d'utiliser la fonction ```Ctrl+F ``` à la fois pour rechercher un mot, le remplacer, et remplacer tous les mots contenus dans le fichier par un nouveau. On peut le voir dans l'exemple suivant :
  
  ![](https://ensiwiki.ensimag.fr/images/4/41/Atom-python-Control-s.png)
-  >  Exemple d'utilisation d'un ```ctrl+F ``` dans un fichier
+  >  Exemple d'utilisation d'un ```Ctrl+F ``` dans un fichier
 
 
 ### Cheat sheet Atom
