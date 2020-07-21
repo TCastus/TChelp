@@ -1,10 +1,10 @@
-# Introduction à Visual Studio Code
+# Introduction à [Visual Studio Code](https://code.visualstudio.com/)
 
-Visual Studio Code est un éditeur de texte qui comporte des fonctionnalités orientées développement. Il est utilisable avec la grande majorité des languages grâce aux extensions qui permettent de le personaliser.
+[Visual Studio Code](https://code.visualstudio.com/) est un éditeur de texte qui comporte des fonctionnalités orientées développement. Il est utilisable avec la grande majorité des languages grâce aux extensions qui permettent de le personaliser.
 
 **Disclaimer**
 
-Ce n'est pas un IDE aussi complet et spécifique que les logiciels de la suite [JetBrain](https://www.jetbrains.com/) par exemple. Il faut peser le pour et le contre en fonction de ses préférences.
+Ce n'est pas un IDE aussi complet et spécifique que les logiciels de la suite [JetBrains](https://www.jetbrains.com/) par exemple. Il faut peser le pour et le contre en fonction de ses préférences.
 
 **Principaux avantages**
 
@@ -107,7 +107,7 @@ Par exemple dans ce cas le fichier à créer correspond au template Python File.
 VSCode ajoute alors un dossier .vscode avec la config
 le fichier launch.json ressemble à ça
 
-```json
+```js
 {
   // Use IntelliSense to learn about possible attributes.
   // Hover to view descriptions of existing attributes.
@@ -129,7 +129,7 @@ Cette action nommée "Python : Fichier actuel" lance le fichier que l'on est en 
 
 On ajoute une action qui lancera toujours le même fichier (test.py) dans un terminal extérieur. Et voilà le nouveau fichier:
 
-```json
+```js
 {
   // Use IntelliSense to learn about possible attributes.
   // Hover to view descriptions of existing attributes.
@@ -173,5 +173,18 @@ Dans un VSCode placer un breakpoint est simple, il suffit de cliquer à gauche d
 Il est alors possible d'inspecter les variables à une ligne précise par exemple lorsque l'on lance le programme en mode debug. Pour cela il suffit d'appuyer sur ***F5*** ou alors Run>Start Debbuging. 
 
 ![](https://i.imgur.com/PsE4TBv.png)
+
+### Autodidactisme
+
+Bon forcément y'a encore plein de fonctionnalités très pratiques qu'on n'a pas expliqué, ou tout simplement qu'on ne connait pas... Ca vaut le coup de trainer sur une video avec les meilleures extensions VScode, la doc officielle du logiciel ou même demander à un 4A. Voila quelques liens en vrac :
+
+**Extensions sympas**
+
+ - [better comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+ - [bracket pair colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
+
+[Doc officielle VScode](https://code.visualstudio.com/docs)
+
+Help > Keyboard Shortcut Reference ouvre une page avec les principaux racourcis clavier du logiciel
 
 **Bonne année en TC :smile:**
