@@ -1,3 +1,5 @@
+:house: [**Retour au menu principal**](/README.md)
+
 # Introduction à [Visual Studio Code](https://code.visualstudio.com/)
 
 [Visual Studio Code](https://code.visualstudio.com/) est un éditeur de texte qui comporte des fonctionnalités orientées développement. Il est utilisable avec la grande majorité des languages grâce aux extensions qui permettent de le personaliser.
@@ -11,7 +13,7 @@ Ce n'est pas un IDE aussi complet et spécifique que les logiciels de la suite [
   - [Table des matières](#table-des-matières)
   - [Installation - TODO](#installation---todo)
     - [Ubuntu](#ubuntu)
-    - [Windows avec chocolatey](#windows-avec-chocolate)
+    - [Windows avec chocolatey](#windows-avec-chocolatey)
   - [Découverte de l'interface](#découverte-de-linterface)
   - [Découverte des activités](#découverte-des-activités)
   - [Conseils et prise en main (débutant)](#conseils-et-prise-en-main-débutant)
