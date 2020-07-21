@@ -11,7 +11,7 @@ Ce n'est pas un IDE aussi complet et spécifique que les logiciels de la suite [
   - [Table des matières](#table-des-matières)
   - [Installation - TODO](#installation---todo)
     - [Ubuntu](#ubuntu)
-    - [Windows avec chocolate](#windows-avec-chocolate)
+    - [Windows avec chocolatey](#windows-avec-chocolate)
   - [Découverte de l'interface](#découverte-de-linterface)
   - [Découverte des activités](#découverte-des-activités)
   - [Conseils et prise en main (débutant)](#conseils-et-prise-en-main-débutant)
@@ -39,7 +39,7 @@ Page de [téléchargement](https://code.visualstudio.com/download) sur le site d
 
 `sudo snap install --classic code`
 
-### Windows avec chocolate
+### Windows avec chocolatey
 
 `choco install vscode`
 
