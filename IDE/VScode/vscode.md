@@ -6,6 +6,22 @@
 
 Ce n'est pas un IDE aussi complet et spécifique que les logiciels de la suite [JetBrains](https://www.jetbrains.com/) par exemple. Il faut peser le pour et le contre en fonction de ses préférences.
 
+## Table des matières
+- [Introduction à Visual Studio Code](#introduction-à-visual-studio-code)
+  - [Table des matières](#table-des-matières)
+  - [Installation - TODO](#installation---todo)
+    - [Ubuntu](#ubuntu)
+    - [Windows avec chocolate](#windows-avec-chocolate)
+  - [Découverte de l'interface](#découverte-de-linterface)
+  - [Découverte des activités](#découverte-des-activités)
+  - [Conseils et prise en main (débutant)](#conseils-et-prise-en-main-débutant)
+  - [Les extensions](#les-extensions)
+  - [Settings](#settings)
+  - [Pour aller un peu plus loin...](#pour-aller-un-peu-plus-loin)
+    - [Automatiser un peu](#automatiser-un-peu)
+    - [Debug et breakpoints](#debug-et-breakpoints)
+    - [Autodidactisme](#autodidactisme)
+
 **Principaux avantages**
 
 | VScode | Suite JetBrain |
