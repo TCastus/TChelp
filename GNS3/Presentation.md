@@ -24,6 +24,8 @@ Vous retrouverez sur [la page de téléchargement](https://www.gns3.com/software
 
 ## Premiers pas avec GNS3
 
+### Ajout d'un routeur
+
 Nous commençons par ajouter les images des routeurs [(disponible sur moodle)](https://moodle.insa-lyon.fr/mod/folder/view.php?id=87489).  
 
 Edit -> Preferences -> IOS routers ->  
@@ -62,6 +64,19 @@ L'ouverture d'un terminale pour l'une des machine s'effectue en double cliquant 
 
 
 ![](img/InterfaceComposent.png)
+
+### Premier projet
+
+Au démarrage de GNS3, un fenêtre s'ouvre pour l'ouverture d'un projet. Tu peux dans cette fenêtre nommé ton projet et le placer ou tu veux sur ton espace de stockage.   
+Si tu veux ouvrir un projet déjà créée tu peux le chercher avec le bouton `Open a project from f disk` ou avec `recent projects` ou tu trouveras les projets récents. Tu peux aussi trouver tes projets dans l'onglet `Project library` .  
+Si la fenêtre ne s'ouvre pas tu peux toujours cliquer sur ![](img/NewProjectButton.png) pour la création d'un nouveau projet. Ce bouton ouvre la même fenêtre. Tu peux aussi cliquer sur ![](img/OpenProjectButton.png)pour naviguer dans tes fichiers et ouvrir un projet existant.
+
+![](img/ProjectPannel.png)
+
+> :keyboard: **Shortcut**: `ctrl` + `o` pour ouvrir un projet  
+> 						`ctrl` + `n` pour un nouveau projet
+
+Un fois que tu as créée ton projet tu peux utiliser le panneau des équipements pour glisser-déposer des routeurs, PCs, switchs etc.
 
 ## Ressources
 
