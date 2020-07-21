@@ -6,7 +6,7 @@ Le but de ce projet est d'avoir des fiches d'aides pour les outils utilisés pen
 
 ### Travailler à distance
 > Vous indique le minimum requis pour travailler sur les machines du département.
-- [Terminal de commandes](Travailler_a_distance/1-Terminal.md)
+- [Terminaux de commandes](Travailler_a_distance/1-Terminal.md)
 - [VPN](Travailler_a_distance/2-VPN.md)
 - [SSH](Travailler_a_distance/3-ConnexionDistanteSSH.md)
 - [SSH-KEY](Travailler_a_distance/31-ConnexionDistanteSSH-ClePublique.md)
