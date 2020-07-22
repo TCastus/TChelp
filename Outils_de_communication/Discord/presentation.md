@@ -18,6 +18,12 @@ Discord est cependant un site nord-américain. Le serveurs sont des machines vir
 
 Vous retrouverez les exécutable et paquets en fonction de votre OS sur [la page de téléchargement](https://discord.com/download) de Discord. Vous pouvez également utiliser un gestionnaire de paquets pour l'installation.
 
+### Quelque commande
+
+- Windows avec chocolatey : `choco install discord`
+- Linux : `sudo snap install discord`
+- OSX : `brew install discord`
+
 Discord peut être utilisé dans un navigateur Web ou comme une application autonome.
 
 :muscle: Nous recommandons l'utilisation en application autonome.
@@ -25,11 +31,10 @@ Discord peut être utilisé dans un navigateur Web ou comme une application auto
 
 L'interface de discord s'analyse en colonnes, et se lit de gauche à droite.
 1. La première colonne indique les serveurs auxquels vous êtes abonnés. Vous pouvez accéder à un menu contextuel pour y réaliser vos actions autorisées. Un bouton '+' en bas de cette liste vous permet de créer votre propre serveur. N'hésitez pas à tester cette fonctionnalité.
-
 2. La seconde colonne s'affiche quand vous sélectionnez un serveur spécifique. Vous ne pouvez interagir avec des utilisateurs d'un serveur qu'en sélectionnant le serveur concerné. Cette colonne liste l'intégralité des salons de discussion. Un icône permet de distinguer les salons à connexion vocale des connexions à connexion texte. La structuration de cette zone est à la charge des administrateurs du serveur. Dans le cas de TC l'organisation des groupes de canaux se fait en fonction des cours.
 En bas de cette colonne, un rectangle indique votre statut de connexion et de profil. Vous y voyez votre pseudo et votre numéro utilisateur. Si le texte dans cette zone est Orange vous avez une connexion défaillante. S'il ne s'agit que de la voix, seuls les canaux voix seront défectueux.
-
 3. La troisième colonne indique soit une zone de discussion texte, soit une zone d'affichage de vignettes graphiques dans un canal vocal.
+4. Vous ne pouvez voir qu'une seule fenêtre de chat ou de video à la fois. Lorsque vous êtes connecté à un canal vocal, vous pouvez changer pour aller sur un canal texte. Sur un canal vocal vous pouvez streamer ou visualiser un stream.
 
 ## Première connexion
 
@@ -49,11 +54,14 @@ Si vous souhaitez créer votre propre serveur, n'hésitez pas à accéder au tut
 
 Félicitations, vous avez rejoint un serveur. Vous pouvez maintenant utiliser les différents channels mis en place avec les droits attribués. Certains canaux peuvent ne  pas être accessibles.
 
-Vous ne pouvez voir qu'une seule fenêtre de chat ou de video à la fois. Lorsque vous êtes connecté à un canal vocal, vous pouvez changer pour aller sur un canal texte. Sur un canal vocal vous pouvez streamer ou visualiser un flux vidéo.
+Vous ne pouvez voir qu'une seule fenêtre de chat ou de video à la fois. Lorsque vous êtes connecté à un canal vocal, vous pouvez changer pour aller sur un canal texte. Vous conserverez la discussion vocale. Sur un canal vocal vous pouvez streamer ou visualiser un flux vidéo.
 
-## Partager son écran : Les streamers
+### Partager son écran : Les streamers
+
 Un streamer est un utilisateur qui diffuse une vidéo à partir de son poste de travail. Discord est initialement fait pour les communautés de joueurs qui peuvent diffuser la vidéo de leur progression dans un jeu et les participants au canal peuvent suivre et commenter cette diffusion en direct.
 Dans le cas de TC, nous l'utilisons pour streamer les contenus de cours des enseignants, ou pour visualiser un texte ou un code d'un étudiant pour l'aider sur un bug ou une erreur. C'est un mode d'interaction extrêmement efficace, qui se permet de 'montrer son écran'...
+
+Vous pouvez streamer deux choses différentes : votre écran tel que vous le voyez ou une application en cours d'exécution.
 
 Vous pouvez streamer deux choses différentes : votre écran tel que vous le voyez ou une application en cours d'exécution.
 :muscle: Nous vous suggérons ne partager le minimum de choses. Dans ce cas, essayer de se limiter au partage de l'application.
@@ -68,7 +76,6 @@ Essayez de n'activer votre micro que lorsque vous devez intervenir. Surtout s'il
 La vidéo est assez consommatrice de bande passante. La majorité du temps c'est un accessoire inutile pour les discussions. Vous pouvez l'activer en début et en fin de session pour dire bonjour et au revoir, mais vous pouvez la conserver éteinte le reste du temps.
 
 ## Utilisation avancée
-
 ### Mentionner quelqu'un ou un groupe de personne
 
 Il est possible de mentionner sur discord, le plus basique est de mentionner un utilisateur. Il faut utiliser le `@` suivi du nom d'utilisateur de la personne ou de son alias (nom donner que sur un serveur).
