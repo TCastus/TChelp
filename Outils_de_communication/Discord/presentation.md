@@ -75,6 +75,20 @@ Essayez de n'activer votre micro que lorsque vous devez intervenir. Surtout s'il
 :muscle: Coupez votre caméra.
 La vidéo est assez consommatrice de bande passante. La majorité du temps c'est un accessoire inutile pour les discussions. Vous pouvez l'activer en début et en fin de session pour dire bonjour et au revoir, mais vous pouvez la conserver éteinte le reste du temps.
 
+### éteindre discord
+
+Et non, cliquer sur la croix de la fenêtre ne ferme pas discord... Cela le met en arrières plan.
+
+Sur Windows, la solution radicale et d'aller le chercher dans le gestionnaire des tâches. La solution plus propre et d'aller dans la barre de tâche (en bas à droite) et de quitter l'application avec un clique droit.
+Mais cette fonctionnalité peut être modifier en allant dans les paramètre  avec la roue crantée en bas a gauche de l'application.
+![](img/SettingsButton.png)
+
+Puis aller dans la section `parametre window`  (1) et cliquer sur `Minimiser dans la barre des tâches` (2) pour décocher l'option
+
+![](img/XSettings.png)
+
+Maintenant, en cliquant sur la croix de la fenêtre, tu fermeras vraiment l'application
+
 ## Utilisation avancée
 ### Mentionner quelqu'un ou un groupe de personne
 
@@ -106,6 +120,18 @@ Plusieurs lignes de code pour du s'écrivent :
 ```
 
 `html`, doit être remplacé par le bon langage pour activer la coloration correspondante à python, c, javascript, css, java, bash, etc.
+
+### Quelques raccourcis clavier
+
+- liste de quelques raccourcis : `ctrl` + `/`
+- Pendant la rédaction de message, ces raccourcis permettent d'utiliser la syntaxe markdown rapidement :
+  -  `ctrl` + `i` permet d'écrire en italique 
+  - `ctrl` + `b` permet d'écrire en gras
+  - `ctrl` + `u` permet d'écrire souligné
+- Pour reload discord sans avoir à l'éteindre et le relancer : `ctrl` + `r`
+- Navigation rapide `ctrl` + `k`
+
+Vous pouvez aussi ajouter vos propre raccourcis clavier dans les paramètres. 
 
 ## Ressources
 
