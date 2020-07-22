@@ -59,12 +59,16 @@ Un streamer est un utilisateur qui diffuse une vidéo à partir de son poste de 
 Dans le cas de TC, nous l'utilisons pour streamer les contenus de cours des enseignants, ou pour visualiser un texte ou un code d'un étudiant pour l'aider sur un bug ou une erreur. C'est un mode d'interaction extrêmement efficace, qui se permet de 'montrer son écran'...
 
 Vous pouvez streamer deux choses différentes : votre écran tel que vous le voyez ou une application en cours d'exécution.
+:muscle: Nous vous suggérons ne partager le minimum de choses. Dans ce cas, essayer de se limiter au partage de l'application.
+![](img/Streamer.png)
+L'image précédente montre l'interface de streaming d'un utilisateur qui diffuse sa calculatrice.
 
 ## Quelques conseils quand vous arrivez sur un canal vocal
-Coupez votre micro, coupez votre caméra.
+Coupez votre micro. Essayez de n'activer votre micro que lorsque vous devez intervenir. Surtout s'il y a beaucoup de monde connecté. Par exemple, on peut vous entendre taper au clavier pendant une discussion, ce qui peut être très dérangeant pour l'orateur.
 
+Coupez votre caméra. La vidéo est assez consommatrice de bande passante. La majorité du temps c'est un accessoire inutile pour les discussions. Vous pouvez l'activer en début et en fin de session pour dire bonjour et au revoir, mais vous pouvez la conserver éteinte le reste du temps.
 
-## Utilisation un peu plus avancée
+## Utilisation avancée
 
 ### Mentionner quelqu'un ou un groupe de personne
 
