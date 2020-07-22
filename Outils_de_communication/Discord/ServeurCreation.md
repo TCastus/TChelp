@@ -33,7 +33,7 @@ Si vous êtes déjà un utilisateur de Discord, vous pouvez créer un nouveau se
 
 ## Paramétrer votre serveur
 
-- Par la suite, vous pourrez configurer les paramètres de votre nouveau serveur. Pour ce faire, vous pouvez cliquer sur le nom de votre serveur, qui s'affiche désormais en haut à droite de votre écran, et voir apparaître un menu déroulant contenant les différents paramètres réglables. 
+- Par la suite, vous pourrez configurer les paramètres de votre nouveau serveur. Pour ce faire, vous pouvez cliquer sur le nom de votre serveur, qui s'affiche désormais en haut à gauche de votre écran, et voir apparaître un menu déroulant contenant les différents paramètres réglables. 
 
 ![Image Paramètres](img/CaptureParametres.JPG?raw=true "Ouverture Parametres")
 
