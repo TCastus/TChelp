@@ -1,4 +1,10 @@
+
+
+
 # Discord
+
+ ![](https://www.podfeet.com/blog/wp-content/uploads/2018/02/discord-logo.png)
+ >  © Icône officielle de l'application
 
 ## Qu'est ce que Discord
 
@@ -15,9 +21,14 @@ Discord est cependant un site nord-américain. Le serveurs sont des machines vir
 
 Vous retrouverez les exécutable et paquets en fonction de votre OS sur [la page de téléchargement](https://discord.com/download) de Discord.
 
-Discord peut être utilisé dans un navigateur Web ou comme une application autonome. Nous recommandons l'utilisation en application autonome.
+- ### Quelque commande
 
-![Image discord](./AppDiscord.png?raw=true "Application discord")
+  - Windows avec chocolatey : `choco install discord`
+  - Linux : `sudo snap install discord`
+  - OSX : `brew install discord`
+
+Discord peut être utilisé dans un navigateur Web ou comme une application autonome. Nous recommandons l'utilisation en application autonome.
+![Image discord](img/AppDiscord.png?raw=true "Application discord")
 
 L'interface de discord s'analyse en colonnes, et se lit de gauche à droite.
 1. La première colonne indique les serveurs auxquels vous êtes abonnés. Vous pouvez accéder à un menu contextuel pour y réaliser vos actions autorisées. Un bouton '+' en bas de cette liste vous permet de créer votre propre serveur. N'hésitez pas à tester cette fonctionnalité.
