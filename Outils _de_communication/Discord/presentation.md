@@ -15,8 +15,14 @@ Discord est cependant un site nord-américain. Le serveurs sont des machines vir
 
 Vous retrouverez les exécutable et paquets en fonction de votre OS sur [la page de téléchargement](https://discord.com/download) de Discord.
 
+- ### Quelque commande
+
+  - Windows avec chocolatey : `choco install discord`
+  - Linux : `sudo snap install discord`
+  - OSX : `brew install discord`
+
 Discord peut être utilisé dans un navigateur Web ou comme une application autonome. Nous recommandons l'utilisation en application autonome.
-![Image discord](./AppDiscord.png?raw=true "Application discord")
+![Image discord](img/AppDiscord.png?raw=true "Application discord")
 
 # Premier pas su Discord
 
