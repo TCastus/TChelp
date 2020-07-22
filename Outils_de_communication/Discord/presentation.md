@@ -101,7 +101,3 @@ Plusieurs lignes de code pour du s'écrivent :
 [Creation d'un serveur](ServeurCreation.md)
 
 [Le site de Discord](https://discord.com/)
-
-```
-
-```
