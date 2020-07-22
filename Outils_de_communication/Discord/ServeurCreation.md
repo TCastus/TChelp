@@ -16,7 +16,7 @@ Dans cette partie, nous allons traiter de la création du serveur en question. A
 
  >  Affichage utilisateur lors de la création d'un nouveau serveur
 
-Vous pouvez ici choisir l'icone du serveur. Le format minimal pour les icônes est 128x128. Si vous souhaitez sélectionner une partie spécifique d'une grande image, coupez-la en multiples de 128 (128X2=256, 128X3=384, etc.). 
+Vous pouvez ici choisir l'icône du serveur. Le format minimal pour les icônes est 128x128. Si vous souhaitez sélectionner une partie spécifique d'une grande image, coupez-la en multiples de 128 (128X2=256, 128X3=384, etc.). 
 
 Il est ensuite nécessaire de choisir la région de votre serveur 
  ![](https://support.discord.com/hc/en-us/article_attachments/208799287/Server_Region_2.png)
@@ -39,7 +39,7 @@ Si vous êtes déjà un utilisateur de Discord, vous pouvez créer un nouveau se
 
 - La section "inviter des utilisateurs" des paramètres permet de générer un lien à partager avec les autres utilisateurs que vous voulez inviter dans votre serveur. 
 
-- Un second paramètre peut indiquer si, par défaut, le serveur enverra ou non des notifications aux différents utilisateurs lorsque des messages sont envoyés sur les discussions. ( Ce paramètre est personnalisable par la suite par l'utilisateur)
+- Un second paramètre peut indiquer si, par défaut, le serveur enverra ou non des notifications aux différents utilisateurs lorsque des messages sont envoyés sur les discussions. (Ce paramètre est personnalisable par la suite par l'utilisateur)
 
 ![](img/NotificationSetting.JPG)
 
@@ -47,9 +47,9 @@ Si vous êtes déjà un utilisateur de Discord, vous pouvez créer un nouveau se
 
 ![](https://www.techuntold.com/wp-content/uploads/2019/02/create-roles-in-discord-server.png)
 
-Ils peuvent être spécifiques à chaque serveurs, et permettent de gérer une hiérarchie dans la serveur. Ils servent à décrire ce que peut contrôler utilisateur.
+Ils peuvent être spécifiques à chaque serveurs, et permettent de gérer une hiérarchie dans la serveur. Ils servent à décrire ce que peut contrôler l'utilisateur.
 L'accès à certaines chaînes peuvent être modérés en fonction des rôles des utilisateurs. Certains pourront accéder à des chanels, d'autres non. 
-En venant utiliser un clic droit sur le nom de l'utilisateur ayant rejoint votre serveur, vous pouvez ainsi modérer ses rôles pour lui donner ou retirer des accès à certaines fonctionnalités de votre serveur.
+En faisant un clic droit sur le nom de l'utilisateur ayant rejoint votre serveur, vous pouvez ainsi modérer ses rôles pour lui donner ou retirer des accès à certaines fonctionnalités de votre serveur.
 
 
 ## Créer des chanels et des catégories
@@ -60,7 +60,7 @@ Dans le menu déroulant des paramètres, on peut venir sélectionner l'option "C
 
 ![](https://www.howtogeek.com/wp-content/uploads/2018/08/2018-08-30-5.png.pagespeed.ce.aMbCSjVo7g.png)
 
-La section "catégorie " fonctionne de manière similaire.
+La section "catégorie" fonctionne de manière similaire.
 
 
 ## Pour aller plus loin
