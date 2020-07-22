@@ -1,4 +1,10 @@
+
+:house: [**Retour au menu principal**](/README.md)
+
 # Discord
+
+ ![](https://discord.com/assets/f8389ca1a741a115313bede9ac02e2c0.svg)
+ >  © Icône officielle de l'application 
 
 ## Qu'est ce que Discord
 
