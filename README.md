@@ -12,20 +12,24 @@ Le but de ce projet est d'avoir des fiches d'aides pour les outils utilisés pen
 - [SSH-KEY](Travailler_a_distance/31-ConnexionDistanteSSH-ClePublique.md)
 - [RDP](Travailler_a_distance/4-ConnexionDistanceBureauVirtuel.md)
 
-### Outils divers
+### Communiquer à distance
+> Quelques outils utilisés pour les cours à distance
+- [Discord](Outils _de_communication/Discord/presentation.md)
+- [Zoom](Outils _de_communication/Zoom/Utilisations_generales_zoom.md)
+- [BigBlueButton](Outils _de_communication/BigBlueButton/Utilisation_generales_BBB.md)
 
+### Outils 
 > Vous en aurez forcément besoin à un moment dans l'année
 
-- [GNS3](GNS3/Presentation.md)
-- [Git/GitHub](Git_GitHub/Presentation.md)
-- [GPG vérification](Git_GitHub/GPG_verification_commit.md)
+- [Syscom - GNS3](GNS3/Presentation.md)
+- [Info - Git/GitHub](Git_GitHub/Presentation.md)
+- [Info - GPG vérification](Git_GitHub/GPG_verification_commit.md)
 
 ### Gestionnaire de paquets
 
 > Pour installer rapidement et facilement des logiciels, utile sous windows, indispensable sous linux
 
-**Windows**
-- [Chocolatey](Gestionnaire_de_paquets_windows/Chocolatey/Presentation.md)
+- [Windows Chocolatey](Gestionnaire_de_paquets_windows/Chocolatey/Presentation.md)
 
 ### Les Editeurs de code
 

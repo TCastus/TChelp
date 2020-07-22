@@ -4,13 +4,9 @@
 Liste des logiciels à utiliser par matières/thématiques.
 Nous vous conseillons d'avoir un dualboot ou une VM avec une distribution linux.
 
-## General :
-### Connexion à distance :
-Installez un utilitaire pour se connecter en RDP et SSH au département :  [lien vers le md correspondant]
-
 ## PIT :
 ### Installation de Python :
-De nombreuses distribution de Python existe, renseignez vous à propos de PyCharm, Spyder, Anaconda ..
+De nombreuses distributions de Python existent, renseignez vous à propos de PyCharm, Spyder, Anaconda.
 
 ## SIS :
 ### Installation de Matlab :
