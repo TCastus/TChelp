@@ -11,7 +11,7 @@
 Discord est un logiciel de chat et de VoIP conçu initialement pour les communautés de joueurs en ligne mais son utilisation s'est démocratisée vers le grand public.  
 Son utilisation est basée sur des espaces personnalisables que discord appelle serveurs.  Un serveur permet de structurer des canaux de communication. Un canal de discussion peut être de type texte ou vocal. Discord permet d'établir des communications éphémères vocales ou textuelles, entre deux utilisateurs amis, dans un groupe d'utilisateurs amis, ou sur un serveur spécifique.
 Discord doit son succès, entre autre, aux éléments suivants :
-- Simplicité de mise en oeuvre des canaux de discussion.
+- Simplicité de mise en œuvre des canaux de discussion.
 - Souplesse de gestion des droits d'administration d'un serveur.
 - Efficacité des communications.
 
@@ -21,16 +21,69 @@ Discord est cependant un site nord-américain. Le serveurs sont des machines vir
 
 Vous retrouverez les exécutable et paquets en fonction de votre OS sur [la page de téléchargement](https://discord.com/download) de Discord.
 
-- ### Quelque commande
+### Quelque commande
 
-  - Windows avec chocolatey : `choco install discord`
-  - Linux : `sudo snap install discord`
-  - OSX : `brew install discord`
+- Windows avec chocolatey : `choco install discord`
+- Linux : `sudo snap install discord`
+- OSX : `brew install discord`
 
-Discord peut être utilisé dans un navigateur Web ou comme une application autonome. Nous recommandons l'utilisation en application autonome.
+## Premier pas su Discord
+
+Discord peut être utilisé dans un navigateur Web ou comme une application autonome. Nous recommandons l'utilisation en application autonome. L'interface se présente de la même sur les deux supports.
+
 ![Image discord](img/AppDiscord.png?raw=true "Application discord")
 
-# Premier pas su Discord
+Pour communiquer avec quelqu'un, nous avons deux option :
+
+- Envoyer une demande d'ami et donc parler sur un canal privé. Pour ajouter un amis, il faut aller dans l'accueil de discord (1) puis cliquer sur `ajouter un ami` (2). Et pour finir taper le nom de notre ami. Ce nom est composer d'un nom d'utilisateur suivie de `#xxxx` ou x représente des chiffre de 0 à 9. Par exemple `user#1234` est un nom d'utilisateur.
+
+  ![](img/AddFriend.png)
+
+  
+
+- Rejoindre un serveur et parler sur des canaux "publique" sans être obliger d'avoir la personne en amis. Pour rejoindre un serveur, il faut se munir du lien d'invitation d'un serveur. Ce lien se présente sous la forme `https://discord.gg/[des caracteres alphanumérique]`. Nous pouvons ensuite ajouter le serveur en cliquant sur le `+` dans la liste des serveurs. 
+  ![](img/AddServer.png)
+
+  Par la suite, on te demande de créer ou rejoindre un serveur. La parte création de serveur ne nous intéresse pas ici mais vous avez un tuto pour en créer un [ici](ServeurCreation.md). 
+
+  ![](img/OtherServeur.png)
+
+  Ensuite, il faut simplement coller le lien d'invitation dans le champ et cliquer sur `rejoindre`
+
+  Félicitations, tu peux maintenant utiliser les différents channels mis en place par le serveur avec les droits qui te son attribués.
+
+## Utilisation un peu plus avancée
+
+### Mentionner quelqu'un ou un groupe de personne
+
+Il est possible de mentionner sur discord, le plus basique est de mentionner un utilisateur. Il faut utiliser le `@` suivi du nom d'utilisateur de la personne ou de son alias (nom donner que sur un serveur).
+Nous pouvons aussi mentionner plusieurs personne à l'aide des rôles du serveur. Tous les rôles ne sont pas forcement mentionnable, cela dépend de la configuration du rôle. Pour mentionner, la procédure est identique que celle d'un seul utilisateur mais avec le nom du rôle. 
+Un autre type de mention est mis en place sur tous les serveurs discord. Elle permet de mentionner toutes les personnes qui ont accès au channels. Tu peux utiliser cette mention avec `@here` ou `@everyone` 
+
+### Intégration de code
+
+Quand tu écris des messages textuels, tu peux ajouter du code avec de la coloration syntaxique automatique. Cette coloration est possible grâce au markdown. 
+L'utilisation se fait avec des  "`` ` `` " :warning:, ce n'est pas des apostrophe mais des accents ( :keyboard: : ``Alt gr`` + ``7`` ).  
+Une seule ligne de code peut écrire: `` `<span style="color:red"> test </span>` `` ou ``` ``<span style="color:red"> test </span>`` ```  
+Plusieurs lignes de code pour du s'écrivent : 
+
+```
+​```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Title of the document</title>
+	</head>
+
+	<body>
+		The content of the document......
+	</body>
+
+</html>
+​```
+```
+
+`html`, peut être remplacer par d'autres langage comme python, c, javascript, css, java etc.
 
 ## Ressources
 
@@ -39,3 +92,7 @@ Discord peut être utilisé dans un navigateur Web ou comme une application auto
 [Creation d'un serveur](ServeurCreation.md)
 
 [Le site de Discord](https://discord.com/)
+
+```
+
+```
