@@ -13,12 +13,12 @@ Le but de ce projet est d'avoir des fiches d'aides pour les outils utilisés pen
 - [RDP](Travailler_a_distance/4-ConnexionDistanceBureauVirtuel.md)
 
 ### Communiquer à distance
-> Quelques outils utilisés pour les cours à distance
-- [Discord](Outils _de_communication/Discord/presentation.md)
-- [Zoom](Outils _de_communication/Zoom/Utilisations_generales_zoom.md)
-- [BigBlueButton](Outils _de_communication/BigBlueButton/Utilisation_generales_BBB.md)
+> Quelques outils utilisés pour les cours à distance.
+- [Discord](Outils_de_communication/Discord/presentation.md)
+- [Zoom](Outils_de_communication/Zoom/Utilisations_generales_zoom.md)
+- [BigBlueButton](Outils_de_communication/BigBlueButton/Utilisation_generales_BBB.md)
 
-### Outils 
+### Outils
 > Vous en aurez forcément besoin à un moment dans l'année
 
 - [Syscom - GNS3](GNS3/Presentation.md)
