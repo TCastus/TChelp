@@ -33,26 +33,23 @@ En bas de cette colonne, un rectangle indique votre statut de connexion et de pr
 
 ## Première connexion
 
-Pour communiquer avec quelqu'un, nous avons deux options :
+Pour communiquer avec quelqu'un, vous avez deux options :
 
-- Envoyer une demande d'ami et donc parler sur un canal privé. Pour ajouter un amis, il faut aller dans l'accueil de discord (1) puis cliquer sur `ajouter un ami` (2). Et pour finir taper le nom de notre ami. Ce nom est composer d'un nom d'utilisateur suivie de `#xxxx` ou x représente des chiffre de 0 à 9. Par exemple `user#1234` est un nom d'utilisateur.
-
+- Envoyer une demande d'ami pour discuter en direct avec lui. Pour ajouter un ami, il faut aller dans l'accueil de discord (1) puis cliquer sur `ajouter un ami` (2). Et pour finir taper l'id de votre ami sous la forme `user#1234`. Son id est visible dans son statut en bas à gauche de la seconde colonne.
   ![](img/AddFriend.png)
 
-- Rejoindre un serveur et parler sur des canaux "publique" sans être obliger d'avoir la personne en amis. Pour rejoindre un serveur, il faut se munir du lien d'invitation d'un serveur. Ce lien se présente sous la forme `https://discord.gg/[des caracteres alphanumérique]`. Nous pouvons ensuite ajouter le serveur en cliquant sur le `+` dans la liste des serveurs.
+- Rejoindre un serveur et parler sur des canaux. Pour rejoindre un serveur, il faut avoir le lien d'invitation du serveur. Ce lien se présente sous la forme `https://discord.gg/[des caractères alphanumériques]`. Vous pouvez ajouter le serveur en cliquant sur le `+` dans la liste des serveurs.
   ![](img/AddServer.png)
+Vous pouvez recevoir le lien directement dans un chat discord ou par mail. L'ajout du serveur est alors automatique sur le clic.
 
-  Par la suite, on te demande de créer ou rejoindre un serveur. La parte création de serveur ne nous intéresse pas ici mais vous avez un tuto pour en créer un [ici](ServeurCreation.md).
+Les liens d'invitation discord ont des durées de vies limitées. Si le votre n'est plus valable vous pouvez en redemander un à l'administrateur du serveur. Une fois abonné à un serveur vous pouvez en sortir pour deux raisons. Vous décidez de quitter le serveur avec le menu contextuel, ou l'administrateur peut décider de vous Expulser du serveur. Enfin certaines invitations donnent un statut temporaire quand vous quittez les canaux de chat, vous êtes automatiquement expulsé du serveur. Certains enseignants TC utilisent cette fonction pour vous inviter dans leurs bureaux virtuels et vous sortir du serveur à la fin de la réunion.
 
-  ![](img/OtherServeur.png)
+Si vous souhaitez créer votre propre serveur, n'hésitez pas à accéder au tuto  [ici](ServeurCreation.md).
+![](img/OtherServeur.png)
 
-  Ensuite, il faut simplement coller le lien d'invitation dans le champ et cliquer sur `rejoindre`
+Félicitations, vous avez rejoint un serveur. Vous pouvez maintenant utiliser les différents channels mis en place avec les droits attribués. Certains canaux peuvent ne  pas être accessibles.
 
-  Félicitations, tu peux maintenant utiliser les différents channels mis en place par le serveur avec les droits qui te son attribués.
-
-  Une fois que vous êtes connecté sur un serveur, vous pouvez naviguer entre les canaux de discussion textes ou vocaux disponibles. Certains canaux peuvent ne pas vous être accessibles.
-
-  Vous ne pouvez voir qu'une seule fenêtre de chat ou de video à la fois. Lorsque vous êtes connecté à un canal vocal, vous pouvez changer pour aller sur un canal texte. Sur un canal vocal vous pouvez streamer ou visualiser un stream.
+Vous ne pouvez voir qu'une seule fenêtre de chat ou de video à la fois. Lorsque vous êtes connecté à un canal vocal, vous pouvez changer pour aller sur un canal texte. Sur un canal vocal vous pouvez streamer ou visualiser un flux vidéo.
 
 ## Partager son écran : Les streamers
 Un streamer est un utilisateur qui diffuse une vidéo à partir de son poste de travail. Discord est initialement fait pour les communautés de joueurs qui peuvent diffuser la vidéo de leur progression dans un jeu et les participants au canal peuvent suivre et commenter cette diffusion en direct.
@@ -64,9 +61,11 @@ Vous pouvez streamer deux choses différentes : votre écran tel que vous le voy
 L'image précédente montre l'interface de streaming d'un utilisateur qui diffuse sa calculatrice.
 
 ## Quelques conseils quand vous arrivez sur un canal vocal
-Coupez votre micro. Essayez de n'activer votre micro que lorsque vous devez intervenir. Surtout s'il y a beaucoup de monde connecté. Par exemple, on peut vous entendre taper au clavier pendant une discussion, ce qui peut être très dérangeant pour l'orateur.
+:muscle: Coupez votre micro.
+Essayez de n'activer votre micro que lorsque vous devez intervenir. Surtout s'il y a beaucoup de monde connecté. Par exemple, on peut vous entendre taper au clavier pendant une discussion, ce qui peut être très dérangeant pour l'orateur.
 
-Coupez votre caméra. La vidéo est assez consommatrice de bande passante. La majorité du temps c'est un accessoire inutile pour les discussions. Vous pouvez l'activer en début et en fin de session pour dire bonjour et au revoir, mais vous pouvez la conserver éteinte le reste du temps.
+:muscle: Coupez votre caméra.
+La vidéo est assez consommatrice de bande passante. La majorité du temps c'est un accessoire inutile pour les discussions. Vous pouvez l'activer en début et en fin de session pour dire bonjour et au revoir, mais vous pouvez la conserver éteinte le reste du temps.
 
 ## Utilisation avancée
 
@@ -78,7 +77,7 @@ Un autre type de mention est mis en place sur tous les serveurs discord. Elle pe
 
 ### Intégration de code
 
-Quand tu écris des messages textuels, tu peux ajouter du code avec de la coloration syntaxique automatique. Cette coloration est possible grâce au markdown.
+Quand tu écris des messages textuels, tu peux ajouter du code avec de la coloration syntaxique automatique. Cette coloration est possible grâce à la syntaxe markdown.
 L'utilisation se fait avec des  "`` ` `` " :warning:, ce n'est pas des apostrophe mais des accents ( :keyboard: : ``Alt gr`` + ``7`` ).  
 Une seule ligne de code peut écrire: `` `<span style="color:red"> test </span>` `` ou ``` ``<span style="color:red"> test </span>`` ```  
 Plusieurs lignes de code pour du s'écrivent :
@@ -99,8 +98,7 @@ Plusieurs lignes de code pour du s'écrivent :
 ​```
 ```
 
-`html`, peut être remplacer par d'autres langage comme python, c, javascript, css, java etc.
-
+`html`, doit être remplacé par le bon langage pour activer la coloration correspondante à python, c, javascript, css, java, bash, etc.
 
 ## Ressources
 
