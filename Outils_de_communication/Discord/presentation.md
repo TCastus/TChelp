@@ -57,7 +57,6 @@ Pour communiquer avec quelqu'un, nous avons deux options :
 
   Une fois que vous êtes connecté sur un serveur, vous pouvez naviguer entre les canaux de discussion textes ou vocaux disponibles. Certains canaux peuvent ne pas vous être accessibles.
 
-  Vous ne pouvez voir qu'une seule fenêtre de chat ou de video à la fois. Lorsque vous êtes connecté à un canal vocal, vous pouvez changer pour aller sur un canal texte. Sur un canal vocal vous pouvez streamer ou visualiser un stream.
 
 ### Partager son écran : Les streamers
 
