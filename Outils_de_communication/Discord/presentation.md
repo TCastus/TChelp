@@ -1,10 +1,7 @@
-
-
-
 # Discord
 
  ![](https://www.podfeet.com/blog/wp-content/uploads/2018/02/discord-logo.png)
- >  © Icône officielle de l'application 
+ >  © Icône officielle de l'application
 
 ## Qu'est ce que Discord
 
@@ -32,6 +29,17 @@ Vous retrouverez les exécutable et paquets en fonction de votre OS sur [la page
 Discord peut être utilisé dans un navigateur Web ou comme une application autonome. Nous recommandons l'utilisation en application autonome. L'interface se présente de la même sur les deux supports.
 
 ![Image discord](img/AppDiscord.png?raw=true "Application discord")
+
+L'interface de discord s'analyse en colonnes, et se lit de gauche à droite.
+1. La première colonne indique les serveurs auxquels vous êtes abonnés. Vous pouvez accéder à un menu contextuel pour y réaliser vos actions autorisées. Un bouton '+' en bas de cette liste vous permet de créer votre propre serveur. N'hésitez pas à tester cette fonctionnalité.
+
+2. La seconde colonne s'affiche quand vous sélectionnez un serveur spécifique. Vous ne pouvez interagir avec des utilisateurs d'un serveur qu'en sélectionnant le serveur concerné. Cette colonne liste l'intégralité des salons de discussion. Un icône permet de distinguer les salons à connexion vocale des connexions à connexion texte. La structuration de cette zone est à la charge des administrateurs du serveur. Dans le cas de TC l'organisation des groupes de canaux se fait en fonction des cours.
+En bas de cette colonne, un rectangle indique votre statut de connexion et de profil. Vous y voyez votre pseudo et votre numéro utilisateur. Si le texte dans cette zone est Orange vous avez une connexion défaillante. S'il ne s'agit que de la voix, seuls les canaux voix seront défectueux.
+
+3. La troisième colonne indique soit une zone de discussion texte, soit une zone d'affichage de vignettes graphiques dans un canal vocal.
+
+## Première connexion
+
 
 Pour communiquer avec quelqu'un, nous avons deux option :
 
@@ -84,6 +92,7 @@ Plusieurs lignes de code pour du s'écrivent :
 ```
 
 `html`, peut être remplacer par d'autres langage comme python, c, javascript, css, java etc.
+
 
 ## Ressources
 
