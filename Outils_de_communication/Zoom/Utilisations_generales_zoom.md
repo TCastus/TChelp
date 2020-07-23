@@ -46,7 +46,7 @@ La section ``contact`` permet de visualiser  les contacts ajoutés dans Zoom.
 
 ## Rejoindre une conférence
 
-Pour rejoindre une réunion, soit vous avez reçu un lien pour rejoindre directement, cliquez dessus et zoom s'ouvre automatiquement. Il faut bien entendu que l'application ait été installée au préalable.
+Pour rejoindre une réunion, si vous avez reçu un lien pour rejoindre directement, cliquez dessus et zoom s'ouvre automatiquement. Il faut bien entendu que l'application ait été installée au préalable.
 
 Sinon, vous pouvez rejoindre en cliquant sur "Rejoindre une conférence" au lancement de l'application. Saisissez ensuite l'ID de la réunion, et le pseudonyme que vous souhaitez utiliser.
 
@@ -69,11 +69,15 @@ Pour accéder à cette option, il vous faut créer un compte. Au lancement de l'
 En bas de la fenêtre, vous pouvez voir plusieurs icones :
 
 ``rejoindre l'audio`` qui permet de venir modifier les paramètres audio de votre micro
+
 ``arrêter la vidéo`` qui permet de gérer le flux vidéo de votre webcam
+
 ``inviter`` qui permet d'ajouter d'autres participants, et ``participants`` qui permet de visualiser ceux déjà présents.
 
 ``partager l'écran`` vous permet d'afficher sur l'écran des autres participants l'affichage que vous avez de votre écran, que ce soit une fenêtre en particulier ou l'intégralité de votre écran.
+
 ``converser`` permet d'accéder au chat textuel de l'application, avec les différents participants de la réunion.
+
 ``enregistrer`` permet d'enregistrer le flux vidéo de votre vidéoconférence
 
 
