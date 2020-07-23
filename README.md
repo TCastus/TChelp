@@ -22,14 +22,14 @@ Le but de ce projet est d'avoir des fiches d'aides pour les outils utilisés pen
 > Vous en aurez forcément besoin à un moment dans l'année
 
 - [Syscom - GNS3](GNS3/Presentation.md)
-- [Info - Git/GitHub](Git_GitHub/Presentation.md)
+- [Info - Git/GitHub](Git_GitHub/2-GitHub.md)
 - [Info - GPG vérification](Git_GitHub/GPG_verification_commit.md)
 
 ### Gestionnaire de paquets
 
 > Pour installer rapidement et facilement des logiciels, utile sous windows, indispensable sous linux
 
-- [Windows Chocolatey](Gestionnaire_de_paquets_windows/Chocolatey/Presentation.md)
+- [Windows Chocolatey](Gestionnaire_de_paquets/Chocolatey/Presentation.md)
 
 ### Les Editeurs de code
 
