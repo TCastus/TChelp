@@ -10,7 +10,7 @@ Avant propos : vous retrouverez un bon nombre de tutoriels officiels [ici](https
 Zoom est un logiciel de visioconférence très utilisé dans le milieu professionnel et parfois pour des cours à l'INSA de Lyon.
 Cet outil est très pratique lors de grandes réunion de type amphithéâtre et lorsque la vidéo est nécessaire (les autres outils étant principalement basé sur la VoIP et non sur la vidéoconférence).
 Cependant, la durée des réunion est limitée (à 4h avec vos identifiants INSA normalement).
-De plus, zoom est assez simple d'utilisation.
+De plus, Zoom est assez simple d'utilisation.
 
 
 
@@ -18,7 +18,7 @@ De plus, zoom est assez simple d'utilisation.
 
 Vous trouverez les exécutables sur [la page de téléchargement](https://zoom.us/fr-fr/zoomrooms/software.html).
 
-Par la suite, il est possible d'utiliser l'application de manière anonyme pour ce qui est de rejoindre des réunions déjà existantes ( l'hôte n'aura qu'à envoyer le lien de la réunion aux différents participants). A l'inverse, il est nécessaire de créer un compte pour pouvoir accéder à plus d'options ( dont le fait de pouvoir créer une réunion, pour ensuite y inviter d'autres utilisateurs).
+Par la suite, il est possible d'utiliser l'application de manière anonyme pour ce qui est de rejoindre des réunions déjà existantes (l'hôte n'aura qu'à envoyer le lien de la réunion aux différents participants). A l'inverse, il est nécessaire de créer un compte pour pouvoir accéder à plus d'options (dont le fait de pouvoir créer une réunion, pour ensuite y inviter d'autres utilisateurs).
 
 ![](https://img.bfmtv.com/c/0/708/131/9de07e558ec2af5ed8ef93a0fee33.png)
 
@@ -34,8 +34,8 @@ Attention : l'interface n'est visualisable que par les utilisateurs ayant souscr
 ![](https://img.bfmtv.com/c/0/708/655/7cea729d47872ba6b2fa58666fffd.png)
 
 La section ``Chat``  permet de suivre des conversations textuelles tenues dans l’application.
-La section `` réunion `` permet de planifier une réunion.
-La section ``contact`` permet de visualiser  les contacts ajoutés dans Zoom.
+La section `` Réunions`` permet de planifier une réunion.
+La section ``Contacts`` permet de visualiser  les contacts ajoutés dans Zoom.
 
 
 
@@ -46,7 +46,7 @@ La section ``contact`` permet de visualiser  les contacts ajoutés dans Zoom.
 
 ## Rejoindre une conférence
 
-Pour rejoindre une réunion, si vous avez reçu un lien pour rejoindre directement, cliquez dessus et zoom s'ouvre automatiquement. Il faut bien entendu que l'application ait été installée au préalable.
+Pour rejoindre une réunion, si vous avez reçu un lien pour rejoindre directement, cliquez dessus et Zoom s'ouvre automatiquement. Il faut bien entendu que l'application ait été installée au préalable.
 
 Sinon, vous pouvez rejoindre en cliquant sur "Rejoindre une conférence" au lancement de l'application. Saisissez ensuite l'ID de la réunion, et le pseudonyme que vous souhaitez utiliser.
 
@@ -68,21 +68,21 @@ Pour accéder à cette option, il vous faut créer un compte. Au lancement de l'
 
 En bas de la fenêtre, vous pouvez voir plusieurs icones :
 
-``rejoindre l'audio`` qui permet de venir modifier les paramètres audio de votre micro
+``Rejoindre l'audio`` qui permet de venir modifier les paramètres audio de votre micro
 
-``arrêter la vidéo`` qui permet de gérer le flux vidéo de votre webcam
+``Arrêter la vidéo`` qui permet de gérer le flux vidéo de votre webcam
 
-``inviter`` qui permet d'ajouter d'autres participants, et ``participants`` qui permet de visualiser ceux déjà présents.
+``Inviter`` qui permet d'ajouter d'autres participants, et ``participants`` qui permet de visualiser ceux déjà présents.
 
-``partager l'écran`` vous permet d'afficher sur l'écran des autres participants l'affichage que vous avez de votre écran, que ce soit une fenêtre en particulier ou l'intégralité de votre écran.
+``Partager l'écran`` vous permet d'afficher sur l'écran des autres participants l'affichage que vous avez de votre écran, que ce soit une fenêtre en particulier ou l'intégralité de votre écran.
 
-``converser`` permet d'accéder au chat textuel de l'application, avec les différents participants de la réunion.
+``Converser`` permet d'accéder au chat textuel de l'application, avec les différents participants de la réunion.
 
-``enregistrer`` permet d'enregistrer le flux vidéo de votre vidéoconférence
+``Enregistrer`` permet d'enregistrer le flux vidéo de votre vidéoconférence
 
 
 
-Si vous souhaitez inviter des participants, la sélection de l'icone ``inviter`` mènera à une redirection vers vos contacts, pour leur partager le lien de la réunion. De  même, vous pouvez sélectionner "E-mail" pour envoyer ce lien d'invitation à vos contacts par mails.
+Si vous souhaitez inviter des participants, la sélection de l'icone ``Inviter`` mènera à une redirection vers vos contacts, pour leur partager le lien de la réunion. De  même, vous pouvez sélectionner "E-mail" pour envoyer ce lien d'invitation à vos contacts par mail.
 
 ![](https://img.bfmtv.com/c/0/708/1d9/6fc6e75180aa2b391b0b56769022d.png)
 
@@ -94,7 +94,7 @@ Si vous souhaitez inviter des participants, la sélection de l'icone ``inviter``
 
 ## Planifier une réunion
 
-Zoom propose également de planifier des réunions. Pour cela, depuis l’onglet Accueil de l’application, cliquez sur **Programmer** au lancement de l'application .
+Zoom propose également de planifier des réunions. Pour cela, depuis l’onglet Accueil de l’application, cliquez sur **Programmer** au lancement de l'application.
 
 
 
@@ -118,11 +118,11 @@ Par la suite, vous pourrez partager le lien de cette future réunion à vos coll
 
 
 
-## Echanger des fichiers avec Zoom
+## Échanger des fichiers avec Zoom
 
 
 
-Comme vu précédemment, Zoom propose un principe de messagerie instantanée, permettant un accès permanant à un chat textuel, mais aussi des canaux de discussions. L'utilisation du chat textuel permet de transférer des fichiers ( dans la mesure où ces derniers ont une taille raisonnable ). On y accède ainsi via l'onglet "Chat" de l'application.
+Comme vu précédemment, Zoom propose un principe de messagerie instantanée, permettant un accès permanant à un chat textuel, mais aussi des canaux de discussions. L'utilisation du chat textuel permet de transférer des fichiers (dans la mesure où ces derniers ont une taille raisonnable). On y accède ainsi via l'onglet "Chat" de l'application.
 
 
 
@@ -138,7 +138,7 @@ Cette utilisation du chat textuel permet à la fois de créer une nouvelle conve
 
 ## Enregistrer une vidéo
 
-Lors d'une réunion Zoom, vous pouvez enregistrer le flux vidéo et audio de votre réunion. Pour ce faire, il faut sélectionner l'icone `enregistrer` vue plus tôt dans la barre d'outils. Pour stopper l'enregistrement, il suffit de venir cliquer sur ce même bouton, qui prendre la forme d'un bouton stop. A l'issu de l'enregistrement, le fichier est converti au format MP4, enregistrée dans le dossier ``*C:\Users\VotrePC\Documents\Zoom*`` de votre PC.
+Lors d'une réunion Zoom, vous pouvez enregistrer le flux vidéo et audio de votre réunion. Pour ce faire, il faut sélectionner l'icone `Enregistrer` vue plus tôt dans la barre d'outils. Pour stopper l'enregistrement, il suffit de venir cliquer sur ce même bouton, qui prendre la forme d'un bouton stop. A l'issu de l'enregistrement, le fichier est converti au format MP4 et enregistré dans le dossier ``*C:\Users\VotrePC\Documents\Zoom*`` de votre PC.
 
 
 
@@ -148,7 +148,7 @@ Lors d'une réunion Zoom, vous pouvez enregistrer le flux vidéo et audio de vot
 
 # Configuration
 
-Pour venir personnaliser les paramètres de son compte, et de la réunion en cours si vous en êtes l'administrateur, vous pouvez suivre le chemin (zoom.us > Préférences) et de modifier les paramètres audio et vidéo.
+Pour personnaliser les paramètres de son compte, et de la réunion en cours si vous en êtes l'administrateur, vous pouvez suivre le chemin (zoom.us>Préférences) et modifier les paramètres audio et vidéo.
 
 ## Catégorie audio
 
