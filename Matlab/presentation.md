@@ -23,7 +23,17 @@ Choisie ensuite la licence et `next`
 
 ![](img/LicenseChoice.png)
 
-Tu seras invité a choisir le lieux installation, je t'invite a le laisser par défaut. Tu peux donc cliquer sur `next` . Et tu dois maintenant choisir les toolboxes. Les toolboxes que tu as besoin sont : Simulink / .... (Ne inquiète pas, tu peux télécharger les toolboxes après l'installation)
+Tu seras invité a choisir le lieux installation, je t'invite a le laisser par défaut. Tu peux donc cliquer sur `next` . Et tu dois maintenant choisir les toolboxes. Les toolboxes que tu as besoin sont (ne inquiète pas, tu peux télécharger les toolboxes après l'installation) :
+- Simulink Dektop Real-Time
+- Simscape Electrical
+- Simcape
+- Symbolic Math Toolbox
+- Statistics and Machine Learning Toolbox
+- Simulink
+- Signal Processing Toolbox
+- Image Processing Toolbox
+- DSP System Toolbox
+- Communications Toolbox
 
 ![](img/ToolboxesChoice.png)
 
