@@ -21,11 +21,12 @@ Vous retrouverez les exécutable et paquets en fonction de votre OS sur [la page
 Discord peut être utilisé dans un navigateur Web ou comme une application autonome.
 
 :muscle: Nous recommandons l'utilisation en application autonome car elle permet d'accéder à toutes les fonctionnalités.
+
 ![Image discord](img/AppDiscord.png?raw=true "Application discord")
 
 L'interface utilisateur de Discord se lit en colonnes, et de gauche à droite.
-1. La première colonne indique les serveurs que vous avez rejoints. Vous pouvez accéder à un menu contextuel pour y réaliser vos actions autorisées. Le premier serveur de la liste est votre Accueil. Vous accédez à la liste de vos amis ainsi que vos groupes de discussion personnels. Le bouton '+' en bas de cette liste vous permet de rejoindre un serveur existant ou de créer votre propre serveur. N'hésitez pas à tester cette dernière fonctionnalité. (N'hésitez pas à accéder au tuto  [ici](ServeurCreation.md).
-![](img/OtherServeur.png))
+1. La première colonne indique les serveurs que vous avez rejoints. Vous pouvez accéder à un menu contextuel pour y réaliser vos actions autorisées. Le premier serveur de la liste est votre Accueil. Vous accédez à la liste de vos amis ainsi que vos groupes de discussion personnels. Le bouton '+' en bas de cette liste vous permet de rejoindre un serveur existant ou de créer votre propre serveur. N'hésitez pas à tester cette dernière fonctionnalité. (Tuto disponnible [ici](ServeurCreation.md).)
+![](img/OtherServeur.png)
 2. La seconde colonne s'affiche quand vous sélectionnez un serveur spécifique. Vous ne pouvez interagir avec les utilisateurs d'un serveur qu'en sélectionnant le serveur concerné. Cette colonne liste l'intégralité des salons de discussion. Une icône permet de distinguer les salons à connexion vocale des salons à connexion texte. La structuration de cette zone est à la charge des administrateurs du serveur. Dans le cas de TC l'organisation des groupes de canaux se fait en fonction des cours.
 En bas de cette colonne, un rectangle indique votre statut de connexion et de profil. Vous y voyez votre pseudo et votre numéro utilisateur. Si le texte dans cette zone est Orange vous avez une connexion défaillante. S'il ne s'agit que de la voix, les canaux voix et vidéo seront défectueux.
 3. La troisième colonne indique soit une zone de discussion texte, soit une zone d'affichage de vignettes graphiques dans un canal vocal.
@@ -36,11 +37,12 @@ Vous ne pouvez voir qu'une seule fenêtre de chat ou de video à la fois. Lorsqu
 
 Pour communiquer avec quelqu'un, vous avez deux options :
 
-- Envoyer une demande d'ami pour discuter en direct avec lui. Pour ajouter un ami, il faut aller dans l'accueil de discord (1) puis cliquer sur `ajouter un ami` (2). Et pour finir taper l'id de votre ami sous la forme `user#1234`. Son id est visible dans son statut en bas à gauche de la seconde colonne.
+- Envoyer une demande d'ami pour discuter en direct avec lui. Pour ajouter un ami, il faut aller dans l'accueil de Discord (1) puis cliquer sur `Ajouter un ami` (2). Et pour finir taper l'id de votre ami sous la forme `user#1234`. Son id est visible dans son statut en bas à gauche de la seconde colonne.
   ![](img/AddFriend.png)
 
 - Rejoindre un serveur et parler sur des canaux. Pour rejoindre un serveur, il faut avoir le lien d'invitation du serveur. Ce lien se présente sous la forme `https://discord.gg/[des caractères alphanumériques]`. Vous pouvez ajouter le serveur en cliquant sur le `+` dans la liste des serveurs.
   ![](img/AddServer.png)
+  
 Vous pouvez recevoir le lien directement dans un chat discord ou par mail. L'ajout du serveur est alors automatique sur le clic.
 
 Les liens d'invitation discord peuvent être limités en temps ou en nombre de tentatives. Si le votre n'est plus valable vous pouvez en redemander un à l'administrateur du serveur. Une fois abonné à un serveur vous pouvez en sortir pour deux raisons. Vous décidez de quitter le serveur avec le menu contextuel, ou l'administrateur peut décider de vous expulser du serveur. Enfin certaines invitations donnent un statut temporaire quand vous quittez les canaux de chat, vous êtes automatiquement expulsé du serveur. Certains enseignants TC utilisent cette fonction pour vous inviter dans leurs bureaux virtuels et vous sortir du serveur à la fin de la réunion.
@@ -65,7 +67,7 @@ Lorsque vous streamez dans un canal, un icône l'indique, et n'importe quel part
 :muscle: Coupez votre micro.
 Essayez de n'activer votre micro que lorsque vous devez intervenir. Surtout s'il y a beaucoup de monde connecté. Par exemple, on peut vous entendre taper au clavier pendant une discussion, ce qui peut être très dérangeant pour l'orateur.
 
-:muscle: Coupez votre caméra.
+:muscle: Activez votre caméra uniquement lorsque c'est nécessaire.
 La vidéo est assez consommatrice de bande passante. La majorité du temps c'est un accessoire inutile pour les discussions. Vous pouvez l'activer en début et en fin de session pour dire bonjour et au revoir, mais vous pouvez la conserver éteinte le reste du temps.
 
 ### Éteindre discord
@@ -82,7 +84,7 @@ Puis aller dans la section `Paramètres Windows`  (1) et cliquer sur `Minimiser 
 
 Maintenant, en cliquant sur la croix de la fenêtre, tu fermeras vraiment l'application
 
-Sur MacOS, c'est pareil... Fermer la fenêtre d'une application n'arrête pas son exécution. Pour voir les applications en cours d'exécution vous pouvez utiliser la combinaison de touches `CMD + TAB`. Vous pouvez basculer sur l'application que vous voulez. Pour quitter une application sous MacOs, le plus simple est certainement le raccourci `MCD+q`.
+Sur MacOS, c'est pareil... Fermer la fenêtre d'une application n'arrête pas son exécution. Pour voir les applications en cours d'exécution vous pouvez utiliser la combinaison de touches `CMD + TAB`. Vous pouvez basculer sur l'application que vous voulez. Pour quitter une application sous MacOs, le plus simple est certainement le raccourci `CMD + Q`.
 
 ## Utilisation avancée
 ### Mentionner quelqu'un ou un groupe de personne
