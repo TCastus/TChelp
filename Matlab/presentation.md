@@ -23,6 +23,7 @@ Choisi ensuite la licence et `next`
 
 Tu seras invité a choisir le lieux installation, je t'invite à le laisser par défaut. Tu peux donc cliquer sur `next`. Et tu dois maintenant choisir les toolboxes. Les toolboxes que tu as besoin sont (ne inquiète pas, tu peux télécharger les toolboxes après l'installation) :
 - Simulink Dektop Real-Time
+- Simulink Control Design 
 - Simscape Electrical
 - Simcape
 - Symbolic Math Toolbox
@@ -32,6 +33,8 @@ Tu seras invité a choisir le lieux installation, je t'invite à le laisser par 
 - Image Processing Toolbox
 - DSP System Toolbox
 - Communications Toolbox
+- Audio System Toolbox 
+- Communications Toolbox Support Package for USRP Radio
 
 ![](img/ToolboxesChoice.png)
 
