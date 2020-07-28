@@ -1,4 +1,7 @@
+:house: [**Retour au menu principal**](/TChelp)
+
 # Connection VPN
+
 ###### tags: `Assistance` `VPN`
 
 Une connexion à un réseau virtuel privé ou vpn est obligatoire pour travailler à distance sur le site INSA. Lorsque vous démarrez le vpn, tout se passe comme si vous étiez connecté physiquement sur une machine du site.

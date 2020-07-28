@@ -1,4 +1,7 @@
+:house: [**Retour au menu principal**](/TChelp)
+
 # Connection RDP
+
 ###### tags: `Assistance` `rdp`
 
 Si vous avez réussi à vous connecter en ssh à une machine distante, c'est que vous savez lancer un terminal, vous connecter en vpn et manipuler les commandes ssh de base.

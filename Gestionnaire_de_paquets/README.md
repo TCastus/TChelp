@@ -1,3 +1,5 @@
+:house: [**Retour au menu principal**](/TChelp)
+
 # Qu'est ce qu'un gestionnaire de paquets ?
 
 Les systèmes d'exploitation(OS) (windows, linux, macos) fournissent des outils de base mis à disposition des utilisateurs. Ces outils sont automatiquement installés dans la structure de fichiers du système d'exploitation concerné.

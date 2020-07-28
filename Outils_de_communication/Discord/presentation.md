@@ -1,3 +1,5 @@
+:house: [**Retour au menu principal**](/TChelp)
+
 # Discord
 
  ![](https://www.podfeet.com/blog/wp-content/uploads/2018/02/discord-logo.png)
@@ -43,6 +45,7 @@ Pour communiquer avec quelqu'un, vous avez deux options :
 - Rejoindre un serveur et parler sur des canaux. Pour rejoindre un serveur, il faut avoir le lien d'invitation du serveur. Ce lien se présente sous la forme `https://discord.gg/[des caractères alphanumériques]`. Vous pouvez ajouter le serveur en cliquant sur le `+` dans la liste des serveurs.
   ![](img/AddServer.png)
   
+
 Vous pouvez recevoir le lien directement dans un chat discord ou par mail. L'ajout du serveur est alors automatique sur le clic.
 
 Les liens d'invitation discord peuvent être limités en temps ou en nombre de tentatives. Si le votre n'est plus valable vous pouvez en redemander un à l'administrateur du serveur. Une fois abonné à un serveur vous pouvez en sortir pour deux raisons. Vous décidez de quitter le serveur avec le menu contextuel, ou l'administrateur peut décider de vous expulser du serveur. Enfin certaines invitations donnent un statut temporaire quand vous quittez les canaux de chat, vous êtes automatiquement expulsé du serveur. Certains enseignants TC utilisent cette fonction pour vous inviter dans leurs bureaux virtuels et vous sortir du serveur à la fin de la réunion.

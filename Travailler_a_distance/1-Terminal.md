@@ -1,4 +1,7 @@
+:house: [**Retour au menu principal**](/TChelp)
+
 # Terminal de commandes
+
 ###### tags: `Assistance` `Terminal`
 
 Un terminal de commande et une fenêtre qui permet d'intergir en mode texte

@@ -1,4 +1,7 @@
+:house: [**Retour au menu principal**](/TChelp)
+
 # Présentation de Git
+
 ##### Tags : git
 B
 Git est un outil de gestion de version de fichier. Il permet de conserver sur votre machine local l'ensemble des modifications que vous effectuez sur un ensemble de fichier.

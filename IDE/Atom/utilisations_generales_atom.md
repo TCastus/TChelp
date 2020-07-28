@@ -1,9 +1,9 @@
-:house: [**Retour au menu principal**](/README.md)
- 
+:house: [**Retour au menu principal**](/TChelp)
+
  ![](https://cdn.clc2l.com/t/a/t/atom-E7XtFC.jpg)
  >  © Icône officielle de l'application Atom
- 
- 
+
+
 # Qu'est ce qu'Atom?
 
 - Atom est un éditeur de texte "hackable", gratuit : pas de mise en forme, pas de dessins, juste du texte. Il est donc très utile comme outil de développement.
@@ -43,7 +43,7 @@ Sur le haut de l'écran, on peut visionner le fichier en cours d'éxecution, ain
 
 ![](https://ensiwiki.ensimag.fr/images/7/73/Atom-bandeau.png)
  >  Exemple d'un projet en cours de travail en langage python
- 
+
  - Pour ouvrir un fichier existant, on accède directement au menu Fichier>Ouvrir un fichier (Open existing file). On recherche alors ce dernier dans le répertoire de l'ordinateur.
  - Pour ouvrir un dossier existant et accéder aux fichiers qu'il contient, on accède au menu Fichier >Ouvrir un dossier (Open Folder)
 
@@ -56,10 +56,10 @@ Sur le haut de l'écran, on peut visionner le fichier en cours d'éxecution, ain
 
 ![](https://flight-manual.atom.io/using-atom/images/panes.png)
  >  Exemple d'un projet en cours de travail avec des fenêtres séparées
- 
- 
+
+
  - Il est possible d'utiliser la fonction ```Ctrl+F ``` à la fois pour rechercher un mot, le remplacer, et remplacer tous les mots contenus dans le fichier par un nouveau. On peut le voir dans l'exemple suivant :
- 
+
  ![](https://ensiwiki.ensimag.fr/images/4/41/Atom-python-Control-s.png)
   >  Exemple d'utilisation d'un ```Ctrl+F ``` dans un fichier
 

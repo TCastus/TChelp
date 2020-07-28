@@ -1,3 +1,5 @@
+:house: [**Retour au menu principal**](/TChelp)
+
 # Modèle de serveur pour les cours
 
 Vous trouverez un modèle de serveur pour les cours [sur ce lien](https://discord.new/yUDAYNapWQRq). Ce modèle permet d'avoir une similarité entre les serveurs des 3, 4 et 5 TC. L'idée du modèle est de dupliquer le rôle et la section ``Model matiere`` afin de structurer les cours. Pour tout le reste, un espace sur [le serveur de l'astus](https://discord.com/invite/ukwVPsA) est disponible. Tu pourras parler librement, te détendre, parler avec des anciens TC et trouver plein de ressources.

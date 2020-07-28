@@ -1,4 +1,4 @@
-:house: [**Retour au menu principal**](/README.md)
+:house: [**Retour au menu principal**](/TChelp)
 
 # Introduction à la suite Jet Brains
 

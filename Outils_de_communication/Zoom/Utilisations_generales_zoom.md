@@ -1,3 +1,5 @@
+:house: [**Retour au menu principal**](/TChelp)
+
 # Zoom
 
 ![](https://lh3.googleusercontent.com/1DqxbUca62LmV1ehZirHGWYBef9Jrtl3DhZ4m6YBnWCUX-XNr3lcnYKb31R-7ukpKAw=s360)

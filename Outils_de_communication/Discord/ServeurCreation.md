@@ -1,3 +1,5 @@
+:house: [**Retour au menu principal**](/TChelp)
+
 # Création d'un serveur Discord
 
 ## Si vous vous connectez pour la première fois
