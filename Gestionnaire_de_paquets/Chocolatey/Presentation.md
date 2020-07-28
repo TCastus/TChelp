@@ -19,3 +19,15 @@ Sinon vous pouvez utiliser le ligne de commande suivante ``choco search <package
 Pour la mise à jour des paquets, il faut taper la commande ``choco upgrade <package name>`` et pour mettres à jour tous les paquet ```choco upgrade all`` (vous pouvez faire un script avec un lancement regulier à l'aide du planificateur de tâches)
 
 Pour lister les applications installer, utiliser la commande ``choco list --local-only``
+
+## Une interface graphique
+
+Vous pouvez aussi utiliser chocolatey avec une interface graphique (GUI). Pour cela, il faut l'installer à l'aide de cette commande : `choco install chocolateygui`
+Une fois installée, vous pouvez la lancer à l'aide du menu démarrer Windows en tapant `chocolatey GUI`
+
+l'interface se présente comme ceci :
+
+## Resources
+
+[Le site de chocolatey](https://chocolatey.org/)
+[Un petit tuto un peu plus complet]()
