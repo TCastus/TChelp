@@ -88,7 +88,7 @@ Vous pouvez trouver un cours plus approfondi sur [OpenClassrooms](https://opencl
 
 Utilisation d'un serveur pour gns3 [tuto ecrit (EN)](https://luminisindia.com/it-networking-blog/168-learn-how-to-setup-gns3-server-with-the-help-of-demonstration) [tuto video (FR)](https://www.youtube.com/watch?v=fBQZbjSydrQ&list=WL&index=11&t=0s)
 
-Utilisation de remote server pour du partage de ressources [tuto video (EN)](https://www.youtube.com/watch?v=uLRTq2-vlX8) (a revoir pck je ne l'aime pas trop, je crois que je vais me chauffer a faire un tuto pck je n'arrive pas a trouver ce que je veux mdr)
+Utilisation de remote server pour du partage de ressources [Petit tuto](RemoteServer.md)
 
 [Utilisation d'une VM sous VMware avec GNS3](https://openclassrooms.com/fr/courses/2581701-simulez-des-architectures-reseaux-avec-gns3/4823181-importez-vos-images-pour-votre-architecture)
 
