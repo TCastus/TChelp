@@ -94,5 +94,7 @@ Utilisation de remote server pour du partage de ressources [Petit tuto](RemoteSe
 
 [utilisation d'une VM sous VirtualBox avec GNS3]([https://www.it-connect.fr/importer-une-machine-virtualbox-dans-gns3%EF%BB%BF/](https://www.it-connect.fr/importer-une-machine-virtualbox-dans-gns3﻿/))
 
+[Playlist YouTube: Premiers pas](https://www.youtube.com/playlist?list=PLLIV0VIvYuAMqJZm-Ulr1qiMGzH6f0OVl)
+
 
 
