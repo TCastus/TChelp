@@ -14,6 +14,7 @@ Son principe est simple, il lit tout ce qui transite par votre carte réseau et 
 ## Installation
 
 Vous trouverez les exécutables en fonctions de votre OS [ici](https://www.wireshark.org/download.html)
+Vous pouvez aussi utilisé un gestionnaire de paquet
 
 ## Lancement
 
@@ -22,12 +23,23 @@ Je vous recommande de lancer Wireshark en mode administrateur sous windows ou en
 Vous arrivez normalement sur cette page :
 ![](img/acceuil.png)
 
+Avec:  
+
+- En rouge, <span style="color:red">la barre d'outils</span>
+- En noir, <span style="color:black">les captures récemment ouverte</span>
+- En orange, <span style="color:orange">les interfaces disponible sur votre PC </span>
+
+
+
 ### Lancer une capture
 
-Cliquez sur le bouton bleu
-![](img/capture.png)
+Cliquez sur le bouton bleu ![](img/capture.png) et vous pourrez voir cette interface ![](img/captureInt.png)
+
+Avec au centre de l'interface, la description des paquets enregistrés.
 
 ### Suivre un steam
 
 Faites un clic gauche sur un paquet, puis sur 'Steam' et suivez le stream
-![](img/stream.png)
+![](img/streamMenu.png)
+
+Cela va ouvrir une fenêtre comme celle-ci. Ici c'est illisible car la communication est chiffré mais il existe des moyen de déchiffrer. ![](img/stream.png)
