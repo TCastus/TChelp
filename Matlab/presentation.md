@@ -42,3 +42,24 @@ Tu seras invité a choisir le lieux installation, je t'invite à le laisser par 
 
 Pour finir tu peux cliquer sur `next` puis `install all`  
 L'installation de Matlab est relativement longue même avec un bonne connexion.
+
+## Présentation de l'interface
+
+Elle se présente de cette manière : 
+
+![](img/Interface.png)
+
+<span style="color:blue">En bleu</span>, un explorateur de fichier permettant de naviguer entre les différents fichiers du projet.
+<span style="color:red">En rouge</span>, une zone d'édition de texte permettant de modifier le code.
+<span style="color:green">En vert</span>, une console permettant exécuter des commande en mode interprété ou de lancer des scripts. 
+<span style="color:orange">En orange</span>, les variables en court d'utilisation, très pratique pour savoir la valeur de la variable rapidement.
+Et un barre d'outils, comme sur la majorité des logiciels en haut. Elle te permettra de lancer des scripts, de lancer le mode debug, créer/importer de nouveau fichier, ajouter des add-ons rapidement.
+
+## Ajout d'add-ons 
+
+Si il vous manque des toolboxes (non installé lors du setup par exemple) ou avez besoin d'un module spécifique, dans la barre d'outils, menu `Home` vous trouverez un bouton ![](img/add-onsButton.png) qui vous permettra de les installer.
+En cliquant sur le bouton, cette interface va s'ouvrir : 
+
+![](img/add-onsInt.png)
+
+Pour installer une toolbox, rien de plus simple, utilisez le champs de recherche. Un fois la toolbox trouver et que vous êtes sur sa page, cliquez sur `Add`. Ici, il est possible que Matlab vous demande de vous reconnectez. Utiliser les mêmes credentials que pour l'installation.
