@@ -37,7 +37,7 @@ Utilisez un des deux clients
 ## Installation du client vpn (Windows)
 Choisir un des deux outils :
 
-    - Openconnect : https://www.infradead.org/openconnect/download.html
+    - Openconnect : https://github.com/openconnect/openconnect-gui/releases
     - Anyconnect : https://software.cisco.com/download/home/286281283/type/282364313/release/4.8.03036
     - choco install openconnect-gui -y
 
