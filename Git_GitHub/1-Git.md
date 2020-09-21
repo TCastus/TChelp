@@ -3,7 +3,6 @@
 # Présentation de Git
 
 ##### Tags : git
-B
 Git est un outil de gestion de version de fichier. Il permet de conserver sur votre machine local l'ensemble des modifications que vous effectuez sur un ensemble de fichier.
 
 L'usage principal provient de la gestion de code informatique, car une modification d'une ligne de programme peut entrainer des bugs, et se souvenir des lignes de programme rédigées la veille, la semaine passée ou l'année précédente peut être complexe. Les bugs n'apparaissent pas toujours le jour de la correction...
@@ -11,7 +10,8 @@ Git est aujourd'hui le produit de gestion de version de code le plus avancé. De
 
 Git est un outil que vous utilisez pour gérer vos mises à jours de code source ou du texte. Actuellement, pour lire ce document texte, vous accédez à un site web `github` qui stocke une copie des documents que vous êtes en train de lire. `Github.com` n'est donc pas un outil, mais un site de stockage, de récupération et d'indexation de projets reposant sur des documents au format caractères. C'est le cas du code source informatique, ou du document au format `markdown` que vous êtes en train de consulter.
 
-On doit donc présenter `git` et `github` de manière séparée.
+On doit donc présenter `git` et `github` de manière séparée et nous allons commencer par git.
+
 # Git
 ## Installation
 Git est un logiciel que vous devez installer sur votre machine.
@@ -23,9 +23,8 @@ Vous devez tester votre installation en tapant la commande
 ```bash
 $ git --version
 git version 2.21.0 (Apple Git-122)
-$
 ```
-La version n'est pas importante, mais si vous obtenez un autre message commande comme par exemple `zsh: command not found: git`
+La version n'est pas importante, il s'agit de s'assurer que git est bien installé et que vous n'obtenez pas par exemple `zsh: command not found: git`.
 
 ## Principes initiaux
 Git cherche à gérer les différences existantes entre deux évolutions d'un fichier. Les répertoires (dossiers) sont des fichiers particuliers qui référencent d'autres fichiers. Git doit initialement pouvoir identifier les différences entre deux fichiers.
@@ -37,7 +36,7 @@ toto.txt :
 Bonjour, je s\'appelle
 Stéphane
 ```
-```bash titi.txt
+```bash
 titi.txt :
 ----------
 Bonjour, je s\'appelle
@@ -62,7 +61,7 @@ Le résultat de la commande `diff` indique que la ligne 2 du fichier toto est di
 Git est un outil qui permet de gérer le suivi d'un projet, en utilisant diff pour repérer les modifications apportées à un ensemble de fichiers.
 
 ## Utilisation de git
-git peut s'utiliser en partant d'un répertoire vide sur votre poste de travail. La plupart du temps on part d'un projet existant qu'on va modifier pour le faire évoluer. Par exemple si vous devez faire un texte, on part d'une version initiale du texte pour le faire évoluer. Pour un logiciel, on peut partir d'un ensemble de fichiers initiaux pour les faire évoluer.
+Git peut s'utiliser en partant d'un répertoire vide sur votre poste de travail. La plupart du temps on part d'un projet existant qu'on va modifier pour le faire évoluer. Par exemple si vous devez faire un texte, on part d'une version initiale du texte pour le faire évoluer. Pour un logiciel, on peut partir d'un ensemble de fichiers initiaux pour les faire évoluer.
 
 Pour comprendre les commandes de base de git, nous l'utiliserons de manière simple à partir d'un projet existant. Par exemple le projet que vous êtes en train de consulter.
 
@@ -126,7 +125,7 @@ Votre repertoire TCHelp est donc vide, et vous voulez considérer cette version 
 
 Vous allez maintenant créer une nouvelle version de votre projet.
 
-La premieère commande à connaitre est la commande git 'status'. Elle vous donne l'état de votre Worspace par rapport au dépôt.
+La premieère commande à connaitre est la commande git `status`. Elle vous donne l'état de votre Worspace par rapport au dépôt.
 ```bash
 $ git status
 On branch master
@@ -157,7 +156,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 Les deux premières lignes de la réponse indiquent que vous êtes à jour avec la version distante à partir de laquelle vous êtes parti. Nous verrons cela plus tard.
 
-Puis git vous annonce qu'il voit des changements, mais qu'ils ne sont pas prévus pour être intégrés à la version suivante : 'Changes NOT stagged for commit'.
+Puis git vous annonce qu'il voit des changements, mais qu'ils ne sont pas prévus pour être intégrés à la version suivante : `Changes NOT stagged for commit`.
 
 La dernière ligne vous indique que pour l'instant il n'y a aucune demande d'enregistré pour une version suivante.
 
@@ -196,10 +195,10 @@ Changes not staged for commit:
 	deleted:    guides/Logiciels.md
 ```
 
-git vous indique maintenant que vous planifiez (commit) de valider la suppression du fichier README.md dans la prochaine version.
-Pour les autres fichiers supprimés, git continue à vous dire qu'il ne sait pas quoi en faire, mais qu'ils ne sont pas plannifiés (not stagged) pour la version suivante. (`commit` est un engagement pour une version suivante).
+Git vous indique maintenant que vous planifiez (`to be committed`) de valider la suppression du fichier README.md dans la prochaine version.
+Pour les autres fichiers supprimés, git continue à vous dire qu'il ne sait pas quoi en faire, mais qu'ils ne sont pas planifiés (`not stagged for commit`) pour la version suivante. (`commit` est un engagement pour une version suivante).
 
-Pour valider cette première modification vous pouvez exécuter la commande git 'commit' :
+Pour valider cette première modification vous pouvez exécuter la commande git `commit` :
 ```bash
 $ git commit -m'Suppression du fichier README.md pour test'
 [master 764d91d] Suppression du fichier README.md
@@ -207,9 +206,9 @@ $ git commit -m'Suppression du fichier README.md pour test'
  delete mode 100644 README.md
 ```
 
-La commande commit, valide un plan d'engagement pour la version suivante. Ce plan doit indiquer ce que vous avez fait, ou pourquoi vous l'avez fait. Ici on utilise l'option `-m` avec un message qui indique la raison de cette nouvelle version.
+La commande `commit` valide un plan d'engagement pour la version suivante. Ce plan doit indiquer ce que vous avez fait, ou pourquoi vous l'avez fait. Ici on utilise l'option `-m` avec un message qui indique la raison de cette nouvelle version.
 
-git vous annonce l'existence d'une nouvelle version de votre projet : 764d91d. Et que globalement cette version a supprimé un fichier qui s'appellait README.md.
+Git vous annonce l'existence d'une nouvelle version de votre projet : 764d91d. Et que globalement cette version a supprimé un fichier qui s'appellait README.md.
 
 Pour résumer :
 La nouvelle version, est donc la première version sans le fichier README.md.  
@@ -252,7 +251,7 @@ Date:   Fri Jul 10 11:35:54 2020 +0200
 Le résultat de la commande vous indique que votre version en cours (HEAD->master) est la 764d91d (dernier commit), et que la personne qui a validé ce commit a indiqué la 'Suppression du fichier README.md'.
 
 
-Votre projet contient un certain nombre de versions. Elles ont toute un numéro de commit qui l'identifie de manière unique. Vous pouvez revenir sur une version particulière avec la commande `checkout` mais en indiquant cette fois-ci non pas un fichier ou un répertoire, mais un numéro de commit de version.
+Votre projet contient un certain nombre de versions. Elles ont toutes un numéro de commit qui l'identifie de manière unique. Vous pouvez revenir sur une version particulière avec la commande `checkout` mais en indiquant cette fois-ci non pas un fichier ou un répertoire, mais un numéro de commit de version.
 
 Revenons par exemple sur la version '86baf197'. Comme vous avez cloné le projet initial que je possède, cette version existe également chez vous dans votre dépôt. La commande `checkout`, va juste remettre tous les fichiers dans l'état où ils étaient dans la version '86baf197' du 10 juillet 2020 à partir du dépôt que vous possédez.
 
@@ -272,8 +271,7 @@ do so (now or later) by using -b with the checkout command again. Example:
 HEAD is now at 86baf19 Merge branch 'master' of github.com:TCastus/TChelp
 ```
 
-git vous indique que la tête de mise à jour des version est détachée et que vous vous êtes placé sur une version spécifique antérieure. Vous pouvez y retrouver une version du fichier README.md.
-Comment le remettre dans votre version courante... Comment récupérer votre ancienne version de fichier.
+Git vous indique que la tête de mise à jour des versions est détachée et que vous vous êtes placé sur une version spécifique antérieure. Vous pouvez y retrouver une version du fichier README.md et le remettre dans votre version courante.
 
 Vous savez maintenant que votre fichier est présent dans la version '86baf197'. Vous allez donc revenir à la version courante, puis checkouter votre fichier provenant de cette version. Pour revenir à votre projet en cours, vous aller vous replacer sur l'identifiant 'master' de votre projet.
 
@@ -292,7 +290,7 @@ Vous pouvez maintenent récupérer votre fichier de l'ancienne version du projet
 $ git checkout 86baf19 README.md
 Updated 1 path from 2b7e802
 ```
-Vous venez de recopier le fichier README.md provenant de la version 86baf19 de votre projet dans votre Workspace courant. La commande 'status' vous indique que le fichier a été récupéré et qu'il est déjà prêt a être intégré dans la prochaine version commité. Nous allons valider cette nouvelle version de projet avec la commande commit et pour message : "Ajout du fichier README.md qu'on avait supprimé avant"
+Vous venez de recopier le fichier README.md provenant de la version 86baf19 de votre projet dans votre Workspace courant. La commande `status` vous indique que le fichier a été récupéré et qu'il est déjà prêt à être intégré dans la prochaine version. Nous allons valider cette nouvelle version de projet avec la commande commit et pour message : "Ajout du fichier README.md qu'on avait supprimé avant"
 
 ```bash
 $ git status
@@ -310,7 +308,7 @@ $ git commit -m"Ajout du fichier README.md qu'on avait supprimé avant"
  create mode 100644 README.md
 ```
 
-Le système git nous annonce une nouvelle version de projet, la 8be8200 qui est la nouvelle version 'master' de travail.
+Le système git nous annonce une nouvelle version de projet, la 8be820 qui est la nouvelle version master de travail.
 
 Un dernier coup d'oeil nous indique la suite des versions du projet.  
 
@@ -334,36 +332,36 @@ Date:   Wed Jul 15 09:16:13 2020 +0200
     Text fix
 ```
 
-Nous avons initialement 'cloné' le projet, en copiant la version stockée sur un site web distant. Cette version (99188) est marquée (taggée). origin/master, origin/HEAD, ces deux marqueurs indique la version courante de travail distante.
+Nous avons initialement cloné le projet, en copiant la version stockée sur un site web distant. Cette version (991886) est marquée (taggée) : origin/master, origin/HEAD, ces deux marqueurs indique la version courante de travail distante.
 
 Puis nous avons créé la version 764d91 qui contient le projet sans le fichier README.md
 
-Enfin nous avons créé la version 8be82 qui contient une version contenant le fichier README.md provenant d'une version précédente du projet. Cette version 8be82, est également taggée comme étant la tête HEAD du projet : c'est là où les commit iront et master qui représente la version la plus avancée de votre projet local. (On devrait lire local/master par rapport à la version 9918 qui elle est origin/master).
+Enfin nous avons créé la version 8be820 qui contient une version contenant le fichier README.md provenant d'une version précédente du projet. Cette version 8be8200, est également taggée comme étant la tête HEAD du projet : c'est là où les commits iront et master qui représente la version la plus avancée de votre projet local. (On devrait lire local/master par rapport à la version 991886 qui elle est origin/master).
 
-Pour rappel, git est fait pour que vous puissiez, en tant que développeur suivre les modifications que vous faites sur un projet initialement créé ou récupéré. Les commandes présentées jusque maintenant ne font pas appel au réseau (à part pour le clone initial). Cele vous permet de suivre toutes les modifications que vous réalisez sur votre projet.
+Pour rappel, git est fait pour que vous puissiez, en tant que développeur suivre les modifications que vous faites sur un projet initialement créé ou récupéré. Les commandes présentées jusque maintenant ne font pas appel au réseau (à part pour le clone initial). Cela vous permet de suivre toutes les modifications que vous réalisez sur votre projet.
 
-Dans un cas extrême de travail, pouvez avoir un commit par ligne de code ajouté ou modifié de votre programme. Git fournit un mécanisme de sauvegarde rapide de vos modifications, et il est impossible de perdre des données dans git, tant que vous ne modifiez pas à la main le repértoire '.git'.
+Dans un cas extrême de travail, vous pouvez avoir un commit par ligne de code ajouté ou modifié de votre programme. Git fournit un mécanisme de sauvegarde rapide de vos modifications, et il est impossible de perdre des données dans git, tant que vous ne modifiez pas à la main le repértoire '.git'.
 
 C'est un outil de protection des développeurs contre les erreurs de manipulation. L'outil enregistre toutes les modifications validées depuis le lancement du projet. Pour récupérer une très très vielle version d'un projet il suffit de checkouter une très très vieille version du projet. Tout ceci localement à votre machine.
 
 Il existe de très nombreuses autres fonctions permettant de manipuler les différentes informations entre le workspace et le dépôt local. Il existe de nombreuses autres fonctions pour gérer plus finement vos versions comme par exemple les branches. Il existe de nombreuses commandes pour comprendre et manipuler la base de stockage du dépôt. Vous apprendrez ces commandes au besoin ou en lisant un cours plus complet sur git. Mais les quelques instructions de base nécessaires sont :
 
-git clone <dépot distant>
-git rm <fichier du workspace>
-git checkout <fichier du workspace> | <version de commit> <fichier du commit> | <version de commit>
-git commit -m'<message de version>'
-git status
-git log
+- `git clone <dépot distant>`
+- `git rm <fichier du workspace>`
+- `git checkout <fichier du workspace> | <version de commit> <fichier du commit> | <version de commit>`
+- `git commit -m'<message de version>'`
+- `git status`
+- `git log`
 
 Une toute dernière commande à connaitre est la commande diff, qui permet d'afficher la différence entre un fichier de votre workspace avec la version enregistré dans votre dépôt qui correspond à la dernière version connue. Avant de faire un commit de version, on lance donc les deux commandes de contrôle pour vérifier ce qui va se passer :
-$ git status -> liste les modification que git va prendre en compte et celle qu'il ignore.
-$ git diff -> liste les différence d'un fichier du workspace par rapport à la version du dépôt local
-$ git commit -m'Message'
+- `git status` -> liste les modifications que git va prendre en compte et celle qu'il ignore.
+- `git diff` -> liste les différences d'un fichier du workspace par rapport à la version du dépôt local.
+- `git commit -m'Message'`
 
 #### Comment ajouter un fichier à un projet ?
 On a vu jusqu'à présent comment récupérer des fichiers existants, comment supprimer des fichiers, mais on ne sais pas comment ajouter un fichier dans un projet, ou comment se comporte le système quand on modifie le contenu d'un fichier.
 
-Vous allez commencer par vérifier que votre projet est à jour. C'est à dire que la version du Workspace et la version du dépôt sont les mêmes. La commande est :
+Vous allez commencer par vérifier que votre projet est à jour. C'est à dire que la version du workspace et la version du dépôt sont les mêmes. La commande est :
 ```bash
 $ git status
 On branch master
@@ -372,9 +370,9 @@ Your branch is ahead of 'origin/master' by 2 commits.
 
 nothing to commit, working tree clean
 ```
-Rien à commit, espace de travail propre. Sont des messages optimistes pour commencer un travail.
+Rien à commit, espace de travail propre, sont des messages optimistes pour commencer un travail.
 
-Vous décider de modifier le fichier README.md en mettant l'unique phrase 'bonjour', et vous crééz un fichier TOTO.md contenant la phrase 'au revoir'. Vous pouvez utiliser n'importe quel éditeur pour modifier ces fichiers ou bien exécuter rapidement ces deux commandes sous unix ou mac.
+Vous décidez de modifier le fichier README.md en mettant l'unique phrase 'bonjour', et vous crééz un fichier TOTO.md contenant la phrase 'au revoir'. Vous pouvez utiliser n'importe quel éditeur pour modifier ces fichiers ou bien exécuter rapidement ces deux commandes sous unix ou mac.
 
 ```bash
 $ echo "bonjour" > README.md
@@ -402,8 +400,8 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-Le status vous indique que le fichier README.md a été modifié mais qu'il n'est pas prévu dans
-le commmit et que TOTO.md n'est pas suivi par git. Les deux commentaires indiquent que vous pouvez utiliser la commande 'add' pour ajouter le suivi de ces fichiers et les intégrer dans le prochain commit.
+La commande vous indique que le fichier README.md a été modifié mais qu'il n'est pas prévu dans
+le commit et que TOTO.md n'est pas suivi par git. Les deux commentaires indiquent que vous pouvez utiliser la commande `add` pour ajouter le suivi de ces fichiers et les intégrer dans le prochain commit.
 
 ```bash
 $ git add README.md TOTO.md
@@ -418,9 +416,9 @@ Changes to be committed:
 	modified:   README.md
 	new file:   TOTO.md
 ```
-Les deux fichiers sont prévus pour être intégrés au prochain commit. Notez la parenthèse sur la commande 'reset HEAD <file>' qui permet d'annuler l'intégration d'une des modifications dans le commit. Si vous vous appercevez par exemple que le fichier 'TOTO.md' ne doit pas faire partie du prochain commit, c'est le seul moyen pour le retirer du prochain commit.
+Les deux fichiers sont maintenant prévus pour être intégrés au prochain commit. Notez la parenthèse sur la commande `reset HEAD <file>` qui permet d'annuler l'intégration d'une des modifications dans le commit. Si vous vous apercevez par exemple que le fichier TOTO.md ne doit pas faire partie du prochain commit, c'est le seul moyen pour le retirer du prochain commit.
 
-Si vous êtes d'accord avec les modification du projet et du prochain commit, vous pouvez alors lancer la commande de validation de vos modifications.
+Si vous êtes d'accord avec les modifications du projet et du prochain commit, vous pouvez alors lancer la commande de validation de vos modifications.
 ```bash
 $ git commit -m"Modification du README.md et Ajout du fichier TOTO.md"
 $ git commit -m'Modifications du README.md et ajout du fichier TOTO.md'
@@ -430,35 +428,29 @@ $ git commit -m'Modifications du README.md et ajout du fichier TOTO.md'
  create mode 100644 TOTO.md
 ```
 
-En résumé git gère les version de l'intégralité des fichiers d'un projet. De plus il conserve localement dans un répertoire de copie, l'intégralité de toutes les versions d'un projet.
+En résumé git gère les versions de l'intégralité des fichiers d'un projet. De plus il conserve localement dans un répertoire de copie, l'intégralité de toutes les versions d'un projet.
 
 Le cycle classique de codage en utilisant git est le suivant :
 
-git clone <localisation distante> // Cette commande ne se fait qu'une fois dans la vie du projet
+- `git clone <localisation distante>` // Cette commande ne se fait qu'une fois dans la vie du projet
 
-// A chaque fois que vous voulez valider une version. On répète les commandes suivantes
-git status                      // Pour vérifier ce qui a été modifié
-git diff <fichier>              // Pour vérifier une modification spécifique sur un fichier quand on a un doute
-git add                         // Pour ajouter les éléments dans la liste des modifications
-git commit -m"<Message clair>"  // Pour enregistrer votre nouvelle version
+- A chaque fois que vous voulez valider une version. On répète les commandes suivantes :
+  - `git status`                      // Pour vérifier ce qui a été modifié
+  - `git diff <fichier>`              // Pour vérifier une modification spécifique sur un fichier quand on a un doute
+  - `git add`                         // Pour ajouter les éléments dans la liste des modifications
+  - `git commit -m"<Message clair>"`  // Pour enregistrer votre nouvelle version
 
-// Enfin en cas de problème la commande checkout permet de manipuler n'importe quel élément présent dans l'historique des versions
-git checkout
+- Enfin, en cas de problème la commande, `git checkout` permet de manipuler n'importe quel élément présent dans l'historique des versions.
 
 A noter qu'il n'y a pas de règles sur la taille d'un commit, le nombre de fichiers à intégrer, etc
-C'est le développeur du projet qui décide du rythme des commits. Les commits étant fait localement,
-il n'est pas nécessaire d'avoir une connexion réseau pour enregistrer les évolutions de son projet. Certains projets font des commits à la granularité de la ligne de code, d'autre font des commits à la journée ou à la semaine.
+C'est le développeur du projet qui décide du rythme des commits. Les commits étant faits localement,
+il n'est pas nécessaire d'avoir une connexion réseau pour enregistrer les évolutions de son projet. Certains projets font des commits à la granularité de la ligne de code, d'autres font des commits à la journée ou à la semaine.
 
-Beaucoup d'utilisateurs considèrent git comme un outils de travail et de dévéloppement collaboratif. Ce n'est pas exclusivement fait pour cela, si vous avez compris cette présentation. C'est un outil très pratique pour suivre son propre code, sans qu'il ne soit partagé avec d'autres utilisateurs. Cependant git permet également de travailler à plusieurs sur un code commun.
+Beaucoup d'utilisateurs considèrent git comme un outil de travail et de dévéloppement collaboratif. Ce n'est pas exclusivement fait pour cela, si vous avez compris cette présentation. C'est un outil très pratique pour suivre son propre code, sans qu'il ne soit partagé avec d'autres utilisateurs. Cependant git permet également de travailler à plusieurs sur un code commun.
 
-La synchronisation entre les utilisateurs est une fonctionnalité prévue par git. L'environnement le plus classique qui propose cela est github, que nous présentons au chapitre suivant.
+La synchronisation entre les utilisateurs est une fonctionnalité prévue par git. L'environnement le plus classique qui propose cela est github, que nous présentons au [chapitre suivant](2-GitHub.md).
 
 
 # Ressources
 https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github
 
-## Qu'est ce que git ?
-
-## A quoi sert Git ?
-
-##
