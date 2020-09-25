@@ -37,6 +37,8 @@ Tu seras invité a choisir le lieux installation, je t'invite à le laisser par 
 - Communications Toolbox
 - Audio System Toolbox 
 - Communications Toolbox Support Package for USRP Radio
+- Deep Learning Toolbox
+- Wavelet toolbox
 
 ![](img/ToolboxesChoice.png)
 
