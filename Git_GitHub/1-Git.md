@@ -75,7 +75,7 @@ Pour l'instant, il n'est pas question de travail de groupe collaboratif. La prem
 ### Manipulation minimale de mon projet
 Dans une fenêtre de commande déplacez vous dans le répertoire `/tmp` de votre machine. Lancez la commande :
 ```bash
-$ git clone git@github.com:TCastus/TChelp.git
+$ git clone https://github.com/TCastus/TChelp
 Cloning into 'TChelp'...
 remote: Enumerating objects: 142, done.
 remote: Counting objects: 100% (142/142), done.
