@@ -120,3 +120,11 @@ ctrl+tab = changer de fichier à éditer
 alt+shift sur un warning/erreur = voir les propositions de correction
 
 ctrl + b = aller à la définition/aux usages d'une fonction ou attribut
+
+
+
+## Ressources
+
+[Tips and tricks by JetBrains (video)](https://www.youtube.com/watch?v=NoDx0MEESDw&t=463s)
+[Tips and tricks by JetBrains (website)](https://www.jetbrains.com/pycharm/guide/playlists/42/)
+[Quelques raccourcis clavier (video)](https://www.youtube.com/watch?v=9fxBvbEvAxY)
