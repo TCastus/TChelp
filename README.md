@@ -27,7 +27,7 @@ Le but de ce projet est d'avoir des fiches d'aides pour les outils utilisés pen
 
 ### Gestionnaire de paquets
 
-> Pour installer rapidement et facilement des logiciels, utile sous windows, indispensable sous linux
+> Pour installer rapidement et facilement des logiciels, utile sous Windows, indispensable sous linux
 
 - [Windows Chocolatey](Gestionnaire_de_paquets/Chocolatey/Presentation.md)
 
@@ -38,3 +38,7 @@ Le but de ce projet est d'avoir des fiches d'aides pour les outils utilisés pen
 - [Jet Brains](IDE/Jet_brains/Utilisation_generale.md)
 - [Atom](IDE/Atom/utilisations_generales_atom.md)
 - [VScode](IDE/VScode/vscode.md)
+
+
+
+[Top contributors](topContributors.md)
