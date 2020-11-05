@@ -31,8 +31,8 @@ NB: L'installation des dev tools de chaque langage de programmation est nécessa
 
 ### Avec chocolatey (Windows)
 
-``choco install pycharam``
-``choco unstall inteliji``
+`choco install pycharam`
+`choco unstall inteliji`
 
 ### Avec snap (Linux)
 
