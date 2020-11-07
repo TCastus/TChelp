@@ -44,3 +44,6 @@ Après avoir activé WSL, il vous faut installer une distribution Linux. Pour ce
 Félicitations, vous avez une distribution Linux sous Windows !
 
 Notez que WSL est supporté nativement par le nouveau terminal développé en Open Source par Microsoft et vous permettra de lancer plusieurs distributions dans une seule application aux côtés de vos amis le cmd et le Powershell.
+
+#Ressources
+[https://docs.microsoft.com/en-us/windows/wsl/](https://docs.microsoft.com/en-us/windows/wsl/)
