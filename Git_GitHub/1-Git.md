@@ -452,7 +452,7 @@ La synchronisation entre les utilisateurs est une fonctionnalité prévue par gi
 
 
 # Ressources
-[Cours d'openClassroms](https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github)
-[Apprendre git](https://learngitbranching.js.org/?locale=fr_FR)
-[Oh Shit, Git!?!](https://ohshitgit.com/fr)
-[Git workflow](https://stackoverflow.com/questions/14224492/is-this-a-good-strategy-to-undo-git-stuff)
+ - [Cours d'openClassroms](https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github)
+ - [Apprendre git](https://learngitbranching.js.org/?locale=fr_FR)
+ - [Oh Shit, Git!?!](https://ohshitgit.com/fr)
+ - [Git workflow](https://stackoverflow.com/questions/14224492/is-this-a-good-strategy-to-undo-git-stuff)
