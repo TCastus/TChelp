@@ -27,7 +27,7 @@ Si vous voulez utiliser WSL1 et ne pas passer à WSL2, redémarrez votre PC pour
 
 Tout d'abord, vérifiez dans Windows Update que vous possédez bien la dernière version de Windows et que votre machine tourne sur un système x64. Quand cela est fait, on peut passer aux choses sérieuses.
 Lancez le Powershell en tant qu'administrateur et activez la fonctionnalité "Plateforme de machine virtuelle" via la commande suivante:
-`dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
+`dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
 Vous pouvez aussi réaliser cette action en allant dans "Activer ou désactiver des fonctionnalités Windows" comme auparavant et en activant la fonctionnalité en cochant sa case. Un redémarrage de l'ordinateur est nécessaire pour appliquer les modifications.
 
 Ensuite, il vous faudra télécharger et installer le package de mise à jour Linux Kernel disponible [ici](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi).
@@ -44,6 +44,7 @@ Après avoir activé WSL, il vous faut installer une distribution Linux. Pour ce
 Félicitations, vous avez une distribution Linux sous Windows !
 
 Notez que WSL est supporté nativement par le nouveau terminal développé en Open Source par Microsoft et vous permettra de lancer plusieurs distributions dans une seule application aux côtés de vos amis le cmd et le Powershell.
+
 
 # Ressources
 [https://docs.microsoft.com/en-us/windows/wsl/](https://docs.microsoft.com/en-us/windows/wsl/)
