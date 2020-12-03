@@ -24,20 +24,20 @@ Choisi ensuite la licence et `next`
 ![](img/LicenseChoice.png)
 
 Tu seras invité a choisir le lieux d'installation, je t'invite à le laisser par défaut. Tu peux donc cliquer sur `next`. Et tu dois maintenant choisir les toolboxes. Les toolboxes que tu as besoin sur les trois ans sont (ne inquiète pas, tu peux télécharger les toolboxes après l'installation) :
-- Simulink Dektop Real-Time
-- Simulink Control Design 
-- Simscape Electrical
-- Simcape
-- Symbolic Math Toolbox
-- Statistics and Machine Learning Toolbox
-- Simulink
-- Signal Processing Toolbox
-- Image Processing Toolbox
-- DSP System Toolbox
-- Communications Toolbox
 - Audio System Toolbox 
+- Communications Toolbox
 - Communications Toolbox Support Package for USRP Radio
 - Deep Learning Toolbox
+- DSP System Toolbox
+- Image Processing Toolbox
+- Signal Processing Toolbox
+- Simcape
+- Simulink
+- Simulink Control Design 
+- Simulink Dektop Real-Time
+- Simscape Electrical
+- Statistics and Machine Learning Toolbox
+- Symbolic Math Toolbox
 - Wavelet toolbox
 
 ![](img/ToolboxesChoice.png)
