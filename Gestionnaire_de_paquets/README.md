@@ -2,10 +2,9 @@
 
 # Qu'est ce qu'un gestionnaire de paquets ?
 
-Les systèmes d'exploitation(OS) (windows, linux, macos) fournissent des outils de base mis à disposition des utilisateurs. Ces outils sont automatiquement installés dans la structure de fichiers du système d'exploitation concerné.
+Les systèmes d'exploitation, ou OS, comme Windows, Linux, ou MacOS fournissent des outils de base mis à disposition des utilisateurs. Ces outils sont automatiquement installés dans la structure de fichiers du système d'exploitation concerné.
 
-Initialement, lorsque vous installez un logiciel externe, un outil d'installation décide de la localisation des fichiers installés. La plupart du temps l'installation se fait dans un répertoire unique que vous pouvez choisir. Dans d'autre cas, le système d'exploitation vous impose d'installer des fichiers à certains emplacements spécifiques. Les dll partagées pour windows, les ressources pour macosx...
-En fonction des versions de systèmes d'exploitation ces emplacements peuvent changer, mais les installateurs ne sont pas corrigés.
+Initialement, lorsque vous installez un logiciel externe, un outil d'installation décide de la localisation des fichiers installés. La plupart du temps l'installation se fait dans un répertoire unique que vous pouvez choisir. Dans d'autre cas, le système d'exploitation vous impose d'installer des fichiers à certains emplacements spécifiques. Les dll partagées pour Windows, les ressources pour MacOS... En fonction des versions de systèmes d'exploitation ces emplacements peuvent changer, mais les installateurs ne sont pas corrigés.
 
 Quand on supprime un logiciel, ou quand on met à jour un logiciel, il peut laisser derrière lui d'anciens fichiers qui ne sont pas supprimés. Petit à petit votre système d'exploitation est inondé de ces fichiers rémanents. Certains de ces fichiers peuvent en plus générer des bugs de comportement de l'OS.
 
