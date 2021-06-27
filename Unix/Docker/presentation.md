@@ -1,6 +1,9 @@
 :house: [**Retour au menu principal**](/TChelp)
 
 # Présentation de Docker
+
+Docker est une plateforme de virtualisation très utilisée pour le développement et le déploiement d'applications. Il pourra vous être un allié de taille pour vos différents projets en vous permettant d'éviter des problèmes de différence de plateforme et de versions. Cette page vise à vous donner un aperçu global de son fonctionnement.
+
 ## Terminologie
 Docker gère des **conteneurs**, qui contiennent un ou plusieurs processus et se lancent dans une copie d'une **image**.
 Les **images** sont définies à l'aide d'un **Dockerfile**.
@@ -114,3 +117,13 @@ Docker vous permet effectivement d'empaqueter un logiciel serveur dans un format
 avec la plupart des grands fournisseurs de *Cloud computing* ainsi que toutes les distributions Linux, macOS et même Windows (avec des restrictions).
 
 Vous pouvez déployer un logiciel sans savoir comment il fonctionne. 
+
+# Ressources
+
+Vous comprenez maintenant le principe général de Docker. Voici quelques ressources qui vous permettront de creuser le sujet pour que Docker devienne un outil du quotidien :
+
+- [Introduction vidéo très courte](https://www.youtube.com/watch?v=Gjnup-PuquQ)  pour vous remettre en tête les concepts principaux de Docker
+- [Les slides de la formation pratique du SIA](https://sia.asso-insa-lyon.fr/static/media/Docker.9401ab55.pdf) pour comprendre les commandes principales de la version command-line de Docker, la syntaxe Dockerfile, et l'utilisation de docker-compose. Cette formation publique est donnée en début d'année, renseignez-vous auprès du Service Informatique Associatif de l'INSA pour plus d'infos
+- [La présentation d'Anthony Blaire](https://people.irisa.fr/Anthony.Baire/docker-tutorial.pdf), plus complète et technique
+- [Docker-curriculum](https://docker-curriculum.com), tutoriel détaillé et complet
+- [Les 800 slides de container.training](https://container.training/intro-selfpaced.yml.html), pour devenir le boss des conteneurs

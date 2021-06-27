@@ -12,6 +12,12 @@ Le but de ce projet est d'avoir des fiches d'aides pour les outils utilisés pen
 - [SSH-KEY](Travailler_a_distance/31-ConnexionDistanteSSH-ClePublique.md)
 - [RDP](Travailler_a_distance/4-ConnexionDistanceBureauVirtuel.md)
 
+### S'initier au monde d'Unix
+
+> Pour apprivoiser Linux et son écosystème
+
+Quelle solution adopter pour accéder au monde d'Unix ? Trouvez votre bonheur grâce à [notre guide](Unix/README.md)
+
 ### Communiquer à distance
 > Quelques outils utilisés pour les cours à distance.
 - [Discord](Outils_de_communication/Discord/presentation.md)

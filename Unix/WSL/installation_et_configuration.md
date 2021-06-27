@@ -6,8 +6,6 @@ WSL (Windows Subsystem for Linux) est une fonctionnalité disponible sous Window
 
 WSL prend donc la forme d'un terminal de la distribution Linux choisi par l'utilisateur.
 
-
-
 # Installation de WSL
 
 L'Installation se fait en deux temps :
