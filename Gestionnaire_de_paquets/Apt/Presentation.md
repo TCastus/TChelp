@@ -144,7 +144,9 @@ Si un message d'erreur s'affiche disant qu'il manque des dépendances, vous pouv
 
 Pas de panique. Un fichier binaire se trouve quelque part dans le tas, il suffit de l'identifier. Chercher un fichier exécutable sans extension, souvent du même nom que l'application, à la racine ou dans un dossier `./bin`
 
-Ensuite, `chmod +x`-ez le, et lancez-le.
+Ensuite, donnez les droits d'exécution sur ce fichier avec `sudo chmod +x <fichier>` et exécutez-le.
+
+
 
 ## Compilation depuis la source
 
