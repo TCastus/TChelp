@@ -92,7 +92,7 @@ Remarque personnelle : j'essaye d'utiliser `snap` le moins possible, parce qu'il
 Pour installer snap, utilisez apt : 
 
 ```
-sudo install snapd
+sudo apt install snapd
 ```
 
 Pour installer un paquet snap :
@@ -104,7 +104,7 @@ sudo snap install <logiciel>
 Pour supprimer un paquet snap : 
 
 ```
-sudo snap install <logiciel>
+sudo snap remove <logiciel>
 ```
 
 Pour lister les snap installés : 
