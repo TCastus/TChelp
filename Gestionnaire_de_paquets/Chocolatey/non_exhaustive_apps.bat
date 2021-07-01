@@ -4,7 +4,7 @@ set /P IDE="Choisie si tu veux installer vscode, atom ou la suite JetBrains"
 
 IF "%IDE%" == "vscode" (
 	choco install vscode -y
-) ELSE IF "%IDE%" == "vscode" (
+) ELSE IF "%IDE%" == "jetbrains" (
 	choco install clion-ide -y
 	choco install pycharm-community -y
 	choco install intellijidea-community -y
@@ -13,7 +13,7 @@ IF "%IDE%" == "vscode" (
 ) ELSE IF "%IDE% == "atom"(
 	choco install atom -y
 )ELSE (
-	set /P IDE="Saisie invalid, taper vscode ou jetbrains"
+	set /P IDE="Saisie invalid, taper vscode, atom ou jetbrains"
 )
 
 choco install openconnect-gui -y

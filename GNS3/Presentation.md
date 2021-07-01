@@ -82,6 +82,8 @@ Un fois que tu as créé ton projet tu peux utiliser le panneau des équipements
 
 ## Ressources
 
+[Un tuto vidéo réalisé par Oana Iova](https://www.youtube.com/watch?v=Hc-3Uv9t8tE)
+
 Vous pouvez trouver un cours plus approfondi sur [OpenClassrooms](https://openclassrooms.com/fr/courses/2581701-simulez-des-architectures-reseaux-avec-gns3)
 
 [Le site de GNS3](https://www.gns3.com/)

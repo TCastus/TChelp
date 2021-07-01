@@ -27,9 +27,10 @@ Le but de ce projet est d'avoir des fiches d'aides pour les outils utilisés pen
 
 ### Gestionnaire de paquets
 
-> Pour installer rapidement et facilement des logiciels, utile sous Windows, indispensable sous linux
+> Pour installer rapidement et facilement des logiciels, utile sous Windows, indispensable sous Linux
 
 - [Windows Chocolatey](Gestionnaire_de_paquets/Chocolatey/Presentation.md)
+- [apt sur Ubuntu](Gestionnaire_de_paquets/Apt/Presentation.md)
 
 ### Les Editeurs de code
 

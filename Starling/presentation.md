@@ -17,3 +17,12 @@ L'installation est possible uniquement sur les distributions linux suivantes :
 - Debian 10 Buster amd64 with Gnome desktop
 
 Si votre distribution est l'une cité au-dessus, vous pouvez télécharger l'archive sur Moodle dans le cours TIP ou via le [repo GitHub du LIRIS ](https://github.com/liris-vision/starling/tree/tip) puis suivre les instructions dans le `install.txt`. Sinon, un lien pour télécharger un machine virtuel vous sera transmis par l'enseignant.
+
+## VM
+
+Le clavier par défaut dans la machine virtuelle Starling est QWERTY.
+Pour installer le clavier français, suivre les étapes 1 à 6 dans le document ci-joint :
+- aller dans ``Settings``, ``Region & Language``
+- dans ``Input Sources``, cliquer sur `+`
+- ajouter le langage ``French`` et le placer en 1ère positionen cliquant sur `^`
+- de retour sur le bureau, cliquer sur le sélecteur de langage,puis sur French.
