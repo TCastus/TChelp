@@ -45,6 +45,60 @@ Félicitations, vous avez une distribution Linux sous Windows !
 
 Notez que WSL est supporté nativement par le nouveau terminal développé en Open Source par Microsoft et vous permettra de lancer plusieurs distributions dans une seule application aux côtés de vos amis le cmd et le Powershell.
 
+# Et si je veux lancer des interfaces graphiques avec WSL ?
+
+WSL va bientot permettre via une mise à jour (WSLg) de lancer des interfaces graphiques en utilisant le kernel Linux. Cette mise à jour devrait arriver d'ici la fin d'année 2021 et va largement simplifier le lancement d'interfaces graphiques dans WSL.
+
+Malgré cela, il est déjà possible de lancer des logiciels Linux sous le format graphique via un serveur X. Cela est faisable seulement avec WSL2.
+
+Je préfère vous prévenir que la démarche n'est pas à 100% fonctionnel et qu'il est possible de rencontrer de nombreux bugs. Néanmoins, il vous sera possible d'installer des logiciels avec interfaces graphiques voire même des environnements de bureau comme xfce.
+
+Pour cela, il vous faudra installer un logiciel supplémentaire, comme VcXsrv ici.
+Il suffit donc de télécharger et d'installer le logiciel à ce [lien](https://sourceforge.net/projects/vcxsrv/)
+
+Ce serveur X sera utilisé comme un moniteur virtuel pour les interfaces lancées dans WSL.
+
+Ensuite, il vous suffit de lancer XLaunch dans notre cas.
+
+![Premier écran au lancement de XLaunch](./FirstStepXLaunch.png)
+Sur cet écran, vous pouvez choisir soit de lancer soit une grande fenêtre soit de multiples fenêtres.
+
+![Deuxième écran](./SecondStepXLaunch.png)
+Laissez les paramètres définis par défaut sur cet écran
+
+![Troisième écran](./LastStepXLaunch.png)
+Enfin, cochez "Disable access control" pour éviter les problèmes d'autorisation d'accès au moniteur. ATTENTION, cela rend le moniteur accessible seulement via une addresse IP, donc peu sécurisé.
+
+Selon ce que vous avez choisi au premier écran, soit rien n'apparait, soit une fenêtre noire.
+
+Maintenant, revenons à WSL. Lancez votre distribution et récupérez l'IP de l'host via la commande suivante :
+`cat /etc/resolv.conf`.
+
+![CAT](./catetc.png)
+Il faut ici récupérer l'addresse Nameserver et mettre à jour la variable d'environnement DISPLAY avec celle-ci :
+`export DISPLAY = [adresse IP]:0.0`
+, ce qui donne dans mon cas `export DISPLAY=172.18.208.1:0.0`.
+
+Il est l'heure de tester si tout fonctionne ! Pour cela, installez une interface graphique. Ici, je teste avec gvim, l'interface graphique de Vim. installez le via la commande :
+`sudo apt-get install gvim`
+
+Ensuite, avec le serveur X allumé, lancez la commande `gvim` et normalement, vous verrez apparaître la fenêtre de gvim dans la fenêtre XLaunch.
+
+![Gvim](./gvim.png)
+
+Et voilà, vous avez lancé un logiciel Linux avec interface graphique dans WSL. Notez qu'il peut y avoir des problèmes d'affichages, de son, etc.
+
+Si vous voulez expérimenter un petit peu, il est même possible de lancer un environnement de bureau comme xfce, ce qui donne ceci :
+![xfce](./xfce.png)
+## Les erreurs
+
+Si vous avez une erreur du type `cannot open display`, vérifiez la variable d'environnement DISPLAY ainsi que le Firewall de Windows qui peut bloquer la connexion au serveur X.
+
+Pour l'erreur `Authorization required, but no authorization protocol specified`, celle-ci vient de l'option `Disable access control`. Vous trouverez des solutions différentes sur Internet, n'hésitez pas à les tester si vous ne voulez pas activer cette option dans XLaunch.
+
+Si vous détectez d'autres erreurs qui bloquent le lancement, n'hésitez pas à laisser des issues sur TCHelp et à rechercher sur Internet, il y a pas mal d'utilisateurs et de docs (disponibles dans les ressources).
 
 # Ressources
 [https://docs.microsoft.com/en-us/windows/wsl/](https://docs.microsoft.com/en-us/windows/wsl/)
+[https://doc.ubuntu-fr.org/wsl#installer_un_serveur_x](https://doc.ubuntu-fr.org/wsl#installer_un_serveur_x)
+[]
