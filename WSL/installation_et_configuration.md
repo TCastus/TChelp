@@ -88,11 +88,11 @@ Ensuite, avec le serveur X allumé, lancez la commande `gvim` et normalement, vo
 
 Et voilà, vous avez lancé un logiciel Linux avec interface graphique dans WSL. Notez qu'il peut y avoir des problèmes d'affichages, de son, etc.
 
-Si vous voulez expérimenter un petit peu, il est même possible de lancer un environnement de bureau comme xfce, ce qui donne ceci :
+Si vous voulez expérimenter un petit peu, il est même possible de lancer un environnement de bureau comme xfce ([exemple de tutoriel](https://solarianprogrammer.com/2017/04/16/windows-susbsystem-for-linux-xfce-4/)), ce qui donne ceci :
 ![xfce](./xfce.png)
 ## Les erreurs
 
-Si vous avez une erreur du type `cannot open display`, vérifiez la variable d'environnement DISPLAY ainsi que le Firewall de Windows qui peut bloquer la connexion au serveur X.
+Si vous avez une erreur du type `cannot open display`, vérifiez la variable d'environnement DISPLAY ainsi que le Firewall de Windows qui peut bloquer la connexion au serveur X ([Problème du Firewall](https://stackoverflow.com/questions/61860208/wsl-2-run-graphical-linux-desktop-applications-from-windows-10-bash-shell-erro)).
 
 Pour l'erreur `Authorization required, but no authorization protocol specified`, celle-ci vient de l'option `Disable access control`. Vous trouverez des solutions différentes sur Internet, n'hésitez pas à les tester si vous ne voulez pas activer cette option dans XLaunch.
 
