@@ -60,13 +60,16 @@ Ce serveur X sera utilisé comme un moniteur virtuel pour les interfaces lancée
 
 Ensuite, il vous suffit de lancer XLaunch dans notre cas.
 
-![Premier écran au lancement de XLaunch](./FirstStepXLaunch.png)
+![Premier écran au lancement de XLaunch](img/FirstStepXLaunch.png)
+
 Sur cet écran, vous pouvez choisir soit de lancer soit une grande fenêtre soit de multiples fenêtres.
 
-![Deuxième écran](./SecondStepXLaunch.png)
+![Deuxième écran](img/SecondStepXLaunch.png)
+
 Laissez les paramètres définis par défaut sur cet écran
 
-![Troisième écran](./LastStepXLaunch.png)
+![Troisième écran](img/LastStepXLaunch.png)
+
 Enfin, cochez "Disable access control" pour éviter les problèmes d'autorisation d'accès au moniteur. ATTENTION, cela rend le moniteur accessible seulement via une addresse IP, donc peu sécurisé.
 
 Selon ce que vous avez choisi au premier écran, soit rien n'apparait, soit une fenêtre noire.
@@ -74,7 +77,8 @@ Selon ce que vous avez choisi au premier écran, soit rien n'apparait, soit une 
 Maintenant, revenons à WSL. Lancez votre distribution et récupérez l'IP de l'host via la commande suivante :
 `cat /etc/resolv.conf`.
 
-![CAT](./catetc.png)
+![CAT](img/catetc.png)
+
 Il faut ici récupérer l'addresse Nameserver et mettre à jour la variable d'environnement DISPLAY avec celle-ci :
 `export DISPLAY = [adresse IP]:0.0`
 , ce qui donne dans mon cas `export DISPLAY=172.18.208.1:0.0`.
@@ -84,12 +88,13 @@ Il est l'heure de tester si tout fonctionne ! Pour cela, installez une interface
 
 Ensuite, avec le serveur X allumé, lancez la commande `gvim` et normalement, vous verrez apparaître la fenêtre de gvim dans la fenêtre XLaunch.
 
-![Gvim](./gvim.png)
+![Gvim](img/gvim.png)
 
 Et voilà, vous avez lancé un logiciel Linux avec interface graphique dans WSL. Notez qu'il peut y avoir des problèmes d'affichages, de son, etc.
 
 Si vous voulez expérimenter un petit peu, il est même possible de lancer un environnement de bureau comme xfce ([exemple de tutoriel](https://solarianprogrammer.com/2017/04/16/windows-susbsystem-for-linux-xfce-4/)), ce qui donne ceci :
-![xfce](./xfce.png)
+![xfce](img/xfce.png)
+
 ## Les erreurs
 
 Si vous avez une erreur du type `cannot open display`, vérifiez la variable d'environnement DISPLAY ainsi que le Firewall de Windows qui peut bloquer la connexion au serveur X ([Problème du Firewall](https://stackoverflow.com/questions/61860208/wsl-2-run-graphical-linux-desktop-applications-from-windows-10-bash-shell-erro)).
