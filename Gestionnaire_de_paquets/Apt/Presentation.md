@@ -4,16 +4,12 @@
 
 Nous vous présentons ici 4 manières d'installer un logiciel. Vous pourrez être confrontés à toutes pendant votre scolarité, et elles ont toutes leurs avantages et leurs inconvénients.
 
-
-
-## Sommaire 
+## Sommaire
 
 - [apt](#apt), l'installateur par défaut
 - [snap](#snap), le concurrent
 - [Téléchargement direct](#Téléchargement direct), quand y'a pas le choix
 - [Compilation depuis la source](#Compilation depuis la source), quand c'est vraiment la galère
-
-
 
 ## apt
 
@@ -21,9 +17,9 @@ Nous vous présentons ici 4 manières d'installer un logiciel. Vous pourrez êtr
 
 Pour la culture, il encapsule un système de packaging appelé `dpkg` et lui donne un front-end plus simple pour aller chercher des paquets distants.
 
-Attention : Toutes les commandes présentées ici dont l'objectif est d'installer, mettre à jour ou supprimer un paquet doivent être précédées de `sudo`, pour obtenir les droits suffisants. Dans le cas où vous l'oublieriez, vous serez confrontés à une erreur du type : 
+Attention : Toutes les commandes présentées ici dont l'objectif est d'installer, mettre à jour ou supprimer un paquet doivent être précédées de `sudo`, pour obtenir les droits suffisants. Dans le cas où vous l'oublieriez, vous serez confrontés à une erreur du type :
 
-```
+```bash
 tc@tc:~$ apt install gimp
 E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
 E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
@@ -33,7 +29,7 @@ E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are y
 
 apt fonctionne sur un système de base de données locale de paquets, qui peut être mise à jour par rapport aux versions en ligne grâce à la commande :
 
-```
+```bash
 sudo apt update
 ```
 
@@ -45,19 +41,19 @@ Vous aurez parfois besoin d'ajouter des sources en plus de celles par défaut av
 
 Après la mise à jour de votre base locale, vous pouvez installer un ou plusieurs paquet(s) :
 
-```
+```bash
 sudo apt install <nom_du_paquet1> <nom_du_paquet_2>
 ```
 
 Vous ne connaissez pas le nom du paquet ? Google vous donnera probablement la réponse. Vous pouvez aussi rechercher sur la base de paquets locale avec la commande :
 
-```
+```bash
 apt search <terme_a_rechercher>
 ```
 
-Et pour avoir des informations plus précises sur un paquet particulier : 
+Et pour avoir des informations plus précises sur un paquet particulier :
 
-```
+```bash
 apt info <nom_du_paquet>
 ```
 
@@ -65,7 +61,7 @@ apt info <nom_du_paquet>
 
 Pour mettre à jour l'ensemble de vos paquets, lancez après la mise à jour de la base locale de vos paquets avec `update`:
 
-```
+```bash
 sudo apt upgrade
 ```
 
@@ -73,7 +69,7 @@ sudo apt upgrade
 
 Pour supprimer un package, utilisez la commande
 
-```
+```bash
 sudo apt remove <nom_du_paquet>
 ```
 
@@ -81,60 +77,56 @@ Vous pouvez ajouter l'argument `--purge` pour supprimer également les fichiers 
 
 Après une désinstallation, vous pouvez lancer `sudo apt autoremove` pour enlever les dépendances installées par le paquet que vous venez de supprimer et dont vous n'avez plus besoin.
 
-
-
 ## snap
 
 snap est un gestionnaire de paquets très utilisé, qui vise à corriger et à uniformiser le monde complexe des gestionnaires de paquets Linux. Il peut fonctionner avec apt, et fournit parfois des versions plus à jour de certains logiciels.
 
-Remarque personnelle : j'essaye d'utiliser `snap` le moins possible, parce qu'il pose aujourd'hui pas mal de problèmes. Il est tout de même incontournable pour certains logiciels comme le moteur chromium, [qui n'est plus disponible que sur snap](https://linuxize.com/post/how-to-install-chromium-web-browser-on-ubuntu-20-04/)
+Remarque personnelle : j'essaye d'utiliser `snap` le moins possible, parce qu'il pose aujourd’hui pas mal de problèmes. Il est tout de même incontournable pour certains logiciels comme le moteur chromium, [qui n'est plus disponible que sur snap](https://linuxize.com/post/how-to-install-chromium-web-browser-on-ubuntu-20-04/)
 
-Pour installer snap, utilisez apt : 
+Pour installer snap, utilisez apt :
 
-```
+```bash
 sudo apt install snapd
 ```
 
 Pour installer un paquet snap :
 
-```
+```bash
 sudo snap install <logiciel>
 ```
 
-Pour supprimer un paquet snap : 
+Pour supprimer un paquet snap :
 
-```
+```bash
 sudo snap remove <logiciel>
 ```
 
-Pour lister les snap installés : 
+Pour lister les snap installés :
 
-```
+```bash
 sudo snap list
 ```
-
-
 
 ## Téléchargement direct
 
 Parfois il n'y a pas le choix, certains éditeurs ne diffusent pas leur logiciel sur les gestionnaires de paquets, et vous proposent un téléchargement sur leur site. Vous vous retrouver avec un zip, plein de fichiers aux noms bizarres, que faire ??
 
-Les utilisateurs linux ne sont pas choyés, et doivent souvent se débrouiller pour trouver comment lancer ce logiciel. Vous avez plusieurs cas de figure : 
+Les utilisateurs Linux ne sont pas choyés, et doivent souvent se débrouiller pour trouver comment lancer ce logiciel. Vous avez plusieurs cas de figure :
 
-### Application en `.AppImage` 
+### Application en `.AppImage`
 
 C'est le plus simple. Donnez les droits d'exécution sur le fichier puis lancez-le :
 
-```
+```bash
 sudo chmod +x <fichier>.AppImage
 ./<fichier>.AppImage
 ```
 
 ### Application en .deb
 
-Les `.deb` peuvent être gérés par le gestionnaire de paquet interne dpkg simplement : 
+Les `.deb` peuvent être gérés par le gestionnaire de paquet interne dpkg simplement :
 
-```
+```bash
 sudo dpkg -i <fichier>.dev
 ```
 
@@ -145,8 +137,6 @@ Si un message d'erreur s'affiche disant qu'il manque des dépendances, vous pouv
 Pas de panique. Un fichier binaire se trouve quelque part dans le tas, il suffit de l'identifier. Chercher un fichier exécutable sans extension, souvent du même nom que l'application, à la racine ou dans un dossier `./bin`
 
 Ensuite, donnez les droits d'exécution sur ce fichier avec `sudo chmod +x <fichier>` et exécutez-le.
-
-
 
 ## Compilation depuis la source
 
