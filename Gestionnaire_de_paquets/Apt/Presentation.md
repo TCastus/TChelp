@@ -1,3 +1,5 @@
+:house: [**Retour au menu principal**](/TChelp)
+
 # Installation de logiciels sur Linux (Debian-based)
 
 À la différence d'OS comme Windows ou OSX, l'installation de logiciels et de librairies sur Linux se fait principalement grâce à des gestionnaires de paquets. Quelques interfaces existent pour éviter d'utiliser la ligne de commande, mais il est déconseillé passé un certain stade d'apprentissage de les utiliser, car ils ne couvrent pas l'ensemble des cas d'utilisation auxquels vous pourrez être confrontés. Nous allons apprendre ici les différentes manières d'installer de manière générale un logiciel sur une distribution de Linux basée sur Debian, comme Ubuntu (et ses variantes), Linux Mint, PopOS, ElementaryOS...
