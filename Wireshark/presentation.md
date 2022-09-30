@@ -2,8 +2,8 @@
 
 # Présentation de Wireshark
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wireshark_icon.svg/langfr-440px-Wireshark_icon.svg.png)
->  © Icône officielle de l'application
+![Wireshark icon](https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wireshark_icon.svg/langfr-440px-Wireshark_icon.svg.png)
+> © Icône officielle de l'application
 
 ## Qu'est ce que Wireshark
 
@@ -21,7 +21,7 @@ Vous pouvez aussi utilisé un gestionnaire de paquet
 Je vous recommande de lancer Wireshark en mode administrateur sous windows ou en sudo sous Unix.
 
 Vous arrivez normalement sur cette page :
-![](img/acceuil.png)
+![accueil](img/acceuil.png)
 
 Avec:  
 
@@ -29,17 +29,15 @@ Avec:
 - En noir, <span style="color:black">les captures récemment ouverte</span>
 - En orange, <span style="color:orange">les interfaces disponible sur votre PC </span>
 
-
-
 ### Lancer une capture
 
-Cliquez sur le bouton bleu ![](img/capture.png) et vous pourrez voir cette interface ![](img/captureInt.png)
+Cliquez sur le bouton bleu ![capture](img/capture.png) et vous pourrez voir cette interface ![captureInt](img/captureInt.png)
 
 Avec au centre de l'interface, la description des paquets enregistrés.
 
 ### Suivre un steam
 
 Faites un clic gauche sur un paquet, puis sur 'Steam' et suivez le stream
-![](img/streamMenu.png)
+![streamMenu](img/streamMenu.png)
 
-Cela va ouvrir une fenêtre comme celle-ci. Ici c'est illisible car la communication est chiffré mais il existe des moyen de déchiffrer. ![](img/stream.png)
+Cela va ouvrir une fenêtre comme celle-ci. Ici c'est illisible car la communication est chiffré mais il existe des moyen de déchiffrer. ![stream](img/stream.png)

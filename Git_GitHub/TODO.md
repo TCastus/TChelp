@@ -1,6 +1,0 @@
-- Commande de base
-- Règles de bonne pratique : 
-  - Mot de passe
-- Gestion des issues
-- Gestion des projets
-- Organisations pour les projets WEB et PIR

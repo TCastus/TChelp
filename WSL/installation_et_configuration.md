@@ -6,11 +6,10 @@ WSL (Windows Subsystem for Linux) est une fonctionnalité disponible sous Window
 
 WSL prend donc la forme d'un terminal de la distribution Linux choisi par l'utilisateur.
 
-
-
 # Installation de WSL
 
 L'Installation se fait en deux temps :
+
 - Activer la fonctionnalité Windows Subsystem for Linux
 - Installation de la distribution Linux
 
@@ -32,11 +31,10 @@ Vous pouvez aussi réaliser cette action en allant dans "Activer ou désactiver 
 
 Ensuite, il vous faudra télécharger et installer le package de mise à jour Linux Kernel disponible [ici](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi).
 
-Maintenant, vous possédez WSL1 et WSL2. Pour passer WSL2 en tant que version par défaut, executez cette commande dans le Powershell:
+Maintenant, vous possédez WSL1 et WSL2. Pour passer WSL2 en tant que version par défaut, exécutez cette commande dans le Powershell:
 `wsl --set-default-version 2`
 
 Ca y est, WSL2 est correctement installé sur votre machine et est prêt à l'emploi, il ne suffit plus que d'installer une distribution Linux.
-
 
 # Installation de la distribution Linux sous WSL (1 et 2)
 
@@ -47,7 +45,7 @@ Notez que WSL est supporté nativement par le nouveau terminal développé en Op
 
 # Et si je veux lancer des interfaces graphiques avec WSL ?
 
-WSL va bientot permettre via une mise à jour (WSLg) de lancer des interfaces graphiques en utilisant le kernel Linux. Cette mise à jour devrait arriver d'ici la fin d'année 2021 et va largement simplifier le lancement d'interfaces graphiques dans WSL.
+WSL va bientôt permettre via une mise à jour (WSLg) de lancer des interfaces graphiques en utilisant le kernel Linux. Cette mise à jour devrait arriver d'ici la fin d'année 2021 et va largement simplifier le lancement d'interfaces graphiques dans WSL.
 
 Malgré cela, il est déjà possible de lancer des logiciels Linux sous le format graphique via un serveur X. Cela est faisable seulement avec WSL2.
 
@@ -70,16 +68,16 @@ Laissez les paramètres définis par défaut sur cet écran
 
 ![Troisième écran](img/LastStepXLaunch.png)
 
-Enfin, cochez "Disable access control" pour éviter les problèmes d'autorisation d'accès au moniteur. ATTENTION, cela rend le moniteur accessible seulement via une addresse IP, donc peu sécurisé.
+Enfin, cochez "Disable access control" pour éviter les problèmes d'autorisation d'accès au moniteur. ATTENTION, cela rend le moniteur accessible seulement via une adresse IP, donc peu sécurisé.
 
-Selon ce que vous avez choisi au premier écran, soit rien n'apparait, soit une fenêtre noire.
+Selon ce que vous avez choisi au premier écran, soit rien n’apparaît, soit une fenêtre noire.
 
 Maintenant, revenons à WSL. Lancez votre distribution et récupérez l'IP de l'host via la commande suivante :
 `cat /etc/resolv.conf`.
 
 ![CAT](img/catetc.png)
 
-Il faut ici récupérer l'addresse Nameserver et mettre à jour la variable d'environnement DISPLAY avec celle-ci :
+Il faut ici récupérer l’adresse Nameserver et mettre à jour la variable d'environnement DISPLAY avec celle-ci :
 `export DISPLAY = [adresse IP]:0.0`
 , ce qui donne dans mon cas `export DISPLAY=172.18.208.1:0.0`.
 
@@ -104,6 +102,7 @@ Pour l'erreur `Authorization required, but no authorization protocol specified`,
 Si vous détectez d'autres erreurs qui bloquent le lancement, n'hésitez pas à laisser des issues sur TCHelp et à rechercher sur Internet, il y a pas mal d'utilisateurs et de docs (disponibles dans les ressources).
 
 # Ressources
+
 [https://docs.microsoft.com/en-us/windows/wsl/](https://docs.microsoft.com/en-us/windows/wsl/)
 [https://doc.ubuntu-fr.org/wsl#installer_un_serveur_x](https://doc.ubuntu-fr.org/wsl#installer_un_serveur_x)
 []
