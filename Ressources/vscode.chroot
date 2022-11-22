@@ -1,0 +1,10 @@
+#!/bin/sh
+echo "INFO: Récupération vscode"
+echo ""
+wget https://code.visualstudio.com/sha/download\?build\=stable\&os\=linux-deb-x64 -O ./code.deb
+echo "INFO: installation vscode"
+dpkg -i ./code.deb
+echo "INFO: nettoyage vscode"
+rm ./code.deb
+
+
