@@ -30,6 +30,8 @@ Sous unix l'instruction : `dd if=./debian-live-11.5.0-amd64-cinnamon+nonfree.iso
   - bs = 10M : est un paramètre important qui peut faire varier votre vitesse de transfert sur votre clé de 0,2MB/s à 200MB/s. Ce qui, pour 4GB vous fera passer de 1h à 3 min. La bonne valeur n'est pas claire. Il faut essayer entre 2m et 10m ca devrait être pas mal.  
   - status : pour avoir une barre de progression. Attention sur MacOS l'option n'existe pas, il faut faire des CTRL-T dans la fenêtre pour voir la progression
 
+*remarque* : Pensez à faire un sync;sync sous linux pour être sur que votre clé soit bien écrite.
+
 - 3 démarrer votre machine sur la clé USB
 Démarrer une machine sur une clé USB peut dans certains cas ne pas fonctionner pour des raisons matérielles, mais cela est maintenant très rare. Il faut configurer son BIOS (le truc qu'on ne démarrage jamais quand la machine se lance en appuyant sur ESC, F2, F10 ou Supp). Le BIOS est une application qui défini le comportement de votre machine avant l'installation d'un système d'exploitation. Vous pouvez manipuler quelques paramètres de gestion matériel et par exemple paramétrer la manière dont les systèmes de démarrage seront recherchés sur votre machine. La plupart du temps le BIOS est configuré pour chercher votre sur votre disque dur (HDD) un emplacement à partir duquel on trouvera un gestionnaire de démarrage (bootloader). Vous devez changer cette configuration pour lui indiquer de recherche un bootloader sur les périphérique de stockage accessibles sur les ports USB. 
 Si vous arrivez à modifier votre BIOS de cette manière, vous pouvez alors démarre votre live cd inscrit sur la clé USB. S'il ne trouve rien sur la clé, pas de panique, il démarrera ce qu'il trouve sur votre disque dur.
@@ -127,3 +129,5 @@ Pour tester l'installation vous pouvez :
 `mount -o loop ./live...iso /mnt`
 2. monter le sqashfs du système de fichier de la clé pour voir les fichier accessibles. 
 `mount -o loop /mnt/live/xxxx.squashfs /mnt/files` par exemple. Vous verrez normalement l'arborescence de votre os (/usr/ /dev /bin /boot).
+
+Ref : https://arpinux.developpez.com/construire-un-live-debian/
