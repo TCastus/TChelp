@@ -1,14 +1,18 @@
-lb config --bootappend-live "boot=live locales=fr_FR.UTF-8 keyboard-layouts=fr persistence" \
-          --mode debian \ 
-          --system live \
-          --distribution bullseye \
-          --archive-areas "main contrib non-free" \
-          --binary-images iso-hybrid
+lb config --bootappend-live "boot=live locales=fr_FR.UTF-8 keyboard-layouts=fr persistence" --mode debian --system live --distribution bullseye --archive-areas "main contrib non-free" --binary-images iso-hybrid
 
 echo task-cinnamon-desktop > config/package-lists/desktop.list.chroot
+echo htop >> config/package-lists/desktop.list.chroot
 echo gnuradio >> config/package-lists/desktop.list.chroot
 echo arduino >> config/package-lists/desktop.list.chroot
+echo gr-osmosdr >> config/package-lists/desktop.list.chroot
 echo dublin-traceroute >> config/package-lists/desktop.list.chroot
 echo wget >> config/package-lists/desktop.list.chroot
+echo htop >> config/package-lists/desktop.list.chroot
+echo kbd >> config/package-lists/desktop.list.chroot
+echo console-data  >> config/package-lists/desktop.list.chroot
 
 cp ../vscode.chroot config/hooks/live/
+
+mkdir -p config/includes.chroot_after_packages/etc/skel
+cp ../net/ca.pem ../net/*.sh config/includes.chroot_after_packages/etc/skel/
+cp ../gnuradio/* config/includes.chroot_after_packages/etc/skel/
