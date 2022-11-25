@@ -131,3 +131,4 @@ Pour tester l'installation vous pouvez :
 `mount -o loop /mnt/live/xxxx.squashfs /mnt/files` par exemple. Vous verrez normalement l'arborescence de votre os (/usr/ /dev /bin /boot).
 
 Ref : https://arpinux.developpez.com/construire-un-live-debian/
+Ref : Live Cd TC : https://tc-net2.insa-lyon.fr/iso/
