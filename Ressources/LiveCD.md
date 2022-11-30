@@ -1,3 +1,4 @@
+:house: [**Retour au menu principal**](/TChelp)
 # Utilisation d'un live-cd au département
 
 ## Dis papa c'est quoi un live-cd ?
