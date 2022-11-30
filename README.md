@@ -62,4 +62,4 @@ N'hésitez pas à contribuer en faisant des pull requests :smiley:.
 ### Des ressources
 
 - [Logiciels a installer](Ressources/Logiciels.md)
-- [Live CD à fabriquer](Ressources/LiveCD.md)
+- [Live CD à fabriquer](Ressources/LiveCD/LiveCD.md)
