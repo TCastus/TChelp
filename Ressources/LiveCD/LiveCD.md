@@ -104,4 +104,4 @@ A la fin du démarrage, un appel à `mount` devrait vous indiquer que la partiti
 
 Deux derniers points. Si votre machine est faible en mémoire < 4Go, vous pouvez également créer une partition de swap sur l'espace restant. Vous pouvez également créer une partition d'échange avec d'autres systèmes. Dans ce cas, il faut repartir de cfdisk et tagguer la partition de type `Extended Fat (Win95, type b)`, et formatter cette dernière en vfat. `mkfs.vat /dev/sdyyyy`.  Si vous désirez créer une partition `vfat` et une partition de swap en plus des 3 partitions initiales, il faudra passer par une 4e partition dite étendue dans laquelle vous créerez les deux partitions. La limite de 4 partitions primaires est là pour des questions historiques d'architecture i386.
 
-Pour en savoir plus sur le live-build. [LiveCD-Details.md]
+Pour en savoir plus sur le live-build. [LiveCD-Details](LiveCD-Details.md)
