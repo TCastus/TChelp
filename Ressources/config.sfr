@@ -1,16 +1,20 @@
-lb config --bootappend-live "boot=live locales=fr_FR.UTF-8 keyboard-layouts=fr persistence" --mode debian --system live --distribution bullseye --archive-areas "main contrib non-free" --binary-images iso-hybrid
+lb config --bootappend-live "boot=live locales=fr_FR.UTF-8 keyboard-layouts=fr" --mode debian --system live --distribution bookworm --archive-areas "main contrib non-free non-free-firmware" --binary-images iso-hybrid
 
 echo task-cinnamon-desktop > config/package-lists/desktop.list.chroot
 echo htop >> config/package-lists/desktop.list.chroot
 echo gnuradio >> config/package-lists/desktop.list.chroot
 echo gr-osmosdr >> config/package-lists/desktop.list.chroot
+echo rtl-sdr >> config/package-lists/desktop.list.chroot
 echo dublin-traceroute >> config/package-lists/desktop.list.chroot
+echo git >> config/package-lists/desktop.list.chroot
 echo wget >> config/package-lists/desktop.list.chroot
 echo htop >> config/package-lists/desktop.list.chroot
 echo kbd >> config/package-lists/desktop.list.chroot
 echo console-data  >> config/package-lists/desktop.list.chroot
 
 # Tanguy
+echo minicom >> config/package-lists/desktop.list.chroot
+echo mspdebug >> config/package-lists/desktop.list.chroot
 echo gdb  >> config/package-lists/desktop.list.chroot
 echo valgrind  >> config/package-lists/desktop.list.chroot
 echo ddd  >> config/package-lists/desktop.list.chroot
@@ -19,10 +23,22 @@ mkdir -p config/includes.chroot_before_packages/etc/udev/rules.d
 cp ../tang/00-teensy.rules config/includes.chroot_before_packages/etc/udev/rules.d
 cp ../tang/arduino-teensy.chroot config/hooks/live/
 
-
 cp ../vscode.chroot config/hooks/live/
 
-# eduroam
+# chrome
+echo libu2f-udev >> config/package-lists/desktop.list.chroot
+cp ../chrome.chroot config/hooks/live/
+
+# eduroam 
 mkdir -p config/includes.chroot_after_packages/etc/skel
 cp ../net/ca.pem ../net/*.sh config/includes.chroot_after_packages/etc/skel/
+
+# vpn
+echo openconnect >> config/package-lists/desktop.list.chroot
+cp ../openconnect.chroot config/hooks/live/
+
+# gnuradio
 cp ../gnuradio/* config/includes.chroot_after_packages/etc/skel/
+
+
+
