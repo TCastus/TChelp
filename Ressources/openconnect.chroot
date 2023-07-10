@@ -1,1 +1,1 @@
-echo "alias vpn='sudo openconnect sslvpn.cisr.fr -u sfrenot@insa-lyon.fr --authgroup=INSA'" >> /etc/skel/.bashrc
+echo "alias vpn='sudo openconnect sslvpn.cisr.fr -u xxx@insa-lyon.fr --authgroup=INSA'" >> /etc/skel/.bashrc

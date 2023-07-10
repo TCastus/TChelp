@@ -22,6 +22,7 @@ echo ddd  >> config/package-lists/desktop.list.chroot
 mkdir -p config/includes.chroot_before_packages/etc/udev/rules.d
 cp ../tang/00-teensy.rules config/includes.chroot_before_packages/etc/udev/rules.d
 cp ../tang/arduino-teensy.chroot config/hooks/live/
+cp ../tang/msp430-gcc.chroot config/hooks/live/
 
 cp ../vscode.chroot config/hooks/live/
 
@@ -37,8 +38,15 @@ cp ../net/ca.pem ../net/*.sh config/includes.chroot_after_packages/etc/skel/
 echo openconnect >> config/package-lists/desktop.list.chroot
 cp ../openconnect.chroot config/hooks/live/
 
+# vmware
+cp ../vmware.chroot config/hooks/live/
+mkdir -p config/includes.chroot_after_packages/etc/skel/.vmware
+cp ../vmware.conf/view-preferences config/includes.chroot_after_packages/etc/skel/.vmware/
+
 # gnuradio
 cp ../gnuradio/* config/includes.chroot_after_packages/etc/skel/
 
-
+# matlab
+cp ../matlab/matlab_R2023a_glnxa64.zip config/includes.chroot_before_packages/opt/
+cp ../matlab/matlabInstall.readme config/includes.chroot_after_packages/etc/skel/
 
