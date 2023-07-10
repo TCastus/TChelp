@@ -5,6 +5,7 @@ wget https://download3.vmware.com/software/CART24FQ1_LIN64_2303/VMware-Horizon-C
 chmod +x ./VMware-Horizon-Client-2303-8.9.0-21435420.x64.bundle
 
 echo "INFO: Installation VMware Horizon"
+echo "from : https://docs.vmware.com/en/VMware-Horizon-Client-for-Linux/5.5/horizon-client-linux-installation/GUID-A5A6332F-1DEC-4D77-BD6E-1362596A2E76.html"
 TERM=dumb ./VMware-Horizon-Client-2303-8.9.0-21435420.x64.bundle --console \
 --set-setting vmware-horizon-usb usbEnable no \
 --set-setting vmware-horizon-smartcard smartcardEnable no \
