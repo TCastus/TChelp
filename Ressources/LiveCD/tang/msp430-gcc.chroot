@@ -1,0 +1,16 @@
+#!/bin/sh
+# Site de référence ti - msp430-gcc-opensource
+mkdir -p /opt/msp430
+
+echo "INFO : Récupération msp430-gcc"
+echo ""
+wget https://dr-download.ti.com/software-development/ide-configuration-compiler-or-debugger/MD-LlCjWuAbzH/9.3.1.2/msp430-gcc-9.3.1.11_linux64.tar.bz2
+tar xvf ./msp430-gcc-9.3.1.11_linux64.tar.bz2 -C /opt/msp430
+rm ./msp430-gcc-9.3.1.11_linux64.tar.bz2
+
+echo "INFO : Récupération Headers"
+echo ""
+wget https://dr-download.ti.com/software-development/ide-configuration-compiler-or-debugger/MD-LlCjWuAbzH/9.3.1.2/msp430-gcc-support-files-1.212.zip
+unzip msp430-gcc-support-files-1.212.zip -d /opt/msp430
+rm ./msp430-gcc-support-files-1.212.zip
+

@@ -1,0 +1,7 @@
+view.allowBlastProxy = 'FALSE'
+view.defaultBroker = 'bv.insa-lyon.fr'
+view.deviceID = 'DC:53:60:DE:E5:CC'
+view.enableBlastCodec = 'TRUE'
+view.enableH264 = 'FALSE'
+view.enableH264YUV444 = 'FALSE'
+view.enableHEVC = 'TRUE'
