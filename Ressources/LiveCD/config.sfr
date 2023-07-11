@@ -47,6 +47,7 @@ cp ../vmware.conf/view-preferences config/includes.chroot_after_packages/etc/ske
 cp ../gnuradio/* config/includes.chroot_after_packages/etc/skel/
 
 # matlab
-cp ../matlab/matlab_R2023a_glnxa64.zip config/includes.chroot_before_packages/opt/
+mkdir -p config/includes.chroot_before_packages/opt/matlab/
+cp ../matlab/matlab_R2023a_glnxa64.zip config/includes.chroot_before_packages/opt/matlab/
 cp ../matlab/matlabInstall.readme config/includes.chroot_after_packages/etc/skel/
 
