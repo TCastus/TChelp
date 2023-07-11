@@ -1,0 +1,21 @@
+#!/bin/sh
+echo "INFO: Récuperation VMware Horizon"
+echo ""
+wget https://download3.vmware.com/software/CART24FQ1_LIN64_2303/VMware-Horizon-Client-2303-8.9.0-21435420.x64.bundle
+chmod +x ./VMware-Horizon-Client-2303-8.9.0-21435420.x64.bundle
+
+echo "INFO: Installation VMware Horizon"
+TERM=dumb ./VMware-Horizon-Client-2303-8.9.0-21435420.x64.bundle --console \
+--set-setting vmware-horizon-html5mmr html5mmrEnable no \
+--set-setting vmware-horizon-integrated-printing vmipEnable no \
+--set-setting vmware-horizon-usb usbEnable no \
+--set-setting vmware-horizon-smartcard smartcardEnable no \
+--set-setting vmware-horizon-rtav rtavEnable no \
+--set-setting vmware-horizon-tsdr tsdrEnable no \
+--set-setting vmware-horizon-scannerclient scannerEnable no \
+--set-setting vmware-horizon-serialportclient serialportEnable no \
+--set-setting vmware-horizon-mmr mmrEnable no \
+--set-setting vmware-horizon-media-provider mediaproviderEnable no
+
+echo "INFO: Suppression VMware Horizon installeur"
+rm ./VMware-Horizon-Client-2303-8.9.0-21435420.x64.bundle
