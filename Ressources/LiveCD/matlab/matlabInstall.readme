@@ -3,5 +3,30 @@ https://fr.mathworks.com/downloads/web_downloads
 ->  matlab_R2023a_glnxa64.zip
 
 Procédure d'installation de matlab a partir de la clé usb
+- Créez votre espace licence sur http://mathworks.com. Votre login sera demandé au lancement de l'installeur
+- Lancer le réseau : ./demarrage-eduroam  
+- Devenez propriétaire du répertoire /opt : sudo chown user /opt
+- Créer une partition sur un disque dur ou un autre disque usb pour accueillir l'installation de matlab
+- Deziper l'installeur de matlab fourni (2023a)
+    cd /opt/matlab
+    unzip matlab_xxx
+- Lancer l'installeur :
+   - Pour les modules à installer : Simulink, Communication toolbox, Signal Processing Toolbox, DSP toolbox, Matlab Coder, Matlab Compiler
+ 
+- Simulink plante sur les installation de debian réalisées. Pour corriger cela :
+ Tester en appelant l'application
+     xxx/MATLAB/bin/glnxa64/MATLABWindow
+     ---> Erreur sur FT_Get_Transform pour libharfbuzz.so
+     ----> Pour corriger il faut cacher les librairie freetype fournies dans matlab. 
+    cd xxx/MATLAB/bin/glnxa64
+    mkdir exclude
+    mv libfreetype.* exlude
+  Retester l'application
+
+--> Simulink doit fonctionner maintenant
+ 
+
+
+
 
 
