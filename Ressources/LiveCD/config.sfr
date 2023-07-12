@@ -22,7 +22,10 @@ echo ddd  >> config/package-lists/desktop.list.chroot
 mkdir -p config/includes.chroot_before_packages/etc/udev/rules.d
 cp ../tang/00-teensy.rules config/includes.chroot_before_packages/etc/udev/rules.d
 cp ../tang/arduino-teensy.chroot config/hooks/live/
+
+# msp430
 cp ../tang/msp430-gcc.chroot config/hooks/live/
+cp ../tang/msp430.env.sh config/includes.chroot_after_packages/etc/skel
 
 cp ../vscode.chroot config/hooks/live/
 
