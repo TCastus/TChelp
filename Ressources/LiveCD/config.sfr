@@ -52,5 +52,8 @@ cp ../gnuradio/* config/includes.chroot_after_packages/etc/skel/
 # matlab
 mkdir -p config/includes.chroot_before_packages/opt/matlab/
 cp ../matlab/matlab_R2023a_glnxa64.zip config/includes.chroot_before_packages/opt/matlab/
-cp ../matlab/matlabInstall.readme config/includes.chroot_after_packages/etc/skel/
+
+# Procédure d'installation
+
+cp ../ProceduresInstallation.Readme config/includes.chroot_after_packages/etc/skel/
 
