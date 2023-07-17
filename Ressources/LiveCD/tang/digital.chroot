@@ -1,0 +1,4 @@
+#!/bin/sh
+wget https://github.com/hneemann/Digital/releases/latest/download/Digital.zip
+unzip ./Digital.zip -d /opt
+rm Digital.zip
