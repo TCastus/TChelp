@@ -18,7 +18,7 @@ echo mspdebug >> config/package-lists/desktop.list.chroot
 echo gdb  >> config/package-lists/desktop.list.chroot
 echo valgrind  >> config/package-lists/desktop.list.chroot
 echo ddd  >> config/package-lists/desktop.list.chroot
-echo default-jre  >> config/package-lists/desktop.list.chroot
+echo openjdk-17-jdk  >> config/package-lists/desktop.list.chroot
 #echo arduino >> config/package-lists/desktop.list.chroot
 mkdir -p config/includes.chroot_before_packages/etc/udev/rules.d
 cp ../tang/00-teensy.rules config/includes.chroot_before_packages/etc/udev/rules.d
