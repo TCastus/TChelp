@@ -313,3 +313,4 @@ Github peut être remplacé par quelques alternatives comme GitLab, ou vous pouv
 # Ressources
 
 <http://etnbrd.github.io/git-cheatsheet/>
+<https://youtu.be/hxH_jonzJ18?si=5mI8UkqQB-SW95ux>
