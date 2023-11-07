@@ -1,6 +1,7 @@
 lb config --bootappend-live "boot=live locales=fr_FR.UTF-8 keyboard-layouts=fr" --mode debian --system live --distribution bookworm --archive-areas "main contrib non-free non-free-firmware" --binary-images iso-hybrid
 
 echo task-cinnamon-desktop > config/package-lists/desktop.list.chroot
+echo wireless-tools >> config/package-lists/desktop.list.chroot
 echo htop >> config/package-lists/desktop.list.chroot
 echo gnuradio >> config/package-lists/desktop.list.chroot
 echo gr-osmosdr >> config/package-lists/desktop.list.chroot
