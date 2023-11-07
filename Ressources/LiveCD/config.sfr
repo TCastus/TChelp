@@ -5,12 +5,13 @@ echo htop >> config/package-lists/desktop.list.chroot
 echo gnuradio >> config/package-lists/desktop.list.chroot
 echo gr-osmosdr >> config/package-lists/desktop.list.chroot
 echo rtl-sdr >> config/package-lists/desktop.list.chroot
-echo dublin-traceroute >> config/package-lists/desktop.list.chroot
 echo git >> config/package-lists/desktop.list.chroot
 echo wget >> config/package-lists/desktop.list.chroot
-echo htop >> config/package-lists/desktop.list.chroot
 echo kbd >> config/package-lists/desktop.list.chroot
 echo console-data  >> config/package-lists/desktop.list.chroot
+
+# java
+echo openjdk-17-jdk >> config/package-lists/desktop.list.chroot
 
 # Tanguy
 echo minicom >> config/package-lists/desktop.list.chroot
@@ -18,23 +19,25 @@ echo mspdebug >> config/package-lists/desktop.list.chroot
 echo gdb  >> config/package-lists/desktop.list.chroot
 echo valgrind  >> config/package-lists/desktop.list.chroot
 echo ddd  >> config/package-lists/desktop.list.chroot
-echo openjdk-17-jdk  >> config/package-lists/desktop.list.chroot
 #echo arduino >> config/package-lists/desktop.list.chroot
 mkdir -p config/includes.chroot_before_packages/etc/udev/rules.d
 cp ../tang/00-teensy.rules config/includes.chroot_before_packages/etc/udev/rules.d
 cp ../tang/arduino-teensy.chroot config/hooks/live/
-
-# digital
-cp ../tang/digital.chroot config/hooks/live
-
-# msp430
 cp ../tang/msp430-gcc.chroot config/hooks/live/
-cp ../tang/msp430.env.sh config/includes.chroot_after_packages/etc/skel
+cp ../tang/digital.chroot config/hooks/live
 
 cp ../vscode.chroot config/hooks/live/
 
+# net
+echo wireshark >> config/package-lists/desktop.list.chroot
+echo mtr >> config/package-lists/desktop.list.chroot
+echo inetutils-traceroute >> config/package-lists/desktop.list.chroot
+echo dublin-traceroute >> config/package-lists/desktop.list.chroot
+
 # chrome
 echo libu2f-udev >> config/package-lists/desktop.list.chroot
+echo fonts-liberation >> config/package-lists/desktop.list.chroot
+echo xdg-utils >> config/package-lists/desktop.list.chroot
 cp ../chrome.chroot config/hooks/live/
 
 # eduroam 
@@ -56,8 +59,9 @@ cp ../gnuradio/* config/includes.chroot_after_packages/etc/skel/
 # matlab
 mkdir -p config/includes.chroot_before_packages/opt/matlab/
 cp ../matlab/matlab_R2023a_glnxa64.zip config/includes.chroot_before_packages/opt/matlab/
+cp ../ProceduresInstallation.Readme config/includes.chroot_after_packages/etc/skel/
 
-# Procédure d'installation
-
-cp ../Procedures.Readme config/includes.chroot_after_packages/etc/skel/
+# gns3
+echo virtualenv >> config/package-lists/desktop.list.chroot
+cp ../gns3.chroot config/hooks/live/
 

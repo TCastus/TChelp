@@ -1,0 +1,7 @@
+#!/bin/bash
+
+virtualenv -p python3.11 /opt/GNS3
+source /opt/GNS3/bin/activate
+pip3 install -U gns3-gui gns3-server PyQt5
+
+echo "export PATH=$PATH:/opt/GNS3/bin" >> /etc/skel/.bashrc
