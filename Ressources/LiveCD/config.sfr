@@ -27,12 +27,13 @@ cp ../tang/arduino-teensy.chroot config/hooks/live/
 cp ../tang/msp430-gcc.chroot config/hooks/live/
 cp ../tang/digital.chroot config/hooks/live
 
+# Code
 cp ../vscode.chroot config/hooks/live/
 
 # net
-echo wireshark >> config/package-lists/desktop.list.chroot
-echo mtr >> config/package-lists/desktop.list.chroot
-echo inetutils-traceroute >> config/package-lists/desktop.list.chroot
+echo wireshark  >> config/package-lists/desktop.list.chroot
+echo mtr  >> config/package-lists/desktop.list.chroot
+echo inetutils-traceroute  >> config/package-lists/desktop.list.chroot
 echo dublin-traceroute >> config/package-lists/desktop.list.chroot
 
 # chrome
@@ -65,4 +66,13 @@ cp ../ProceduresInstallation.Readme config/includes.chroot_after_packages/etc/sk
 # gns3
 echo virtualenv >> config/package-lists/desktop.list.chroot
 cp ../gns3.chroot config/hooks/live/
+echo pcaputils >> config/package-lists/desktop.list.chroot
+echo libpcap-dev >> config/package-lists/desktop.list.chroot
+echo libelf-dev >> config/package-lists/desktop.list.chroot
+echo cmake >> config/package-lists/desktop.list.chroot
+echo telnet >> config/package-lists/desktop.list.chroot
+echo xdotool >> config/package-lists/desktop.list.chroot
+mkdir -p config/includes.chroot_before_packages/opt/gns3-images/
+cp ../gns3-images/c7200-advipservicesk9-mz.152-4.S5.image config/includes.chroot_before_packages/opt/gns3-images/
+
 

@@ -4,4 +4,27 @@ virtualenv -p python3.11 /opt/GNS3
 source /opt/GNS3/bin/activate
 pip3 install -U gns3-gui gns3-server PyQt5
 
+
+git clone https://github.com/GNS3/ubridge.git
+cd ubridge
+make
+make install
+cd ..
+\rm -rf ubridge
+
+git clone https://github.com/GNS3/dynamips.git
+cd dynamips
+mkdir build
+cd build
+cmake ..
+make install
+cd ../..
+\rm -rf dynamips
+
+git clone https://github.com/TolgaBagci/vpcs_0.8-1_amd64.deb.git
+cd vpcs_0.8-1_amd64.deb
+dpkg -i ./vpcs_0.8-1_amd64.deb
+cd ..
+\rm -rf vpcs_0.8-1_amd64.deb
+
 echo "export PATH=$PATH:/opt/GNS3/bin" >> /etc/skel/.bashrc
