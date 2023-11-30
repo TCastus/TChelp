@@ -1,3 +1,9 @@
+# rm -rf live
+# mkdir live
+# cd live
+# ../config.sfr
+# lb build
+
 lb config --bootappend-live "boot=live locales=fr_FR.UTF-8 keyboard-layouts=fr" --mode debian --system live --distribution bookworm --archive-areas "main contrib non-free non-free-firmware" --binary-images iso-hybrid
 
 echo task-cinnamon-desktop > config/package-lists/desktop.list.chroot
