@@ -21,7 +21,7 @@ Nous avons testé les clés suivantes qui passent facilement :
 Une clé USB 2.0 fonctionnera également en mode non persistent, mais trop lente pour le mode persistent.
 
 1. Récupérer sur le site de télécom l'image iso courante
-<https://tc-net2.insa-lyon.fr/iso/>  
+<https://tc-net.insa-lyon.fr/iso/>  
 ou encore  
 `wget --user <LOGIN> --ask-password https://tc-net2.insa-lyon.fr/iso/live-image-amd64.hybrid.iso`
 
