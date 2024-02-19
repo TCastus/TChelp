@@ -3,13 +3,15 @@
 # cd live
 # ../config.sfr
 # lb build
+#dd if=./live-image-amd64.hybrid.iso of=/dev/sdd bs=8MB
 
-# version sans installer
-#lb config --bootappend-live "boot=live locales=fr_FR.UTF-8 keyboard-layouts=fr" --mode debian --system live --distribution bookworm --archive-areas "main contrib non-free non-free-firmware" --binary-images iso-hybrid
-lb config --bootappend-live "boot=live locales=fr_FR.UTF-8 keyboard-layouts=fr" --debian-installer "live" --mode debian --system live --distribution bookworm --archive-areas "main contrib non-free non-free-firmware" --binary-images iso-hybrid
+# Version sans installer
+lb config --bootappend-live "boot=live locales=fr_FR.UTF-8 keyboard-layouts=fr" --mode debian --system live --distribution bookworm --archive-areas "main contrib non-free non-free-firmware" --binary-images iso-hybrid
+
+# Version avec installer
+#lb config --bootappend-live "boot=live locales=fr_FR.UTF-8 keyboard-layouts=fr" --debian-installer "live" --mode debian --system live --distribution bookworm --archive-areas "main contrib non-free non-free-firmware" --binary-images iso-hybrid
 
 echo task-cinnamon-desktop > config/package-lists/desktop.list.chroot
-
 echo wireless-tools >> config/package-lists/desktop.list.chroot
 echo htop >> config/package-lists/desktop.list.chroot
 echo gnuradio >> config/package-lists/desktop.list.chroot
@@ -88,4 +90,19 @@ cp ../gns3-images/c7200-advipservicesk9-mz.152-4.S5.image config/includes.chroot
 echo golang >> config/package-lists/desktop.list.chroot
 echo elm-compiler >> config/package-lists/desktop.list.chroot
 echo nodejs >> config/package-lists/desktop.list.chroot
+
+# srsran
+echo libuhd-dev >> config/package-lists/desktop.list.chroot
+echo uhd-host >> config/package-lists/desktop.list.chroot
+echo net-tools >> config/package-lists/desktop.list.chroot
+
+
+echo build-essential >> config/package-lists/desktop.list.chroot
+echo cmake >> config/package-lists/desktop.list.chroot
+echo libfftw3-dev >> config/package-lists/desktop.list.chroot
+echo libmbedtls-dev >> config/package-lists/desktop.list.chroot
+echo libboost-program-options-dev >> config/package-lists/desktop.list.chroot
+echo libconfig++-dev >> config/package-lists/desktop.list.chroot
+echo libsctp-dev >> config/package-lists/desktop.list.chroot
+cp ../srsran.chroot config/hooks/live/
 

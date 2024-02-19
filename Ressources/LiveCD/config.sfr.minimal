@@ -1,0 +1,21 @@
+# rm -rf live
+# mkdir live
+# cd live
+# ../config.sfr
+# lb build
+#dd if=./live-image-amd64.hybrid.iso of=/dev/sdd1 bs=8MB
+
+# Version sans installer
+lb config --bootappend-live "boot=live locales=fr_FR.UTF-8 keyboard-layouts=fr" --mode debian --system live --distribution bookworm --archive-areas "main contrib non-free non-free-firmware" --binary-images iso-hybrid
+
+# Version avec installer
+#lb config --bootappend-live "boot=live locales=fr_FR.UTF-8 keyboard-layouts=fr" --debian-installer "live" --mode debian --system live --distribution bookworm --archive-areas "main contrib non-free non-free-firmware" --binary-images iso-hybrid
+
+echo task-cinnamon-desktop > config/package-lists/desktop.list.chroot
+# eduroam 
+mkdir -p config/includes.chroot_after_packages/etc/skel
+cp ../net/ca.pem ../net/*.sh config/includes.chroot_after_packages/etc/skel/
+
+# vpn
+echo openconnect >> config/package-lists/desktop.list.chroot
+cp ../openconnect.chroot config/hooks/live/

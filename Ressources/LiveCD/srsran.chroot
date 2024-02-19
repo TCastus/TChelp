@@ -1,0 +1,18 @@
+#!/bin/bash
+
+uhd_images_downloader -t b2xx_b210_fpga_default
+
+git clone https://github.com/srsRAN/srsRAN_4G.git
+cd srsRAN_4G
+mkdir build
+cd build
+cmake ../
+make
+sudo make install
+
+srsran_install_configs.sh service
+
+cd /
+\rm -r srsRAN_4G
+
+
