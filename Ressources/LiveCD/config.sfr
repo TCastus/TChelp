@@ -6,7 +6,7 @@
 #dd if=./live-image-amd64.hybrid.iso of=/dev/sdd bs=8MB
 
 # Version sans installer
-lb config --bootappend-live "boot=live locales=fr_FR.UTF-8 keyboard-layouts=fr" --mode debian --system live --distribution bookworm --archive-areas "main contrib non-free non-free-firmware" --binary-images iso-hybrid
+lb config --bootappend-live "boot=live locales=fr_FR.UTF-8 keyboard-layouts=fr" --mode debian --system live --parent-distribution bookworm --archive-areas "main contrib non-free non-free-firmware" --binary-images iso-hybrid --distribution TC-1.3
 
 # Version avec installer
 #lb config --bootappend-live "boot=live locales=fr_FR.UTF-8 keyboard-layouts=fr" --debian-installer "live" --mode debian --system live --distribution bookworm --archive-areas "main contrib non-free non-free-firmware" --binary-images iso-hybrid
@@ -91,11 +91,12 @@ echo golang >> config/package-lists/desktop.list.chroot
 echo elm-compiler >> config/package-lists/desktop.list.chroot
 echo nodejs >> config/package-lists/desktop.list.chroot
 
+############ RESEAU
 # srsran
 echo libuhd-dev >> config/package-lists/desktop.list.chroot
 echo uhd-host >> config/package-lists/desktop.list.chroot
 echo net-tools >> config/package-lists/desktop.list.chroot
-
+echo iptables >> config/package-lists/desktop.list.chroot
 
 echo build-essential >> config/package-lists/desktop.list.chroot
 echo cmake >> config/package-lists/desktop.list.chroot
@@ -106,3 +107,11 @@ echo libconfig++-dev >> config/package-lists/desktop.list.chroot
 echo libsctp-dev >> config/package-lists/desktop.list.chroot
 cp ../srsran.chroot config/hooks/live/
 
+# Asterisk
+echo linphone-desktop >> config/package-lists/desktop.list.chroot
+echo libedit-dev >> config/package-lists/desktop.list.chroot
+echo uuid-dev >> config/package-lists/desktop.list.chroot
+echo libjansson-dev >> config/package-lists/desktop.list.chroot
+echo libxml2-dev >> config/package-lists/desktop.list.chroot
+echo libsqlite3-dev >> config/package-lists/desktop.list.chroot
+cp ../asterisk.chroot config/hooks/live/
