@@ -4,6 +4,7 @@
 # ../config.sfr
 # lb build
 #dd if=./live-image-amd64.hybrid.iso of=/dev/sdd bs=8MB
+#sudo dcfldd if=./live-image-amd64.hybrid.iso of=/dev/disk4 of=/dev/disk5 of=/dev/disk6
 
 # Version sans installer
 lb config --bootappend-live "boot=live locales=fr_FR.UTF-8 keyboard-layouts=fr" --mode debian --system live --parent-distribution bookworm --archive-areas "main contrib non-free non-free-firmware" --binary-images iso-hybrid --distribution TC-1.3

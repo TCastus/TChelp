@@ -10,7 +10,7 @@ cmake ../
 make
 sudo make install
 
-srsran_install_configs.sh service
+srsran_install_configs.sh user
 
 cd /
 \rm -r srsRAN_4G
