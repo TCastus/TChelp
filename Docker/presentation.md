@@ -127,3 +127,14 @@ Docker vous permet effectivement d'empaqueter un logiciel serveur dans un format
 avec la plupart des grands fournisseurs de *Cloud computing* ainsi que toutes les distributions Linux, macOS et même Windows (avec des restrictions).
 
 Vous pouvez déployer un logiciel sans savoir comment il fonctionne.
+
+
+## liens utiles 
+
+### Vidéo 
+
+- [docker by xavki](https://youtube.com/playlist?list=PLn6POgpklwWq0iz59-px2z-qjDdZKEvWd&si=rrEH0IjYXP6QTUR0)
+
+### Articles 
+
+- [docker by Stephane Robert](https://blog.stephane-robert.info/docs/conteneurs/moteurs-conteneurs/docker/)
