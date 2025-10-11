@@ -52,3 +52,7 @@ scp [nomLogin]@[nomMachine]:toto.txt .
 Notez le '@' après votre nom de login, et le ':', qui indique qu'il s'agit d'une machine distante. Sinon la commande est toujours la même : `scp <source> <destination>`
 
 ![scp](https://i.imgur.com/sbssnDV.png)
+
+## Resources
+
+- [Video en français](https://youtu.be/SQVigDEc-Dk?si=64c-TrLlABM_aBkV)
